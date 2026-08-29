@@ -2,398 +2,71 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cindrela Sales Radar</title>
-
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Cindrela Sales Radar V2</title>
 <style>
+:root{--navy:#101828;--muted:#667085;--bg:#f4f7fb;--card:#fff;--red:#e5484d;--orange:#f79009;--green:#12b76a;--blue:#2563eb;--line:#e4e7ec}
 *{box-sizing:border-box;margin:0;padding:0}
-
-body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f5f7fb;
-color:#172033;
-}
-
-header{
-background:#111827;
-color:white;
-padding:18px 28px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-font-size:22px;
-font-weight:700;
-}
-
-.location{
-font-size:14px;
-opacity:.8;
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-padding:25px;
-}
-
-h1{
-font-size:28px;
-margin-bottom:7px;
-}
-
-.subtitle{
-color:#667085;
-margin-bottom:25px;
-}
-
-.stats{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:15px;
-margin-bottom:25px;
-}
-
-.stat{
-background:white;
-padding:18px;
-border-radius:12px;
-box-shadow:0 2px 8px rgba(0,0,0,.06);
-}
-
-.stat b{
-display:block;
-font-size:28px;
-margin-bottom:6px;
-}
-
-.stat span{
-font-size:13px;
-color:#667085;
-}
-
-.section-title{
-font-size:20px;
-margin:25px 0 15px;
-}
-
-.filters{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-margin-bottom:18px;
-}
-
-button{
-border:0;
-padding:10px 15px;
-border-radius:8px;
-cursor:pointer;
-background:#e9edf5;
-color:#172033;
-font-weight:600;
-}
-
-button.active{
-background:#111827;
-color:white;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:16px;
-}
-
-.card{
-background:white;
-border-radius:14px;
-padding:20px;
-box-shadow:0 2px 9px rgba(0,0,0,.06);
-border-left:5px solid #98a2b3;
-}
-
-.card.high{border-left-color:#e5484d}
-.card.medium{border-left-color:#f79009}
-.card.low{border-left-color:#12b76a}
-
-.badge{
-display:inline-block;
-padding:5px 9px;
-border-radius:20px;
-font-size:11px;
-font-weight:700;
-margin-bottom:12px;
-background:#eef2f6;
-}
-
-.card h3{
-font-size:18px;
-margin-bottom:8px;
-}
-
-.meta{
-font-size:13px;
-color:#667085;
-line-height:1.7;
-}
-
-.sell{
-margin-top:14px;
-padding:12px;
-background:#f8fafc;
-border-radius:8px;
-font-size:13px;
-}
-
-.sell strong{
-display:block;
-margin-bottom:4px;
-}
-
-.empty{
-padding:30px;
-text-align:center;
-background:white;
-border-radius:12px;
-color:#667085;
-}
-
-footer{
-text-align:center;
-padding:30px;
-color:#98a2b3;
-font-size:12px;
-}
-
-@media(max-width:900px){
-.stats{grid-template-columns:repeat(2,1fr)}
-.cards{grid-template-columns:1fr}
-}
-
-@media(max-width:500px){
-.container{padding:15px}
-.stats{grid-template-columns:1fr 1fr}
-h1{font-size:23px}
-}
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:#172033;line-height:1.45}
+header{background:var(--navy);color:#fff;padding:17px 28px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:5}
+.logo{font-size:20px;font-weight:800;letter-spacing:.2px}.location{font-size:13px;opacity:.85}
+.container{max-width:1250px;margin:auto;padding:24px 22px 40px}
+.hero{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:22px}.hero h1{font-size:30px;margin-bottom:5px}.hero p{color:var(--muted)}
+.updated{font-size:12px;color:var(--muted);background:#fff;border:1px solid var(--line);padding:9px 12px;border-radius:9px;white-space:nowrap}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:13px;margin-bottom:22px}.stat{background:#fff;border:1px solid var(--line);border-radius:13px;padding:16px;box-shadow:0 2px 8px #1018280a}.stat b{display:block;font-size:27px}.stat span{font-size:12px;color:var(--muted)}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:12px 0 20px}.filters{display:flex;gap:8px;flex-wrap:wrap}.filters button{border:0;background:#e9eef6;color:#172033;padding:9px 13px;border-radius:9px;font-weight:700;cursor:pointer}.filters button.active{background:var(--navy);color:#fff}
+.search{margin-left:auto;min-width:230px;border:1px solid var(--line);background:#fff;border-radius:9px;padding:10px 12px;outline:none}
+.section-title{font-size:21px;margin-bottom:12px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:#fff;border:1px solid var(--line);border-left:5px solid #98a2b3;border-radius:13px;padding:17px;box-shadow:0 2px 9px #1018280a}.card.sell{border-left-color:var(--red)}.card.plan{border-left-color:var(--orange)}.card.watch{border-left-color:var(--green)}
+.top{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:10px}.badge{font-size:10px;font-weight:800;padding:5px 8px;border-radius:20px;background:#f2f4f7}.score{font-size:11px;font-weight:800;padding:5px 8px;border-radius:20px;background:#eef4ff;color:#175cd3}.card h3{font-size:17px;margin-bottom:7px}.meta{font-size:12.5px;color:var(--muted);line-height:1.7}.sellbox{margin-top:13px;padding:11px;background:#f8fafc;border-radius:9px;font-size:12.5px}.sellbox strong{display:block;margin-bottom:4px;color:#172033}.action{margin-top:10px;display:flex;justify-content:space-between;gap:8px;font-size:11.5px}.action b{color:var(--blue)}
+.panel{background:#fff;border:1px solid var(--line);border-radius:13px;margin-top:24px;padding:18px}.panel h2{font-size:19px;margin-bottom:12px}.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.quick div{background:#f8fafc;border-radius:10px;padding:12px;font-size:12px}.quick b{display:block;font-size:13px;margin-bottom:4px}
+.sources{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.sources a{color:var(--blue);font-size:12px;text-decoration:none}.sources a:hover{text-decoration:underline}
+.empty{grid-column:1/-1;background:#fff;border:1px solid var(--line);border-radius:13px;padding:35px;text-align:center;color:var(--muted)}footer{text-align:center;padding:20px;color:#98a2b3;font-size:11px}
+@media(max-width:950px){.stats{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr 1fr}.quick{grid-template-columns:1fr}.search{margin-left:0;width:100%}.hero{align-items:start;flex-direction:column}}
+@media(max-width:600px){.cards{grid-template-columns:1fr}.container{padding:18px 14px}.hero h1{font-size:24px}}
 </style>
 </head>
-
 <body>
-
-<header>
-<div class="logo">CINDRELA SALES RADAR</div>
-<div class="location">🇳🇬 Abuja, Nigeria</div>
-</header>
-
+<header><div class="logo">CINDRELA SALES RADAR</div><div class="location">🇳🇬 Abuja, Nigeria</div></header>
 <main class="container">
-
-<h1>Travel Opportunity Radar</h1>
-<p class="subtitle">
-Find opportunities early. Plan early. Sell early.
-</p>
-
+<section class="hero"><div><h1>Travel Opportunity Radar</h1><p>Find demand early. Prepare early. Sell early.</p></div><div class="updated">Verified / reviewed: 29 Aug 2026</div></section>
 <div class="stats">
-<div class="stat">
-<b id="sellCount">3</b>
-<span>🔴 Sell Now</span>
+<div class="stat"><b id="sellCount">0</b><span>🔴 Sell Now</span></div>
+<div class="stat"><b id="planCount">0</b><span>🟠 Start Planning</span></div>
+<div class="stat"><b id="watchCount">0</b><span>🟢 Watch</span></div>
+<div class="stat"><b>2</b><span>🛂 Visa / travel watch</span></div>
+<div class="stat"><b id="totalCount">0</b><span>📌 Total opportunities</span></div>
 </div>
-
-<div class="stat">
-<b id="planCount">3</b>
-<span>🟠 Plan Now</span>
-</div>
-
-<div class="stat">
-<b id="upcomingCount">3</b>
-<span>🟢 Upcoming</span>
-</div>
-
-<div class="stat">
-<b>3</b>
-<span>🛂 Visa Alerts</span>
-</div>
-
-<div class="stat">
-<b>4</b>
-<span>🏢 Exhibitions</span>
-</div>
-</div>
-
 <h2 class="section-title">Sales Opportunities</h2>
-
-<div class="filters">
-<button class="active" onclick="filterCards('all',this)">All</button>
-<button onclick="filterCards('sell',this)">🔴 Sell Now</button>
-<button onclick="filterCards('plan',this)">🟠 Plan Now</button>
-<button onclick="filterCards('upcoming',this)">🟢 Upcoming</button>
-<button onclick="filterCards('visa',this)">🛂 Visa</button>
-<button onclick="filterCards('exhibition',this)">🏢 Exhibitions</button>
-</div>
-
-<div class="cards" id="cards">
-
-<div class="card high" data-type="sell">
-<span class="badge">🔴 SELL NOW</span>
-<h3>Abuja International Business Event</h3>
-<div class="meta">
-📅 20 September 2026<br>
-📍 Abuja, Nigeria<br>
-⏳ 22 days remaining
-</div>
-<div class="sell">
-<strong>💰 Cindrela can sell:</strong>
-Flight + Hotel + Airport Transfer + Corporate Travel
-</div>
-</div>
-
-<div class="card high" data-type="sell">
-<span class="badge">🔴 SELL NOW</span>
-<h3>China Business Exhibition</h3>
-<div class="meta">
-📅 15 October 2026<br>
-📍 China<br>
-⏳ Upcoming
-</div>
-<div class="sell">
-<strong>💰 Cindrela can sell:</strong>
-China Visa + Flight + Hotel + Transfers
-</div>
-</div>
-
-<div class="card high" data-type="sell">
-<span class="badge">🔴 SELL NOW</span>
-<h3>Dakar 2026 Youth Olympics</h3>
-<div class="meta">
-📅 31 October 2026<br>
-📍 Dakar, Senegal<br>
-⏳ Upcoming
-</div>
-<div class="sell">
-<strong>💰 Cindrela can sell:</strong>
-Flights + Hotels + Transfers + Group Travel
-</div>
-</div>
-
-<div class="card medium" data-type="plan">
-<span class="badge">🟠 PLAN NOW</span>
-<h3>AFCON 2027</h3>
-<div class="meta">
-📅 June – July 2027<br>
-📍 Kenya / Uganda / Tanzania<br>
-⏳ Future opportunity
-</div>
-<div class="sell">
-<strong>💰 Cindrela can sell:</strong>
-Sports Travel + Flights + Hotels + Visa Assistance
-</div>
-</div>
-
-<div class="card medium" data-type="plan">
-<span class="badge">🟠 PLAN NOW</span>
-<h3>Mother's Day Nigeria</h3>
-<div class="meta">
-📅 Annual event<br>
-📍 Nigeria<br>
-🎯 Family / couples travel
-</div>
-<div class="sell">
-<strong>💰 Cindrela can sell:</strong>
-Weekend Getaways + Hotels + Flights
-</div>
-</div>
-
-<div class="card medium" data-type="plan">
-<span class="badge">🟠 PLAN NOW</span>
-<h3>Father's Day Nigeria</h3>
-<div class="meta">
-📅 Annual event<br>
-📍 Nigeria<br>
-🎯 Family / leisure travel
-</div>
-<div class="sell">
-<strong>💰 Cindrela can sell:</strong>
-Holiday Packages + Hotels + Flights
-</div>
-</div>
-
-<div class="card low" data-type="upcoming">
-<span class="badge">🟢 UPCOMING</span>
-<h3>Global Tourism Events</h3>
-<div class="meta">
-📅 2027<br>
-🌍 Worldwide<br>
-👀 Monitor demand
-</div>
-<div class="sell">
-<strong>💰 Cindrela can sell:</strong>
-Destination Packages + Flights + Hotels
-</div>
-</div>
-
-<div class="card low" data-type="visa">
-<span class="badge">🛂 VISA</span>
-<h3>Visa Rule Changes</h3>
-<div class="meta">
-📍 UK / USA / Canada / Europe<br>
-🇳🇬 Nigeria traveller focus
-</div>
-<div class="sell">
-<strong>💰 Cindrela can sell:</strong>
-Visa Assistance + Flight + Hotel
-</div>
-</div>
-
-<div class="card low" data-type="exhibition">
-<span class="badge">🏢 EXHIBITION</span>
-<h3>World Exhibitions & Trade Fairs</h3>
-<div class="meta">
-🌍 China / Dubai / Europe / Africa<br>
-🎯 Business travellers
-</div>
-<div class="sell">
-<strong>💰 Cindrela can sell:</strong>
-Business Travel + Visa + Hotel + Transfers
-</div>
-</div>
-
-</div>
-
+<div class="toolbar"><div class="filters">
+<button class="active" data-filter="all">All</button><button data-filter="sell">🔴 Sell Now</button><button data-filter="plan">🟠 Plan</button><button data-filter="watch">🟢 Watch</button><button data-filter="business">🏢 Business</button><button data-filter="sports">⚽ Sports</button><button data-filter="seasonal">🎯 Seasonal</button>
+</div><input id="search" class="search" placeholder="Search event, city, product..." aria-label="Search opportunities"></div>
+<div class="cards" id="cards"></div>
+<section class="panel"><h2>⚡ What should I do today?</h2><div class="quick">
+<div><b>1. Attack the nearest event</b>Use Sell Now cards first. Contact likely corporate, group and business travellers before competitors.</div>
+<div><b>2. Build future demand</b>For Plan cards, start a lead list now and prepare visa, flight, hotel and transfer packages.</div>
+<div><b>3. Do not confuse event date with sales date</b>The radar's Action Start tells you when Cindrela should begin selling, not when the event happens.</div>
+</div></section>
+<section class="panel"><h2>🔎 Verified source links</h2><p style="font-size:12px;color:#667085">Event dates should be rechecked before quoting customers. This lite MVP uses verified event information rather than invented event names.</p><div class="sources">
+<a href="https://gitexnigeria.ng/" target="_blank">GITEX Nigeria</a><a href="https://aitf.accinigeria.com/home-1/" target="_blank">Abuja International Trade Fair</a><a href="https://www.cafonline.com/afcon2025/" target="_blank">CAF / AFCON</a><a href="https://newsroom.olympics.com/" target="_blank">IOC / Dakar 2026</a>
+</div></section>
 </main>
-
-<footer>
-Cindrela Sales Radar • Abuja, Nigeria • Lite MVP
-</footer>
-
+<footer>Cindrela Sales Radar • Abuja, Nigeria • Lite Sales Intelligence MVP</footer>
 <script>
-
-function filterCards(type,button){
-
-document.querySelectorAll("button").forEach(b=>{
-b.classList.remove("active");
-});
-
-button.classList.add("active");
-
-document.querySelectorAll(".card").forEach(card=>{
-
-if(type==="all"){
-card.style.display="block";
-}
-else if(card.dataset.type===type){
-card.style.display="block";
-}
-else{
-card.style.display="none";
-}
-
-});
-
-}
-
+const opportunities=[
+{id:1,type:'sell',tag:'SELL NOW',group:'business',title:'GITEX Nigeria 2026',date:'31 Aug – 3 Sep 2026',start:'2026-08-31',place:'Abuja + Lagos, Nigeria',score:98,lead:'Business / tech travellers',products:'Flight + Hotel + Airport Transfer + Business Travel',action:'Sell immediately',source:'GITEX Nigeria'},
+{id:2,type:'sell',tag:'SELL NOW',group:'business',title:'21st Abuja International Trade Fair',date:'25 Sep – 6 Oct 2026',start:'2026-09-25',place:'Abuja, Nigeria',score:96,lead:'500+ exhibitors / business visitors',products:'Corporate Travel + Hotel + Transfers + Group Booking',action:'Sell immediately',source:'ACCI / AITF'},
+{id:3,type:'sell',group:'sports',tag:'SELL NOW',title:'Dakar 2026 Youth Olympic Games',date:'31 Oct – 13 Nov 2026',start:'2026-10-31',place:'Dakar / Diamniadio / Saly, Senegal',score:91,lead:'Sports groups / families / supporters',products:'Flights + Hotels + Transfers + Group Travel',action:'Start selling now',source:'IOC / Dakar 2026'},
+{id:4,type:'plan',group:'sports',tag:'PLAN NOW',title:'AFCON PAMOJA 2027',date:'19 Jun – 17 Jul 2027',start:'2027-06-19',place:'Kenya / Tanzania / Uganda',score:95,lead:'Football supporters / corporate groups',products:'Flights + Hotels + Visa Assistance + Transfers + Group Travel',action:'Build lead list now',source:'CAF'},
+{id:5,type:'plan',group:'seasonal',tag:'PLAN NOW',title:'Mothering Sunday Nigeria 2027',date:'7 Mar 2027',start:'2027-03-07',place:'Nigeria / regional getaways',score:72,lead:'Families / couples / gift trips',products:'Weekend Getaways + Hotels + Flights',action:'Campaign 6–8 weeks before',source:'Nigeria holiday calendar'},
+{id:6,type:'plan',group:'seasonal',tag:'PLAN NOW',title:"Father's Day Nigeria 2027",date:'20 Jun 2027',start:'2027-06-20',place:'Nigeria / regional getaways',score:68,lead:'Families / leisure travellers',products:'Holiday Packages + Hotels + Flights',action:'Campaign 6–8 weeks before',source:'Nigeria holiday calendar'},
+{id:7,type:'watch',group:'business',tag:'WATCH',title:'China Business Exhibition Pipeline',date:'Rolling 2026–27',start:'2027-01-01',place:'China',score:78,lead:'Nigerian importers / exhibitors',products:'China Visa + Flight + Hotel + Transfers',action:'Add exhibitions as dates confirm',source:'Pipeline watch'},
+{id:8,type:'watch',group:'business',tag:'WATCH',title:'International Business & Trade Fairs',date:'Rolling 2026–27',start:'2027-01-01',place:'Dubai / Europe / Africa / Asia',score:74,lead:'SMEs / corporate travellers',products:'Business Travel + Visa + Hotel + Transfers',action:'Monitor monthly',source:'Pipeline watch'},
+{id:9,type:'watch',group:'seasonal',tag:'WATCH',title:'Nigeria Seasonal Travel Calendar',date:'2026–27',start:'2027-01-01',place:'Nigeria',score:70,lead:'Holiday / family / leisure demand',products:'Flights + Hotels + Weekend Packages',action:'Prepare campaigns before peaks',source:'Seasonal planning'}
+];
+const cards=document.getElementById('cards');const search=document.getElementById('search');let current='all';
+function render(){const q=search.value.toLowerCase().trim();const list=opportunities.filter(o=>(current==='all'||o.type===current||o.group===current)&&(!q||(`${o.title} ${o.place} ${o.products} ${o.lead}`).toLowerCase().includes(q)));cards.innerHTML=list.length?list.map(o=>`<article class="card ${o.type}"><div class="top"><span class="badge">${o.tag}</span><span class="score">${o.score}/100</span></div><h3>${o.title}</h3><div class="meta">📅 ${o.date}<br>📍 ${o.place}<br>🎯 ${o.lead}</div><div class="sellbox"><strong>💰 Cindrela can sell:</strong>${o.products}</div><div class="action"><span>Action: <b>${o.action}</b></span><span>${o.source}</span></div></article>`).join(''):`<div class="empty">No matching opportunity found.</div>`;}
+function counts(){document.getElementById('sellCount').textContent=opportunities.filter(x=>x.type==='sell').length;document.getElementById('planCount').textContent=opportunities.filter(x=>x.type==='plan').length;document.getElementById('watchCount').textContent=opportunities.filter(x=>x.type==='watch').length;document.getElementById('totalCount').textContent=opportunities.length;}
+document.querySelectorAll('.filters button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');current=btn.dataset.filter;render();}));search.addEventListener('input',render);counts();render();
 </script>
-
 </body>
 </html>
