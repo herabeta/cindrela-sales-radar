@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cindrela Sales Radar</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f5f7fb;
+color:#172033;
+}
+
+header{
+background:#111827;
+color:white;
+padding:18px 28px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:22px;
+font-weight:700;
+}
+
+.location{
+font-size:14px;
+opacity:.8;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:25px;
+}
+
+h1{
+font-size:28px;
+margin-bottom:7px;
+}
+
+.subtitle{
+color:#667085;
+margin-bottom:25px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:15px;
+margin-bottom:25px;
+}
+
+.stat{
+background:white;
+padding:18px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,.06);
+}
+
+.stat b{
+display:block;
+font-size:28px;
+margin-bottom:6px;
+}
+
+.stat span{
+font-size:13px;
+color:#667085;
+}
+
+.section-title{
+font-size:20px;
+margin:25px 0 15px;
+}
+
+.filters{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+margin-bottom:18px;
+}
+
+button{
+border:0;
+padding:10px 15px;
+border-radius:8px;
+cursor:pointer;
+background:#e9edf5;
+color:#172033;
+font-weight:600;
+}
+
+button.active{
+background:#111827;
+color:white;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:16px;
+}
+
+.card{
+background:white;
+border-radius:14px;
+padding:20px;
+box-shadow:0 2px 9px rgba(0,0,0,.06);
+border-left:5px solid #98a2b3;
+}
+
+.card.high{border-left-color:#e5484d}
+.card.medium{border-left-color:#f79009}
+.card.low{border-left-color:#12b76a}
+
+.badge{
+display:inline-block;
+padding:5px 9px;
+border-radius:20px;
+font-size:11px;
+font-weight:700;
+margin-bottom:12px;
+background:#eef2f6;
+}
+
+.card h3{
+font-size:18px;
+margin-bottom:8px;
+}
+
+.meta{
+font-size:13px;
+color:#667085;
+line-height:1.7;
+}
+
+.sell{
+margin-top:14px;
+padding:12px;
+background:#f8fafc;
+border-radius:8px;
+font-size:13px;
+}
+
+.sell strong{
+display:block;
+margin-bottom:4px;
+}
+
+.empty{
+padding:30px;
+text-align:center;
+background:white;
+border-radius:12px;
+color:#667085;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#98a2b3;
+font-size:12px;
+}
+
+@media(max-width:900px){
+.stats{grid-template-columns:repeat(2,1fr)}
+.cards{grid-template-columns:1fr}
+}
+
+@media(max-width:500px){
+.container{padding:15px}
+.stats{grid-template-columns:1fr 1fr}
+h1{font-size:23px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">CINDRELA SALES RADAR</div>
+<div class="location">🇳🇬 Abuja, Nigeria</div>
+</header>
+
+<main class="container">
+
+<h1>Travel Opportunity Radar</h1>
+<p class="subtitle">
+Find opportunities early. Plan early. Sell early.
+</p>
+
+<div class="stats">
+<div class="stat">
+<b id="sellCount">3</b>
+<span>🔴 Sell Now</span>
+</div>
+
+<div class="stat">
+<b id="planCount">3</b>
+<span>🟠 Plan Now</span>
+</div>
+
+<div class="stat">
+<b id="upcomingCount">3</b>
+<span>🟢 Upcoming</span>
+</div>
+
+<div class="stat">
+<b>3</b>
+<span>🛂 Visa Alerts</span>
+</div>
+
+<div class="stat">
+<b>4</b>
+<span>🏢 Exhibitions</span>
+</div>
+</div>
+
+<h2 class="section-title">Sales Opportunities</h2>
+
+<div class="filters">
+<button class="active" onclick="filterCards('all',this)">All</button>
+<button onclick="filterCards('sell',this)">🔴 Sell Now</button>
+<button onclick="filterCards('plan',this)">🟠 Plan Now</button>
+<button onclick="filterCards('upcoming',this)">🟢 Upcoming</button>
+<button onclick="filterCards('visa',this)">🛂 Visa</button>
+<button onclick="filterCards('exhibition',this)">🏢 Exhibitions</button>
+</div>
+
+<div class="cards" id="cards">
+
+<div class="card high" data-type="sell">
+<span class="badge">🔴 SELL NOW</span>
+<h3>Abuja International Business Event</h3>
+<div class="meta">
+📅 20 September 2026<br>
+📍 Abuja, Nigeria<br>
+⏳ 22 days remaining
+</div>
+<div class="sell">
+<strong>💰 Cindrela can sell:</strong>
+Flight + Hotel + Airport Transfer + Corporate Travel
+</div>
+</div>
+
+<div class="card high" data-type="sell">
+<span class="badge">🔴 SELL NOW</span>
+<h3>China Business Exhibition</h3>
+<div class="meta">
+📅 15 October 2026<br>
+📍 China<br>
+⏳ Upcoming
+</div>
+<div class="sell">
+<strong>💰 Cindrela can sell:</strong>
+China Visa + Flight + Hotel + Transfers
+</div>
+</div>
+
+<div class="card high" data-type="sell">
+<span class="badge">🔴 SELL NOW</span>
+<h3>Dakar 2026 Youth Olympics</h3>
+<div class="meta">
+📅 31 October 2026<br>
+📍 Dakar, Senegal<br>
+⏳ Upcoming
+</div>
+<div class="sell">
+<strong>💰 Cindrela can sell:</strong>
+Flights + Hotels + Transfers + Group Travel
+</div>
+</div>
+
+<div class="card medium" data-type="plan">
+<span class="badge">🟠 PLAN NOW</span>
+<h3>AFCON 2027</h3>
+<div class="meta">
+📅 June – July 2027<br>
+📍 Kenya / Uganda / Tanzania<br>
+⏳ Future opportunity
+</div>
+<div class="sell">
+<strong>💰 Cindrela can sell:</strong>
+Sports Travel + Flights + Hotels + Visa Assistance
+</div>
+</div>
+
+<div class="card medium" data-type="plan">
+<span class="badge">🟠 PLAN NOW</span>
+<h3>Mother's Day Nigeria</h3>
+<div class="meta">
+📅 Annual event<br>
+📍 Nigeria<br>
+🎯 Family / couples travel
+</div>
+<div class="sell">
+<strong>💰 Cindrela can sell:</strong>
+Weekend Getaways + Hotels + Flights
+</div>
+</div>
+
+<div class="card medium" data-type="plan">
+<span class="badge">🟠 PLAN NOW</span>
+<h3>Father's Day Nigeria</h3>
+<div class="meta">
+📅 Annual event<br>
+📍 Nigeria<br>
+🎯 Family / leisure travel
+</div>
+<div class="sell">
+<strong>💰 Cindrela can sell:</strong>
+Holiday Packages + Hotels + Flights
+</div>
+</div>
+
+<div class="card low" data-type="upcoming">
+<span class="badge">🟢 UPCOMING</span>
+<h3>Global Tourism Events</h3>
+<div class="meta">
+📅 2027<br>
+🌍 Worldwide<br>
+👀 Monitor demand
+</div>
+<div class="sell">
+<strong>💰 Cindrela can sell:</strong>
+Destination Packages + Flights + Hotels
+</div>
+</div>
+
+<div class="card low" data-type="visa">
+<span class="badge">🛂 VISA</span>
+<h3>Visa Rule Changes</h3>
+<div class="meta">
+📍 UK / USA / Canada / Europe<br>
+🇳🇬 Nigeria traveller focus
+</div>
+<div class="sell">
+<strong>💰 Cindrela can sell:</strong>
+Visa Assistance + Flight + Hotel
+</div>
+</div>
+
+<div class="card low" data-type="exhibition">
+<span class="badge">🏢 EXHIBITION</span>
+<h3>World Exhibitions & Trade Fairs</h3>
+<div class="meta">
+🌍 China / Dubai / Europe / Africa<br>
+🎯 Business travellers
+</div>
+<div class="sell">
+<strong>💰 Cindrela can sell:</strong>
+Business Travel + Visa + Hotel + Transfers
+</div>
+</div>
+
+</div>
+
+</main>
+
+<footer>
+Cindrela Sales Radar • Abuja, Nigeria • Lite MVP
+</footer>
+
+<script>
+
+function filterCards(type,button){
+
+document.querySelectorAll("button").forEach(b=>{
+b.classList.remove("active");
+});
+
+button.classList.add("active");
+
+document.querySelectorAll(".card").forEach(card=>{
+
+if(type==="all"){
+card.style.display="block";
+}
+else if(card.dataset.type===type){
+card.style.display="block";
+}
+else{
+card.style.display="none";
+}
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
