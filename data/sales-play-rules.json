@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "rules": [
+    {"match":"business","products":["Flight","Hotel","Airport Transfer","Corporate / Business Travel","Group Booking"],"message_angle":"Convenience, coordinated business travel, and one point of contact."},
+    {"match":"sports","products":["Flight","Hotel","Airport Transfer","Group Booking","Team Travel"],"message_angle":"Group coordination, reliable transfers, and team movement."},
+    {"match":"seasonal","products":["Flight","Hotel","Airport Transfer","Group Booking"],"message_angle":"Early planning, availability, and bundled travel support."}
+  ],
+  "lead_statuses":["New","Contacted","Interested","Quoted","Won","Lost"],
+  "follow_up_defaults":{"initial_days":2,"interested_days":1,"quoted_days":2}
+}
