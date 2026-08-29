@@ -1,6 +1,52 @@
 {
-  "generated_at": "2026-08-29T18:00:00Z",
+  "generated_at": "2026-08-29T20:10:00Z",
   "status": "seed",
-  "message": "Daily intelligence feed is ready. Automated GitHub refresh updates this file daily.",
-  "items": []
+  "message": "Seed sales plays are shown until the automated daily refresh publishes fresh signals.",
+  "sales_rule": "News is a discovery signal. Verify event dates/details with an official source before quoting customers.",
+  "items": [
+    {
+      "category": "Nigeria / Abuja events",
+      "title": "GITEX Nigeria 2026 — immediate travel prospecting",
+      "source": "GITEX Nigeria",
+      "published": "29 Aug 2026",
+      "url": "https://gitexnigeria.ng/",
+      "priority": "HOT",
+      "target": "Exhibitors, founders, CEOs and delegates",
+      "products": "Flight + Hotel + Airport Transfer + Business Travel",
+      "action": "Open the official exhibitor list and start outreach now."
+    },
+    {
+      "category": "Nigeria / Abuja events",
+      "title": "21st Abuja International Trade Fair — build corporate lead list",
+      "source": "Abuja International Trade Fair / ACCI",
+      "published": "29 Aug 2026",
+      "url": "https://aitf.accinigeria.com/home-1/",
+      "priority": "HOT",
+      "target": "Exhibitors, SMEs, buyers and corporate teams",
+      "products": "Corporate Travel + Hotel + Transfers + Group Booking",
+      "action": "Build named company targets and begin early outreach."
+    },
+    {
+      "category": "Africa exhibitions",
+      "title": "Africa Space Economy Conference — executive travel opportunity",
+      "source": "ASEICC",
+      "published": "29 Aug 2026",
+      "url": "https://aseicc.org/",
+      "priority": "HOT",
+      "target": "Space executives, exhibitors, delegates and partners",
+      "products": "Flight + Hotel + Transfers + Executive Travel",
+      "action": "Use the official event network to identify companies and delegates to approach."
+    },
+    {
+      "category": "World exhibitions",
+      "title": "International trade-fair prospecting pipeline",
+      "source": "Cindrela Sales Radar",
+      "published": "29 Aug 2026",
+      "url": "https://cindrela-sales-radar.vercel.app/lead-finder.html",
+      "priority": "WARM",
+      "target": "Nigerian SMEs, exhibitors, buyers and corporate travellers",
+      "products": "International Flight + Visa Support + Hotel + Transfers",
+      "action": "Move verified target companies into Lead Finder and start structured follow-up."
+    }
+  ]
 }
