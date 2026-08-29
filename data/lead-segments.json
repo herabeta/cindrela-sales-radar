@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "segments": {
+    "business": ["Exhibitor", "Founder", "CEO / Managing Director", "Business Development", "Operations", "Delegate / Attendee"],
+    "sports": ["Team / Club", "Athlete / Player", "Coach / Staff", "Sponsor", "Media / Delegate"],
+    "seasonal": ["Corporate Traveller", "Group Coordinator", "Family Traveller", "Event Visitor"]
+  },
+  "mapping": {
+    "GITEX Nigeria 2026": ["Exhibitor", "Founder", "CEO / Managing Director", "Delegate / Attendee"],
+    "21st Abuja International Trade Fair": ["Exhibitor", "Business Development", "Operations", "Delegate / Attendee"],
+    "International Cybersecurity Conference": ["Founder", "CEO / Managing Director", "Operations", "Delegate / Attendee"],
+    "Digital Nigeria International Conference": ["Founder", "CEO / Managing Director", "Business Development", "Delegate / Attendee"],
+    "Africa Space Economy Conference": ["Founder", "CEO / Managing Director", "Operations", "Delegate / Attendee"],
+    "Trade Expo Nigeria": ["Exhibitor", "Business Development", "Operations", "Delegate / Attendee"]
+  }
+}
