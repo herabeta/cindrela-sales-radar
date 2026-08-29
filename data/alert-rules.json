@@ -1,0 +1,10 @@
+{
+  "rules": [
+    {"days_before": 90, "label": "PLAN AHEAD", "priority": "WARM", "action": "Research target companies and prepare the sales offer."},
+    {"days_before": 60, "label": "START OUTREACH", "priority": "WARM", "action": "Build the lead list and begin English WhatsApp/email outreach."},
+    {"days_before": 30, "label": "SELL NOW", "priority": "HOT", "action": "Push flight, hotel, transfer and group/corporate travel packages."},
+    {"days_before": 14, "label": "HIGH PRIORITY", "priority": "HOT", "action": "Follow up with every active lead and send quotes."},
+    {"days_before": 7, "label": "URGENT", "priority": "HOT", "action": "Close pending bookings and confirm travel arrangements."}
+  ],
+  "note": "Alert thresholds are planning guidance. Event dates and customer travel details must be verified from official sources."
+}
