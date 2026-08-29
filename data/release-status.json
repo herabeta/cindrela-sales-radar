@@ -1,0 +1,1 @@
+{"release":"sales-radar","status":"in-progress","last_verified":"2026-08-29","qa_policy":"Verify all existing and new features after every code update. Do not mark complete until final end-to-end QA passes.","next":"Connect event configuration to main Lead Finder, then final QA."}
