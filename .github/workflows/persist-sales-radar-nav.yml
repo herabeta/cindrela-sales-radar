@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   persist-nav:
-    if: ${{ !contains(github.event.head_commit.message, 'Persist Sales Radar navigation') }}
+    if: ${{ github.event.head_commit.message != 'Persist Sales Radar navigation' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
