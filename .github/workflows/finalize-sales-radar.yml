@@ -1,0 +1,33 @@
+name: Finalize Sales Radar
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  integrate:
+    if: ${{ github.event.head_commit.message != 'Integrate Sales Radar tools' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Integrate tools without replacing app
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          old='<nav class="nav"><button class="active" data-view="opportunities">📊 Sales Opportunities</button><button data-view="leads">🎯 Lead Finder</button></nav>'
+          new='<nav class="nav"><button class="active" data-view="opportunities">📊 Sales Opportunities</button><button data-view="leads">🎯 Lead Finder</button><button onclick="location.href=\'/intelligence.html\'">🚨 Daily Intelligence</button><button onclick="location.href=\'/sales-pipeline.html\'">📈 Sales Pipeline</button></nav>'
+          if old in s and 'Daily Intelligence</button>' not in s:
+              s=s.replace(old,new,1)
+          s=s.replace('<footer>Cindrela Sales Radar • Abuja, Nigeria • V4</footer>','<footer>Cindrela Sales Radar • Abuja, Nigeria • V4 • Daily Intelligence • Lead Finder • Sales Pipeline</footer>',1)
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit integration
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git diff --cached --quiet && exit 0
+          git commit -m 'Integrate Sales Radar tools'
+          git push
