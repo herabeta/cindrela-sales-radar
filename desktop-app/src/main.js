@@ -3,18 +3,20 @@ const path = require('path');
 const fs = require('fs');
 
 const isDev = !app.isPackaged;
-const webRoot = path.resolve(__dirname, '..', '..');
+const webRoot = isDev
+  ? path.resolve(__dirname, '..', '..')
+  : path.join(process.resourcesPath, 'web');
 const dataDir = path.join(app.getPath('userData'), 'data');
 const localDb = path.join(dataDir, 'cindrela-local-db.json');
+
+function emptyDb() {
+  return { version: 1, leads: [], deals: [], notes: [], settings: {} };
+}
 
 function ensureDataStore() {
   fs.mkdirSync(dataDir, { recursive: true });
   if (!fs.existsSync(localDb)) {
-    fs.writeFileSync(
-      localDb,
-      JSON.stringify({ version: 1, leads: [], deals: [], notes: [], settings: {} }, null, 2),
-      'utf8'
-    );
+    fs.writeFileSync(localDb, JSON.stringify(emptyDb(), null, 2), 'utf8');
   }
 }
 
@@ -23,12 +25,15 @@ function readDb() {
   try {
     return JSON.parse(fs.readFileSync(localDb, 'utf8'));
   } catch {
-    return { version: 1, leads: [], deals: [], notes: [], settings: {} };
+    const fallback = emptyDb();
+    fs.writeFileSync(localDb, JSON.stringify(fallback, null, 2), 'utf8');
+    return fallback;
   }
 }
 
 function writeDb(value) {
   ensureDataStore();
+  if (!value || typeof value !== 'object') throw new TypeError('Database payload must be an object');
   const tmp = `${localDb}.tmp`;
   fs.writeFileSync(tmp, JSON.stringify(value, null, 2), 'utf8');
   fs.renameSync(tmp, localDb);
@@ -43,6 +48,7 @@ function createWindow() {
     minHeight: 700,
     title: 'Cindrela Sales Radar',
     backgroundColor: '#f4f7fb',
+    autoHideMenuBar: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true,
@@ -52,11 +58,15 @@ function createWindow() {
   });
 
   win.webContents.setWindowOpenHandler(({ url }) => {
-    shell.openExternal(url);
+    if (/^https?:\/\//i.test(url)) shell.openExternal(url);
     return { action: 'deny' };
   });
 
   const entry = path.join(webRoot, 'index.html');
+  if (!fs.existsSync(entry)) {
+    throw new Error(`Cindrela Sales Radar web bundle missing: ${entry}`);
+  }
+
   win.loadFile(entry);
 }
 
@@ -81,6 +91,9 @@ app.whenReady().then(() => {
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
   });
+}).catch((err) => {
+  console.error('Cindrela Sales Radar startup failure:', err);
+  app.quit();
 });
 
 app.on('window-all-closed', () => {
