@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, shell } = require('electron');
+const { app, BrowserWindow, ipcMain, shell, Notification } = require('electron');
 const http = require('http');
 const path = require('path');
 const fs = require('fs');
@@ -12,6 +12,7 @@ const localDb = path.join(dataDir, 'cindrela-local-db.json');
 const agentScriptPath = path.join(__dirname, 'desktop-agent.js');
 const PORT = 49321;
 let localServer = null;
+let reminderTimer = null;
 
 function emptyDb() {
   return { version: 2, storage: {}, leads: [], deals: [], notes: [], settings: {}, followUps: [], emailLog: [] };
@@ -48,6 +49,31 @@ function writeDb(value) {
   fs.writeFileSync(tmp, JSON.stringify(next, null, 2), 'utf8');
   fs.renameSync(tmp, localDb);
   return true;
+}
+
+function checkFollowUps() {
+  try {
+    const db = readDb();
+    const list = Array.isArray(db.followUps) ? db.followUps : [];
+    const due = list.filter((x) => x && x.date && x.date <= new Date().toISOString().slice(0, 10) && !x.completed);
+    const notified = db.settings && typeof db.settings === 'object' ? (db.settings.followUpNotifications || {}) : {};
+    let changed = false;
+    for (const item of due.slice(0, 8)) {
+      const stamp = `${item.id}|${item.date}`;
+      if (notified[stamp]) continue;
+      if (Notification.isSupported()) {
+        new Notification({
+          title: 'Cindrela Sales Radar — Follow-up Due',
+          body: `${item.company || 'Lead'} • ${item.action || 'Follow up now'}`
+        }).show();
+      }
+      notified[stamp] = new Date().toISOString();
+      changed = true;
+    }
+    if (changed) writeDb({ settings: { ...(db.settings || {}), followUpNotifications: notified } });
+  } catch (err) {
+    console.error('Follow-up agent check failed:', err);
+  }
 }
 
 function contentType(file) {
@@ -124,6 +150,8 @@ app.whenReady().then(async () => {
   });
 
   await createWindow();
+  checkFollowUps();
+  reminderTimer = setInterval(checkFollowUps, 60 * 1000);
   app.on('activate', async () => { if (BrowserWindow.getAllWindows().length === 0) await createWindow(); });
 }).catch((err) => {
   console.error('Cindrela Sales Radar startup failure:', err);
@@ -131,6 +159,7 @@ app.whenReady().then(async () => {
 });
 
 app.on('window-all-closed', () => {
+  if (reminderTimer) clearInterval(reminderTimer);
   if (localServer) localServer.close();
   if (process.platform !== 'darwin') app.quit();
 });
