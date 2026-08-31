@@ -1,0 +1,45 @@
+name: Safe Update Check
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  validate-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate critical pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          for f in index.html intelligence.html event-calendar.html lead-finder.html; do
+            test -f "$f" || { echo "Missing critical page: $f"; exit 1; }
+          done
+
+      - name: Block accidental placeholder overwrite
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -Rni --exclude-dir=.git --exclude='safe-update-check.yml' "Navigation update placeholder" .; then
+            echo "ERROR: Accidental placeholder content detected."
+            exit 1
+          fi
+
+      - name: Basic HTML sanity check
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          files = ['index.html', 'intelligence.html', 'event-calendar.html', 'lead-finder.html']
+          for name in files:
+              text = Path(name).read_text(encoding='utf-8', errors='strict')
+              if '<html' not in text.lower() or '</html>' not in text.lower():
+                  raise SystemExit(f'Invalid HTML shell: {name}')
+              if '<script' in text.lower() and '</script>' not in text.lower():
+                  raise SystemExit(f'Unclosed script tag: {name}')
+          print('Safe update checks passed.')
