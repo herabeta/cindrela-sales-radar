@@ -1,0 +1,52 @@
+{
+  "name": "cindrela-sales-radar-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Standalone Windows desktop app for Cindrela Sales Radar",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "build:win": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.cindrela.salesradar",
+    "productName": "Cindrela Sales Radar",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "../",
+        "to": "web",
+        "filter": [
+          "index.html",
+          "lead-finder.html",
+          "event-lead-finder.html",
+          "intelligence.html",
+          "sales-pipeline.html",
+          "sales-summary.html",
+          "data/**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": ["nsis"]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Cindrela Sales Radar"
+    }
+  }
+}
