@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T05:07:52.577606Z",
+  "generated_at": "2026-09-01T05:13:19.254051Z",
   "rules": [
     {
       "days_before": 90,
@@ -34,26 +34,6 @@
   ],
   "alerts": [
     {
-      "id": 1,
-      "title": "GITEX Nigeria 2026",
-      "start_date": "2026-08-31",
-      "city": "Abuja / Lagos",
-      "group": "business",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Airport Transfer",
-        "Business Travel"
-      ],
-      "days_until": 0,
-      "alert": {
-        "days_before": 7,
-        "label": "URGENT",
-        "priority": "HOT",
-        "action": "Close pending bookings and confirm travel arrangements."
-      }
-    },
-    {
       "id": 2,
       "title": "21st Abuja International Trade Fair",
       "start_date": "2026-09-25",
@@ -65,7 +45,7 @@
         "Transfers",
         "Group Booking"
       ],
-      "days_until": 25,
+      "days_until": 24,
       "alert": {
         "days_before": 30,
         "label": "SELL NOW",
@@ -85,7 +65,7 @@
         "Transfers",
         "Corporate Travel"
       ],
-      "days_until": 57,
+      "days_until": 56,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -105,7 +85,7 @@
         "Transfers",
         "Business Travel"
       ],
-      "days_until": 71,
+      "days_until": 70,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -125,7 +105,7 @@
         "Transfers",
         "Executive Travel"
       ],
-      "days_until": 85,
+      "days_until": 84,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -145,7 +125,7 @@
         "Transfers",
         "Group Booking"
       ],
-      "days_until": 81,
+      "days_until": 80,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
