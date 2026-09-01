@@ -3,11 +3,17 @@
 ## Production safety
 
 - `stable-production` is the current production safety checkpoint.
-- New changes should be made on a separate branch first.
+- New changes should be made on a separate branch first when possible.
 - Every feature change should be a small, isolated commit.
-- Critical pages must remain present: `index.html`, `intelligence.html`, `event-calendar.html`, `lead-finder.html`.
-- The GitHub Actions `Safe Update Check` workflow validates critical pages and blocks the known accidental placeholder overwrite.
+- Critical pages must remain present: `index.html`, `intelligence.html`, `event-calendar.html`, `lead-finder.html`, `agency-finder.html`.
 - Production should only be refreshed after the deployment is READY and the changed page has been smoke-tested.
+
+## Agency Finder daily data
+
+- Agency Finder shows verified public business prospects currently loaded in the page.
+- The daily review UI records the last local review and opens public discovery queues for new prospects.
+- New agencies or contact details should be verified before being promoted into the main list.
+- Full automatic internet-wide discovery is not claimed without a connected data provider/API.
 
 ## Rollback
 
