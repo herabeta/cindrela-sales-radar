@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T05:13:19.254051Z",
+  "generated_at": "2026-09-02T05:12:57.903647Z",
   "rules": [
     {
       "days_before": 90,
@@ -45,7 +45,7 @@
         "Transfers",
         "Group Booking"
       ],
-      "days_until": 24,
+      "days_until": 23,
       "alert": {
         "days_before": 30,
         "label": "SELL NOW",
@@ -65,7 +65,7 @@
         "Transfers",
         "Corporate Travel"
       ],
-      "days_until": 56,
+      "days_until": 55,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -85,7 +85,7 @@
         "Transfers",
         "Business Travel"
       ],
-      "days_until": 70,
+      "days_until": 69,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -105,7 +105,7 @@
         "Transfers",
         "Executive Travel"
       ],
-      "days_until": 84,
+      "days_until": 83,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -125,7 +125,7 @@
         "Transfers",
         "Group Booking"
       ],
-      "days_until": 80,
+      "days_until": 79,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
