@@ -1,87 +1,111 @@
-import json, re
+import hashlib, json, re
 from datetime import datetime
 
 CANDIDATES = 'data/event-candidates.json'
 OPPORTUNITIES = 'data/opportunities.json'
 
-NIGERIA_TERMS = ('nigeria', 'abuja', 'lagos', 'port harcourt', 'ph', 'ibadan', 'kano')
+NIGERIA_TERMS = ('nigeria', 'abuja', 'lagos', 'port harcourt', 'ibadan', 'kano')
 EVENT_WORDS = ('conference', 'summit', 'expo', 'exhibition', 'festival', 'carnival', 'fair', 'forum', 'championship', 'cup', 'grand prix', 'open', 'meeting', 'congress', 'trade show')
-OFFICIAL_DOMAINS = ('fifa.com', 'formula1.com', 'fiaformulae.com', 'atptour.com', 'wtatennis.com', 'fiba.basketball', 'icc-cricket.com')
-DATE_RE = re.compile(r'\b(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+(\d{1,2})(?:[-–](\d{1,2}))?[,]?\s+(20(?:26|27))\b', re.I)
+OFFICIAL_DOMAINS = (
+    'fifa.com', 'formula1.com', 'fiaformulae.com', 'atptour.com',
+    'wtatennis.com', 'fiba.basketball', 'icc-cricket.com',
+    'cibng.org', 'nitda.gov.ng', 'arcon.gov.ng', 'gov.ng',
+    'accinigeria.com', 'nigeriaminingweek.com', 'nigeriaenergy-ng.com',
+    'big5constructnigeria.com', 'propakwestafrica.com', 'akwaabatravelmarket.com',
+    'agriculturalsocietynigeria.org', 'lekside.com', 'etiosacarnival.com',
+    'dettydecfest.com', 'aftifest.com', 'team-cymru.com', 'n-imex.ng',
+    'luminik.io', 'ng-plantbreeders.com', 'aci-africa.aero', 'eventhive.ng',
+)
+DATE_RE = re.compile(r'\b(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+(\d{1,2})(?:[-–]\d{1,2})?[,]?\s+(20(?:26|27))\b', re.I)
 
 
 def parse_date(text):
     m = DATE_RE.search(text or '')
     if not m:
         return ''
-    raw = m.group(0).replace('–', '-')
-    for fmt in ('%B %d, %Y', '%b %d, %Y'):
+    month_day = m.group(0)
+    month = re.match(r'([A-Za-z]+)\s+(\d{1,2})', month_day)
+    if not month:
+        return ''
+    month_name, day, year = month.group(1), int(month.group(2)), int(m.group(2))
+    for fmt in ('%B %d %Y', '%b %d %Y'):
         try:
-            return datetime.strptime(raw.replace(',', ''), fmt.replace(',', '')).date().isoformat()
+            return datetime.strptime(f'{month_name} {day} {year}', fmt).date().isoformat()
         except ValueError:
             pass
     return ''
 
 
-def slug_id(title):
-    return abs(hash(re.sub(r'\W+', ' ', title.lower()).strip())) % 1000000 + 10000
+def stable_id(title, used):
+    key = re.sub(r'\W+', ' ', title.lower()).strip().encode('utf-8')
+    candidate = 10000 + (int(hashlib.sha1(key).hexdigest()[:8], 16) % 900000)
+    while candidate in used:
+        candidate += 1
+    return candidate
+
 
 with open(CANDIDATES, encoding='utf-8') as f:
     payload = json.load(f)
 with open(OPPORTUNITIES, encoding='utf-8') as f:
     opportunities = json.load(f)
 
-existing_titles = {re.sub(r'\W+', ' ', x.get('title','').lower()).strip() for x in opportunities}
-changed = False
+existing_titles = {re.sub(r'\W+', ' ', x.get('title', '').lower()).strip() for x in opportunities}
+used_ids = {int(x.get('id')) for x in opportunities if str(x.get('id', '')).isdigit()}
 promoted = 0
+
 for item in payload.get('items', []):
     title = item.get('title', '').strip()
     low = title.lower()
     if not title or item.get('status') == 'promoted':
         continue
-    date_text = item.get('detected_date_text') or ''
-    start_date = parse_date(date_text) or parse_date(title)
-    official = bool(item.get('official_source_hint')) or any(d in item.get('discovery_url','').lower() for d in OFFICIAL_DOMAINS)
+
+    start_date = parse_date(item.get('detected_date_text') or '') or parse_date(title)
+    source_text = f"{item.get('source', '')} {item.get('discovery_url', '')}".lower()
+    official = any(domain in source_text for domain in OFFICIAL_DOMAINS)
     nigeria = any(term in low for term in NIGERIA_TERMS)
-    event_like = any(w in low for w in EVENT_WORDS)
+    event_like = any(word in low for word in EVENT_WORDS)
 
     item['verification'] = {
         'date_confirmed': bool(start_date),
         'location_confirmed': nigeria,
         'official_source_confirmed': official,
-        'nigeria_sales_relevance_confirmed': nigeria or ('nigeria' in (item.get('query') or '').lower())
+        'nigeria_sales_relevance_confirmed': nigeria or ('nigeria' in (item.get('query') or '').lower()),
     }
 
-    # Conservative auto-promotion: all verification gates must pass and the event must be Nigeria-local.
+    # Never promote a generic news result. All gates must pass and the event must be Nigeria-local.
     if not (start_date and nigeria and official and event_like):
         item['status'] = 'needs_verification'
         continue
 
-    key = re.sub(r'\W+', ' ', title.lower()).strip()
+    key = re.sub(r'\W+', ' ', low).strip()
     if key in existing_titles:
         item['status'] = 'duplicate'
         continue
 
     city = 'Abuja, Nigeria' if 'abuja' in low else 'Lagos, Nigeria' if 'lagos' in low else 'Nigeria'
     group = 'sports' if any(w in low for w in ('championship', 'cup', 'grand prix', 'open')) else 'business'
-    products = ['Flight', 'Hotel', 'Airport Transfer', 'Business Travel'] if group == 'business' else ['Flight', 'Hotel', 'Transfers', 'Group Travel']
+    products = (
+        ['Flight', 'Hotel', 'Airport Transfer', 'Business Travel']
+        if group == 'business'
+        else ['Flight', 'Hotel', 'Transfers', 'Group Travel']
+    )
     opportunities.append({
-        'id': slug_id(title),
+        'id': stable_id(title, used_ids),
         'title': title,
         'start_date': start_date,
         'city': city,
         'group': group,
         'products': products,
         'source': item.get('source') or 'Verified discovery source',
-        'url': item.get('discovery_url',''),
+        'url': item.get('discovery_url', ''),
         'auto_discovered': True,
-        'verification_status': 'auto_verified_nigeria_event'
+        'verification_status': 'auto_verified_nigeria_event',
     })
+    used_ids.add(opportunities[-1]['id'])
     existing_titles.add(key)
     item['status'] = 'promoted'
     item['promoted_at'] = datetime.utcnow().isoformat() + 'Z'
     promoted += 1
-    changed = True
 
 with open(CANDIDATES, 'w', encoding='utf-8') as f:
     json.dump(payload, f, ensure_ascii=False, indent=2)
