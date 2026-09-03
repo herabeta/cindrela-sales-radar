@@ -6,6 +6,7 @@ MASTER = ROOT / 'data' / 'public-lead-contacts.json'
 OUT = ROOT / 'data' / 'leads-by-event'
 INDEX = ROOT / 'data' / 'public-lead-index.json'
 
+# Event-wise split keeps Lead Finder fast without removing the master dataset.
 
 def slug(s):
     s = re.sub(r'[^a-z0-9]+', '-', str(s).lower()).strip('-')
