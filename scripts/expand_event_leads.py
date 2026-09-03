@@ -16,6 +16,37 @@ PHONE_RE=re.compile(r"(?<!\d)(?:\+\d{1,3}[\s().-]*)?(?:\d[\s().-]*){7,14}\d(?!\d
 GENERIC=('info@','contact@','hello@','sales@','support@','enquiries@','enquiry@','secretariat@','conference@','marketing@','office@')
 RELEVANT=('team','teams','participant','participants','sponsor','sponsors','partner','partners','exhibitor','exhibitors','speaker','speakers','delegate','delegates','roster','rosters','lineup','federation','association','media','press','vendor','vendors')
 BAD_ANCHOR=('home','about','contact','privacy','cookie','login','register','read more','learn more','view all','menu','facebook','instagram','youtube','linkedin','twitter','x')
+# Only dates verified from authoritative/current event sources are included.
+END_DATES={
+ 'GITEX Nigeria 2026':'2026-09-03',
+ 'FIBA Women’s Basketball World Cup 2026':'2026-09-13',
+ 'Italian Grand Prix 2026':'2026-09-06',
+ 'FIFA U-20 Women’s World Cup Poland 2026':'2026-09-27',
+ 'Propak West Africa 2026':'2026-09-10',
+ 'CIBN Annual Banking & Finance Conference 2026':'2026-09-09',
+ 'Madrid Grand Prix 2026':'2026-09-13',
+ 'Akwaaba African Travel Market 2026':'2026-09-15',
+ 'Nigeria Industries & Manufacturing Summit 2026':'2026-09-16',
+ 'Big 5 Construct Nigeria 2026':'2026-09-24',
+ 'Nigeria Plant Breeders Association International Conference 2026':'2026-09-24',
+ 'Azerbaijan Grand Prix 2026':'2026-09-26',
+ 'SBC Summit 2026':'2026-10-01',
+ 'Singapore Grand Prix 2026':'2026-10-11',
+ 'United States Grand Prix 2026':'2026-10-25',
+ 'Mexico City Grand Prix 2026':'2026-11-01',
+ 'São Paulo Grand Prix 2026':'2026-11-08',
+ 'Web Summit 2026':'2026-11-12',
+ 'COP31':'2026-11-20',
+ 'Las Vegas Grand Prix 2026':'2026-11-21',
+ 'Qatar Grand Prix 2026':'2026-11-29',
+ 'Abu Dhabi Grand Prix 2026':'2026-12-06',
+ 'Australian Open 2027':'2027-01-31',
+ 'MWC Barcelona 2027':'2027-03-04',
+ 'ITB Berlin 2027':'2027-03-18',
+ 'IHIF EMEA 2027':'2027-05-12',
+ 'AFCON 2027 Early-Planning Pipeline':'2027-07-17',
+ 'FIFA Women\'s World Cup Brazil 2027 — July Knockout & Finals Phase':'2027-07-25',
+}
 class Links(HTMLParser):
     def __init__(self):super().__init__();self.links=[];self.href='';self.text=[]
     def handle_starttag(self,tag,attrs):
@@ -54,6 +85,11 @@ def make_record(event,city,company,role,source,email='',phone='',note=''):
     return {'event':event,'company':company,'country':city or 'Nigeria','role':role,'contactPerson':'','contactRole':role,'businessEmail':email,'businessPhone':phone,'linkedin':'','source':source,'note':note,'leadType':role,'contactMethod':method,'outreachAngle':angle,'followUpPlan':follow}
 def main():
     events=json.loads(OPP.read_text(encoding='utf-8'));contacts=json.loads(CONTACTS.read_text(encoding='utf-8')) if CONTACTS.exists() else []
+    # Add only verified end dates; leave unknown events unchanged rather than guessing.
+    for e in events:
+        end=END_DATES.get(e.get('title',''))
+        if end and e.get('start_date','')<=end:e['end_date']=end
+    OPP.write_text(json.dumps(events,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     existing={(norm(c.get('event')),norm(c.get('company')),str(c.get('businessEmail','')).lower(),str(c.get('businessPhone','')).lower(),norm(c.get('source'))) for c in contacts};added=0
     for e in events:
         title=e.get('title','').strip(); url=e.get('url','').strip(); city=e.get('city') or 'Nigeria'
@@ -67,7 +103,6 @@ def main():
         try:
             html=fetch(url);pages.append((url,html))
         except Exception:continue
-        # Discover public sub-pages for teams, sponsors, exhibitors, speakers, partners, etc.
         lp=Links();lp.feed(html)
         seen_pages={url}
         for text,href in lp.links:
@@ -97,7 +132,6 @@ def main():
                 rec=make_record(title,city,org,role,page_url,phone=ph,note='Public business phone extracted from event source. Verify before outreach.')
                 key=(norm(title),norm(org),'',ph.lower(),'')
                 if key not in existing:contacts.append(rec);existing.add(key);added+=1
-            # Extract named participant/sponsor/exhibitor links from this page.
             sub=Links();sub.feed(page_html)
             count=0
             for anchor,href in sub.links:
@@ -109,7 +143,6 @@ def main():
                 target=urljoin(page_url,href)
                 if target.startswith(('mailto:','tel:')):continue
                 role=classify(low)
-                # Avoid navigation-like labels that are clearly section names.
                 if norm(label) in {norm(x) for x in RELEVANT}:continue
                 key=(norm(title),norm(label),'','','')
                 if key in existing:continue
