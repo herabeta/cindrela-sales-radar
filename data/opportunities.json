@@ -1071,5 +1071,24 @@
     "url": "https://www.cafonline.com/",
     "sales_market": "Nigeria",
     "sales_reason": "Nigerian supporters, families, sports groups and delegations may travel for AFCON 2027"
+  },
+  {
+    "id": 168,
+    "title": "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase",
+    "start_date": "2027-07-10",
+    "city": "Brazil — multiple host cities",
+    "group": "sports",
+    "products": [
+      "Flight",
+      "Hotel",
+      "Transfers",
+      "Visa Assistance",
+      "Group Travel",
+      "Family Travel"
+    ],
+    "source": "FIFA",
+    "url": "https://www.fifa.com/en/tournaments/womens/womensworldcup/brazil-2027",
+    "sales_market": "Nigeria",
+    "sales_reason": "Nigerian supporters, families, sports groups and delegations may travel during the July knockout and finals phase"
   }
 ]
