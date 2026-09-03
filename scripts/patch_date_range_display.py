@@ -36,3 +36,5 @@ patch('lead-finder.html', [
 ("esc(e.start_date)+' • '+esc(e.title)","esc(dateLabel(e.start_date,e.end_date))+' • '+esc(e.title)"),
 ("$('eventInfo').textContent=e.start_date+' • '+e.city+' • Target:","$('eventInfo').textContent=dateLabel(e.start_date,e.end_date)+' • '+e.city+' • Target:")
 ])
+
+# Keep this script in the enrichment workflow so verified ranges remain reproducible.
