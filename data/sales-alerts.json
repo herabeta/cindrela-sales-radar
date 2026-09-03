@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T14:48:36.241420Z",
+  "generated_at": "2026-09-03T14:52:48.225729Z",
   "rules": [
     {
       "days_before": 90,
@@ -635,6 +635,298 @@
         "label": "HIGH PRIORITY",
         "priority": "HOT",
         "action": "Follow up with every active lead and send quotes."
+      }
+    },
+    {
+      "id": 136,
+      "title": "Travelpreneur Conference & Expo (TRAVCONEXPO) 2026",
+      "start_date": "2026-09-04",
+      "city": "Lagos, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel"
+      ],
+      "source": "Travconex Projects Ltd / Luminik",
+      "url": "https://www.luminik.io/events/travelpreneur-conference-expo/",
+      "days_until": 1,
+      "alert": {
+        "days_before": 7,
+        "label": "URGENT",
+        "priority": "HOT",
+        "action": "Close pending bookings and confirm travel arrangements."
+      }
+    },
+    {
+      "id": 137,
+      "title": "CIBN Annual Banking & Finance Conference 2026",
+      "start_date": "2026-09-08",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Executive Travel"
+      ],
+      "source": "Chartered Institute of Bankers of Nigeria",
+      "url": "https://abfconference.cibng.org/",
+      "days_until": 5,
+      "alert": {
+        "days_before": 7,
+        "label": "URGENT",
+        "priority": "HOT",
+        "action": "Close pending bookings and confirm travel arrangements."
+      }
+    },
+    {
+      "id": 138,
+      "title": "Akwaaba African Travel Market 2026",
+      "start_date": "2026-09-13",
+      "city": "Lagos, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel"
+      ],
+      "source": "Akwaaba African Travel Market",
+      "url": "https://akwaabatravelmarket.com/",
+      "days_until": 10,
+      "alert": {
+        "days_before": 14,
+        "label": "HIGH PRIORITY",
+        "priority": "HOT",
+        "action": "Follow up with every active lead and send quotes."
+      }
+    },
+    {
+      "id": 139,
+      "title": "Nigeria Industries & Manufacturing Summit 2026",
+      "start_date": "2026-09-14",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel",
+        "Group Booking"
+      ],
+      "source": "N-IMEX 2026",
+      "url": "https://n-imex.ng/",
+      "days_until": 11,
+      "alert": {
+        "days_before": 14,
+        "label": "HIGH PRIORITY",
+        "priority": "HOT",
+        "action": "Follow up with every active lead and send quotes."
+      }
+    },
+    {
+      "id": 140,
+      "title": "LCCI Annual Agro-Allied Symposium & Exhibition 2026",
+      "start_date": "2026-09-23",
+      "city": "Lagos, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel"
+      ],
+      "source": "Lagos Chamber of Commerce & Industry",
+      "url": "https://odoo.lagoschamber.com/event",
+      "days_until": 20,
+      "alert": {
+        "days_before": 30,
+        "label": "SELL NOW",
+        "priority": "HOT",
+        "action": "Push flight, hotel, transfer and group/corporate travel packages."
+      }
+    },
+    {
+      "id": 141,
+      "title": "Nigeria Plant Breeders Association International Conference 2026",
+      "start_date": "2026-09-23",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel"
+      ],
+      "source": "Nigeria Plant Breeders Association",
+      "url": "https://www.ng-plantbreeders.com/",
+      "days_until": 20,
+      "alert": {
+        "days_before": 30,
+        "label": "SELL NOW",
+        "priority": "HOT",
+        "action": "Push flight, hotel, transfer and group/corporate travel packages."
+      }
+    },
+    {
+      "id": 142,
+      "title": "Nigeria Aviation Forum 2026",
+      "start_date": "2026-09-24",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Executive Travel"
+      ],
+      "source": "Eventhive",
+      "url": "https://eventhive.ng/calendar/2026-eventhive-calender.pdf",
+      "days_until": 21,
+      "alert": {
+        "days_before": 30,
+        "label": "SELL NOW",
+        "priority": "HOT",
+        "action": "Push flight, hotel, transfer and group/corporate travel packages."
+      }
+    },
+    {
+      "id": 143,
+      "title": "60th Agricultural Society of Nigeria Conference 2026",
+      "start_date": "2026-10-19",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel",
+        "Group Travel"
+      ],
+      "source": "Agricultural Society of Nigeria",
+      "url": "https://agriculturalsocietynigeria.org/60conference/",
+      "days_until": 46,
+      "alert": {
+        "days_before": 60,
+        "label": "START OUTREACH",
+        "priority": "WARM",
+        "action": "Build the lead list and begin English WhatsApp/email outreach."
+      }
+    },
+    {
+      "id": 144,
+      "title": "Abuja International Education Fair 2026",
+      "start_date": "2026-10-12",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Visa Assistance",
+        "Family Travel"
+      ],
+      "source": "Lekkside Education Fair",
+      "url": "https://www.lekside.com/event/abuja-international-education-fair/",
+      "days_until": 39,
+      "alert": {
+        "days_before": 60,
+        "label": "START OUTREACH",
+        "priority": "WARM",
+        "action": "Build the lead list and begin English WhatsApp/email outreach."
+      }
+    },
+    {
+      "id": 145,
+      "title": "International Cybersecurity Conference 2026 (ICSC)",
+      "start_date": "2026-10-27",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel",
+        "Executive Travel"
+      ],
+      "source": "NITDA",
+      "url": "https://nitda.gov.ng/event/international-cybersecurity-conference-2026-icsc-2nd-edition/",
+      "days_until": 54,
+      "alert": {
+        "days_before": 60,
+        "label": "START OUTREACH",
+        "priority": "WARM",
+        "action": "Build the lead list and begin English WhatsApp/email outreach."
+      }
+    },
+    {
+      "id": 146,
+      "title": "National Advertising Conference 2026",
+      "start_date": "2026-11-11",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel",
+        "Executive Travel"
+      ],
+      "source": "Advertising Regulatory Council of Nigeria",
+      "url": "https://nationaladvertisingconference.com/",
+      "days_until": 69,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
+      }
+    },
+    {
+      "id": 147,
+      "title": "SOEHPON Annual International Conference & Exhibition 2026",
+      "start_date": "2026-11-23",
+      "city": "Lagos, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Executive Travel"
+      ],
+      "source": "SOEHPON",
+      "url": "https://conference2026.soehpon.com/contact/",
+      "days_until": 81,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
+      }
+    },
+    {
+      "id": 148,
+      "title": "Made In Nigeria Shoe Expo 2026",
+      "start_date": "2026-11-27",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel",
+        "Group Booking"
+      ],
+      "source": "LOGSAMES",
+      "url": "https://www.eventbrite.com/e/made-in-nigeria-shoe-expo-tickets-1982554800778",
+      "days_until": 85,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
       }
     }
   ]
