@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Daily-safe enrichment: only public contacts found on event source pages; never invent contact data.
 import json
 import re
 import urllib.request
