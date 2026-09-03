@@ -1,0 +1,27 @@
+name: Multi-Source Lead Enrichment
+on:
+  schedule:
+    - cron: '15 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  enrich:
+    if: github.actor != 'cindrela-bot'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Refresh public business contacts
+        run: python scripts/build_public_lead_contacts.py
+      - name: Build multi-source enrichment layer
+        run: python scripts/multi_source_lead_enrichment.py
+      - name: Commit enrichment data
+        run: |
+          git config user.name 'cindrela-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/public-lead-contacts.json data/lead-enrichment.json
+          git diff --cached --quiet || git commit -m 'Daily multi-source lead enrichment'
+          git push
