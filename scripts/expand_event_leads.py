@@ -22,7 +22,6 @@ def main():
         title=e.get('title','').strip(); url=e.get('url','').strip()
         if not title:continue
         org=(e.get('source') or title).strip()
-        key=(title.lower(),'','','',org.lower())
         if not any(k[0]==title.lower() and k[3]==org.lower() for k in existing):
             contacts.append({'event':title,'company':org,'country':e.get('city') or 'Nigeria','role':'Event Contact Desk / Organizer','contactPerson':'','contactRole':'Public Event Contact','businessEmail':'','businessPhone':'','linkedin':'','source':url,'note':'Official/event source lead. Contact details require public-source verification.'});added+=1
         if not url.startswith(('http://','https://')):continue
