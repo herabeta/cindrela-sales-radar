@@ -5,6 +5,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 rules = json.loads((ROOT / 'data' / 'alert-rules.json').read_text(encoding='utf-8'))['rules']
 # Keep this generator data-driven. It enriches opportunities that include an ISO start_date.
+# The daily workflow also rebuilds the event-specific Sales Lead Play from the current date.
 source = ROOT / 'data' / 'opportunities.json'
 out = []
 if source.exists():
