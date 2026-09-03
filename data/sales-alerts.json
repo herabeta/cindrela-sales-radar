@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T14:40:54.836868Z",
+  "generated_at": "2026-09-03T14:48:36.241420Z",
   "rules": [
     {
       "days_before": 90,
@@ -47,6 +47,8 @@
       ],
       "source": "FIFA",
       "url": "https://www.fifa.com/en/tournaments/womens/u20womensworldcup/poland-2026",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian supporters, families, sports groups and delegations may travel for the event",
       "days_until": 2,
       "alert": {
         "days_before": 7,
@@ -69,6 +71,8 @@
       ],
       "source": "FIBA",
       "url": "https://www.fiba.basketball/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian basketball supporters, families, sports groups and delegations may travel for the event",
       "days_until": 1,
       "alert": {
         "days_before": 7,
@@ -91,6 +95,8 @@
       ],
       "source": "Formula 1",
       "url": "https://www.formula1.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "days_until": 1,
       "alert": {
         "days_before": 7,
@@ -223,6 +229,8 @@
       ],
       "source": "Formula 1",
       "url": "https://www.formula1.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "days_until": 8,
       "alert": {
         "days_before": 14,
@@ -245,6 +253,8 @@
       ],
       "source": "Formula 1",
       "url": "https://www.formula1.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "days_until": 21,
       "alert": {
         "days_before": 30,
@@ -267,6 +277,8 @@
       ],
       "source": "Visit Lisboa",
       "url": "https://www.visitlisboa.com/en/events/sbc-summit-2026",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian business travellers, executives and industry delegates may travel for the event",
       "days_until": 26,
       "alert": {
         "days_before": 30,
@@ -333,6 +345,8 @@
       ],
       "source": "Olympics",
       "url": "https://www.olympics.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian athletes, supporters, families and delegations may travel for the event",
       "days_until": 58,
       "alert": {
         "days_before": 60,
@@ -355,6 +369,8 @@
       ],
       "source": "Formula 1",
       "url": "https://www.formula1.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "days_until": 36,
       "alert": {
         "days_before": 60,
@@ -377,6 +393,8 @@
       ],
       "source": "Formula 1",
       "url": "https://www.formula1.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "days_until": 50,
       "alert": {
         "days_before": 60,
@@ -399,6 +417,8 @@
       ],
       "source": "Formula 1",
       "url": "https://www.formula1.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "days_until": 57,
       "alert": {
         "days_before": 60,
@@ -421,6 +441,8 @@
       ],
       "source": "Web Summit",
       "url": "https://websummit.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian founders, executives, technology teams and delegates may travel for the event",
       "days_until": 67,
       "alert": {
         "days_before": 90,
@@ -443,6 +465,8 @@
       ],
       "source": "UNFCCC",
       "url": "https://unfccc.int/cop31",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian government, NGO, corporate and policy delegates may travel for the event",
       "days_until": 67,
       "alert": {
         "days_before": 90,
@@ -487,6 +511,8 @@
       ],
       "source": "WTA",
       "url": "https://www.wtatennis.com/tournaments/wta-finals",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian tennis supporters, families and premium leisure travellers may travel for the event",
       "days_until": 66,
       "alert": {
         "days_before": 90,
@@ -509,6 +535,8 @@
       ],
       "source": "Formula 1",
       "url": "https://www.formula1.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "days_until": 64,
       "alert": {
         "days_before": 90,
@@ -531,6 +559,8 @@
       ],
       "source": "Formula 1",
       "url": "https://www.formula1.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "days_until": 77,
       "alert": {
         "days_before": 90,
@@ -553,6 +583,8 @@
       ],
       "source": "Formula 1",
       "url": "https://www.formula1.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "days_until": 85,
       "alert": {
         "days_before": 90,
