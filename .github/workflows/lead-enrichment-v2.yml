@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - 'scripts/expand_event_leads.py'
+      - 'scripts/split_public_leads.py'
       - 'scripts/patch_date_range_display.py'
       - 'scripts/validate_sales_radar_data.py'
       - 'data/opportunities.json'
@@ -26,6 +27,8 @@ jobs:
           python-version: '3.x'
       - name: Expand every event into contactable leads
         run: python scripts/expand_event_leads.py
+      - name: Split leads into fast event-wise files
+        run: python scripts/split_public_leads.py
       - name: Apply verified event date ranges to user-facing cards
         run: python scripts/patch_date_range_display.py
       - name: Validate Sales Radar data
@@ -34,6 +37,6 @@ jobs:
         run: |
           git config user.name 'cindrela-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/public-lead-contacts.json data/opportunities.json index.html event-calendar-full.html lead-finder.html
-          git diff --cached --quiet || git commit -m 'Refresh leads and verified event ranges'
+          git add data/public-lead-contacts.json data/public-lead-index.json data/leads-by-event data/opportunities.json index.html event-calendar-full.html lead-finder.html
+          git diff --cached --quiet || git commit -m 'Split leads by event for faster Lead Finder'
           git push
