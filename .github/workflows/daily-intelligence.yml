@@ -3,17 +3,23 @@ on:
   schedule:
     - cron: '0 5 * * *'
   workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/update_daily_intelligence.py'
+      - 'scripts/build_sales_alerts.py'
+      - 'data/opportunities.json'
 permissions:
   contents: write
 jobs:
   refresh:
+    if: github.actor != 'cindrela-bot'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Refresh intelligence feed
+      - name: Refresh worldwide intelligence feed
         run: python scripts/update_daily_intelligence.py
       - name: Build early sales alerts
         run: python scripts/build_sales_alerts.py
