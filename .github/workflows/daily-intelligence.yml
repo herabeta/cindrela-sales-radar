@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - 'scripts/update_daily_intelligence.py'
+      - 'scripts/discover_event_candidates.py'
       - 'scripts/build_sales_alerts.py'
       - 'scripts/build_dynamic_sales_plays.py'
       - 'scripts/fix_months_and_2027.py'
@@ -23,16 +24,18 @@ jobs:
           python-version: '3.x'
       - name: Repair month timeline and future opportunities
         run: python scripts/fix_months_and_2027.py
+      - name: Discover new event candidates
+        run: python scripts/discover_event_candidates.py
       - name: Build dynamic date-driven sales plays
         run: python scripts/build_dynamic_sales_plays.py
       - name: Refresh worldwide intelligence feed
         run: python scripts/update_daily_intelligence.py
       - name: Build early sales alerts
         run: python scripts/build_sales_alerts.py
-      - name: Commit updated intelligence, alerts, event data and UI
+      - name: Commit updated intelligence, candidates, alerts, event data and UI
         run: |
           git config user.name 'cindrela-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/daily-intelligence.json data/sales-alerts.json data/opportunities.json data/event-sales-plays.json index.html
-          git diff --cached --quiet || git commit -m 'Daily refresh and dynamic sales play update'
+          git add data/daily-intelligence.json data/event-candidates.json data/sales-alerts.json data/opportunities.json data/event-sales-plays.json index.html
+          git diff --cached --quiet || git commit -m 'Daily discovery and dynamic sales intelligence refresh'
           git push
