@@ -12,7 +12,8 @@
       "Business Travel"
     ],
     "source": "GITEX Nigeria",
-    "url": "https://gitexnigeria.ng/"
+    "url": "https://gitexnigeria.ng/",
+    "end_date": "2026-09-03"
   },
   {
     "id": 102,
@@ -29,7 +30,8 @@
     "source": "FIBA",
     "url": "https://www.fiba.basketball/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian basketball supporters, families, sports groups and delegations may travel for the event"
+    "sales_reason": "Nigerian basketball supporters, families, sports groups and delegations may travel for the event",
+    "end_date": "2026-09-13"
   },
   {
     "id": 103,
@@ -46,7 +48,8 @@
     "source": "Formula 1",
     "url": "https://www.formula1.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event"
+    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+    "end_date": "2026-09-06"
   },
   {
     "id": 136,
@@ -78,7 +81,8 @@
     "source": "FIFA",
     "url": "https://www.fifa.com/en/tournaments/womens/u20womensworldcup/poland-2026",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian supporters, families, sports groups and delegations may travel for the event"
+    "sales_reason": "Nigerian supporters, families, sports groups and delegations may travel for the event",
+    "end_date": "2026-09-27"
   },
   {
     "id": 105,
@@ -93,7 +97,8 @@
       "Business Travel"
     ],
     "source": "Propak West Africa",
-    "url": "https://www.propakwestafrica.com/"
+    "url": "https://www.propakwestafrica.com/",
+    "end_date": "2026-09-10"
   },
   {
     "id": 137,
@@ -108,7 +113,8 @@
       "Executive Travel"
     ],
     "source": "Chartered Institute of Bankers of Nigeria",
-    "url": "https://abfconference.cibng.org/"
+    "url": "https://abfconference.cibng.org/",
+    "end_date": "2026-09-09"
   },
   {
     "id": 110,
@@ -125,7 +131,8 @@
     "source": "Formula 1",
     "url": "https://www.formula1.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event"
+    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+    "end_date": "2026-09-13"
   },
   {
     "id": 138,
@@ -140,7 +147,8 @@
       "Business Travel"
     ],
     "source": "Akwaaba African Travel Market",
-    "url": "https://akwaabatravelmarket.com/"
+    "url": "https://akwaabatravelmarket.com/",
+    "end_date": "2026-09-15"
   },
   {
     "id": 129,
@@ -171,7 +179,8 @@
       "Group Booking"
     ],
     "source": "N-IMEX 2026",
-    "url": "https://n-imex.ng/"
+    "url": "https://n-imex.ng/",
+    "end_date": "2026-09-16"
   },
   {
     "id": 106,
@@ -216,7 +225,8 @@
       "Business Travel"
     ],
     "source": "Big 5 Construct Nigeria",
-    "url": "https://www.big5constructnigeria.com/"
+    "url": "https://www.big5constructnigeria.com/",
+    "end_date": "2026-09-24"
   },
   {
     "id": 140,
@@ -246,7 +256,8 @@
       "Business Travel"
     ],
     "source": "Nigeria Plant Breeders Association",
-    "url": "https://www.ng-plantbreeders.com/"
+    "url": "https://www.ng-plantbreeders.com/",
+    "end_date": "2026-09-24"
   },
   {
     "id": 111,
@@ -263,7 +274,8 @@
     "source": "Formula 1",
     "url": "https://www.formula1.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event"
+    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+    "end_date": "2026-09-26"
   },
   {
     "id": 142,
@@ -310,7 +322,8 @@
     "source": "Visit Lisboa",
     "url": "https://www.visitlisboa.com/en/events/sbc-summit-2026",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian business travellers, executives and industry delegates may travel for the event"
+    "sales_reason": "Nigerian business travellers, executives and industry delegates may travel for the event",
+    "end_date": "2026-10-01"
   },
   {
     "id": 116,
@@ -327,7 +340,8 @@
     "source": "Formula 1",
     "url": "https://www.formula1.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event"
+    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+    "end_date": "2026-10-11"
   },
   {
     "id": 113,
@@ -391,7 +405,8 @@
     "source": "Formula 1",
     "url": "https://www.formula1.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event"
+    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+    "end_date": "2026-10-25"
   },
   {
     "id": 114,
@@ -439,7 +454,8 @@
     "source": "Formula 1",
     "url": "https://www.formula1.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event"
+    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+    "end_date": "2026-11-01"
   },
   {
     "id": 115,
@@ -473,7 +489,8 @@
     "source": "Formula 1",
     "url": "https://www.formula1.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event"
+    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+    "end_date": "2026-11-08"
   },
   {
     "id": 122,
@@ -507,7 +524,8 @@
     "source": "Web Summit",
     "url": "https://websummit.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian founders, executives, technology teams and delegates may travel for the event"
+    "sales_reason": "Nigerian founders, executives, technology teams and delegates may travel for the event",
+    "end_date": "2026-11-12"
   },
   {
     "id": 120,
@@ -524,7 +542,8 @@
     "source": "UNFCCC",
     "url": "https://unfccc.int/cop31",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian government, NGO, corporate and policy delegates may travel for the event"
+    "sales_reason": "Nigerian government, NGO, corporate and policy delegates may travel for the event",
+    "end_date": "2026-11-20"
   },
   {
     "id": 121,
@@ -572,7 +591,8 @@
     "source": "Formula 1",
     "url": "https://www.formula1.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event"
+    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+    "end_date": "2026-11-21"
   },
   {
     "id": 147,
@@ -619,7 +639,8 @@
     "source": "Formula 1",
     "url": "https://www.formula1.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event"
+    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+    "end_date": "2026-11-29"
   },
   {
     "id": 148,
@@ -668,7 +689,8 @@
     "source": "Formula 1",
     "url": "https://www.formula1.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event"
+    "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+    "end_date": "2026-12-06"
   },
   {
     "id": 150,
@@ -878,7 +900,8 @@
     "source": "Australian Open",
     "url": "https://ausopen.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian tennis supporters, families and premium leisure travellers may travel to Melbourne for the Grand Slam"
+    "sales_reason": "Nigerian tennis supporters, families and premium leisure travellers may travel to Melbourne for the Grand Slam",
+    "end_date": "2027-01-31"
   },
   {
     "id": 158,
@@ -965,7 +988,8 @@
     "source": "MWC Barcelona / GSMA",
     "url": "https://www.mwcbarcelona.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian telecom firms, technology companies, founders and delegates may travel for the global mobile industry event"
+    "sales_reason": "Nigerian telecom firms, technology companies, founders and delegates may travel for the global mobile industry event",
+    "end_date": "2027-03-04"
   },
   {
     "id": 163,
@@ -983,7 +1007,8 @@
     "source": "ITB Berlin",
     "url": "https://www.itb.com/en",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian travel companies, tourism officials, destination marketers and trade visitors may travel for the leading tourism trade show"
+    "sales_reason": "Nigerian travel companies, tourism officials, destination marketers and trade visitors may travel for the leading tourism trade show",
+    "end_date": "2027-03-18"
   },
   {
     "id": 164,
@@ -1052,7 +1077,8 @@
     "source": "IHIF EMEA",
     "url": "https://www.ihifemea.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian hotel owners, investors, developers, tourism officials and hospitality executives may travel for the hospitality investment forum"
+    "sales_reason": "Nigerian hotel owners, investors, developers, tourism officials and hospitality executives may travel for the hospitality investment forum",
+    "end_date": "2027-05-12"
   },
   {
     "id": 155,
@@ -1070,7 +1096,8 @@
     "source": "CAF",
     "url": "https://www.cafonline.com/",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian supporters, families, sports groups and delegations may travel for AFCON 2027"
+    "sales_reason": "Nigerian supporters, families, sports groups and delegations may travel for AFCON 2027",
+    "end_date": "2027-07-17"
   },
   {
     "id": 168,
@@ -1089,6 +1116,7 @@
     "source": "FIFA",
     "url": "https://www.fifa.com/en/tournaments/womens/womensworldcup/brazil-2027",
     "sales_market": "Nigeria",
-    "sales_reason": "Nigerian supporters, families, sports groups and delegations may travel during the July knockout and finals phase"
+    "sales_reason": "Nigerian supporters, families, sports groups and delegations may travel during the July knockout and finals phase",
+    "end_date": "2027-07-25"
   }
 ]
