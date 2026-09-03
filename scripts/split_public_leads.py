@@ -15,7 +15,6 @@ contacts = json.loads(MASTER.read_text(encoding='utf-8')) if MASTER.exists() els
 opps = json.loads((ROOT / 'data' / 'opportunities.json').read_text(encoding='utf-8'))
 OUT.mkdir(parents=True, exist_ok=True)
 
-# Remove stale split files; the master file remains untouched.
 for p in OUT.glob('*.json'):
     p.unlink()
 
