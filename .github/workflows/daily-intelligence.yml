@@ -9,6 +9,7 @@ on:
       - 'scripts/discover_event_candidates.py'
       - 'scripts/promote_verified_event_candidates.py'
       - 'scripts/validate_sales_radar_data.py'
+      - 'scripts/ensure_future_months.py'
       - 'scripts/build_sales_alerts.py'
       - 'scripts/build_dynamic_sales_plays.py'
       - 'scripts/fix_months_and_2027.py'
@@ -26,6 +27,8 @@ jobs:
           python-version: '3.x'
       - name: Repair month timeline and future opportunities
         run: python scripts/fix_months_and_2027.py
+      - name: Ensure next future month coverage
+        run: python scripts/ensure_future_months.py
       - name: Discover new event candidates
         run: python scripts/discover_event_candidates.py
       - name: Promote only verified Nigeria opportunities
