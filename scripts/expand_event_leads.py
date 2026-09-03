@@ -26,7 +26,7 @@ class Links(HTMLParser):
     def handle_endtag(self,tag):
         if tag.lower()=='a' and self.href:self.links.append((' '.join(self.text).strip(),self.href)); self.href=''; self.text=[]
 def fetch(url):
-    req=urllib.request.Request(url,headers={'User-Agent':'Cindrela-Sales-Radar-Lead-Enrichment/4.0'})
+    req=urllib.request.Request(url,headers={'User-Agent':'Cindrela-Sales-Radar-Lead-Enrichment/4.1'})
     with urllib.request.urlopen(req,timeout=12) as r:return r.read(1200000).decode(r.headers.get_content_charset() or 'utf-8','ignore')
 def clean(s):return re.sub(r'<[^>]+>',' ',re.sub(r'<script[\s\S]*?</script>|<style[\s\S]*?</style>',' ',s,flags=re.I))
 def normphone(s):
@@ -117,5 +117,6 @@ def main():
         c.setdefault('leadId','auto-'+hashlib.sha1(json.dumps(c,sort_keys=True,ensure_ascii=False).encode()).hexdigest()[:16])
         c['contactReady']=bool(c.get('businessEmail') or c.get('businessPhone'))
         c['lastVerified']=c.get('lastVerified') or today
-    CONTACTS.write_text(json.dumps(contacts,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(f'Expanded multi-role public lead records: +{added}, total={len(contacts)}')
+    # Keep every lead/field, but remove pretty-print whitespace so the browser downloads/parses far less data.
+    CONTACTS.write_text(json.dumps(contacts,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8');print(f'Expanded multi-role public lead records: +{added}, total={len(contacts)}')
 if __name__=='__main__':main()
