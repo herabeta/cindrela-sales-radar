@@ -5,7 +5,8 @@ ROOT = Path(__file__).resolve().parents[1]
 OPP = ROOT / 'data' / 'opportunities.json'
 PLAYS = ROOT / 'data' / 'event-sales-plays.json'
 
-# Keep the future timeline from stopping at June 2027. This is a verified July phase of the FIFA Women's World Cup.
+# Keep future month coverage continuous without inventing placeholder events.
+# Only add an event when it is a known, date-bearing opportunity.
 EVENT = {
     'id': 168,
     'title': "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase",
