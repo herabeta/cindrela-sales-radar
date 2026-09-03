@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T14:52:48.225729Z",
+  "generated_at": "2026-09-03T15:27:38.203450Z",
   "rules": [
     {
       "days_before": 90,
@@ -33,30 +33,6 @@
     }
   ],
   "alerts": [
-    {
-      "id": 101,
-      "title": "FIFA U-20 Women’s World Cup Poland 2026",
-      "start_date": "2026-09-05",
-      "city": "Poland",
-      "group": "sports",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Group Travel"
-      ],
-      "source": "FIFA",
-      "url": "https://www.fifa.com/en/tournaments/womens/u20womensworldcup/poland-2026",
-      "sales_market": "Nigeria",
-      "sales_reason": "Nigerian supporters, families, sports groups and delegations may travel for the event",
-      "days_until": 2,
-      "alert": {
-        "days_before": 7,
-        "label": "URGENT",
-        "priority": "HOT",
-        "action": "Close pending bookings and confirm travel arrangements."
-      }
-    },
     {
       "id": 102,
       "title": "FIBA Women’s Basketball World Cup 2026",
@@ -106,6 +82,52 @@
       }
     },
     {
+      "id": 136,
+      "title": "Travelpreneur Conference & Expo (TRAVCONEXPO) 2026",
+      "start_date": "2026-09-04",
+      "city": "Lagos, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel"
+      ],
+      "source": "Travconex Projects Ltd / Luminik",
+      "url": "https://www.luminik.io/events/travelpreneur-conference-expo/",
+      "days_until": 1,
+      "alert": {
+        "days_before": 7,
+        "label": "URGENT",
+        "priority": "HOT",
+        "action": "Close pending bookings and confirm travel arrangements."
+      }
+    },
+    {
+      "id": 101,
+      "title": "FIFA U-20 Women’s World Cup Poland 2026",
+      "start_date": "2026-09-05",
+      "city": "Poland",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "FIFA",
+      "url": "https://www.fifa.com/en/tournaments/womens/u20womensworldcup/poland-2026",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian supporters, families, sports groups and delegations may travel for the event",
+      "days_until": 2,
+      "alert": {
+        "days_before": 7,
+        "label": "URGENT",
+        "priority": "HOT",
+        "action": "Close pending bookings and confirm travel arrangements."
+      }
+    },
+    {
       "id": 105,
       "title": "Propak West Africa 2026",
       "start_date": "2026-09-08",
@@ -125,6 +147,119 @@
         "label": "URGENT",
         "priority": "HOT",
         "action": "Close pending bookings and confirm travel arrangements."
+      }
+    },
+    {
+      "id": 137,
+      "title": "CIBN Annual Banking & Finance Conference 2026",
+      "start_date": "2026-09-08",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Executive Travel"
+      ],
+      "source": "Chartered Institute of Bankers of Nigeria",
+      "url": "https://abfconference.cibng.org/",
+      "days_until": 5,
+      "alert": {
+        "days_before": 7,
+        "label": "URGENT",
+        "priority": "HOT",
+        "action": "Close pending bookings and confirm travel arrangements."
+      }
+    },
+    {
+      "id": 110,
+      "title": "Madrid Grand Prix 2026",
+      "start_date": "2026-09-11",
+      "city": "Madrid, Spain",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+      "days_until": 8,
+      "alert": {
+        "days_before": 14,
+        "label": "HIGH PRIORITY",
+        "priority": "HOT",
+        "action": "Follow up with every active lead and send quotes."
+      }
+    },
+    {
+      "id": 138,
+      "title": "Akwaaba African Travel Market 2026",
+      "start_date": "2026-09-13",
+      "city": "Lagos, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel"
+      ],
+      "source": "Akwaaba African Travel Market",
+      "url": "https://akwaabatravelmarket.com/",
+      "days_until": 10,
+      "alert": {
+        "days_before": 14,
+        "label": "HIGH PRIORITY",
+        "priority": "HOT",
+        "action": "Follow up with every active lead and send quotes."
+      }
+    },
+    {
+      "id": 129,
+      "title": "Ember to Remember 2026",
+      "start_date": "2026-09-14",
+      "city": "Nigeria — nationwide",
+      "group": "seasonal",
+      "products": [
+        "Flights",
+        "Hotels",
+        "Airport Transfers",
+        "Holiday Packages"
+      ],
+      "source": "Federal Ministry of Information and National Orientation",
+      "url": "https://fmino.gov.ng/tourism-ministry-and-mycityapp-announce-ember-to-remember-2026-nigerias-100-day-tourism-season/",
+      "days_until": 11,
+      "alert": {
+        "days_before": 14,
+        "label": "HIGH PRIORITY",
+        "priority": "HOT",
+        "action": "Follow up with every active lead and send quotes."
+      }
+    },
+    {
+      "id": 139,
+      "title": "Nigeria Industries & Manufacturing Summit 2026",
+      "start_date": "2026-09-14",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel",
+        "Group Booking"
+      ],
+      "source": "N-IMEX 2026",
+      "url": "https://n-imex.ng/",
+      "days_until": 11,
+      "alert": {
+        "days_before": 14,
+        "label": "HIGH PRIORITY",
+        "priority": "HOT",
+        "action": "Follow up with every active lead and send quotes."
       }
     },
     {
@@ -194,20 +329,20 @@
       }
     },
     {
-      "id": 109,
-      "title": "21st Abuja International Trade Fair",
-      "start_date": "2026-09-25",
-      "city": "Abuja, Nigeria",
+      "id": 140,
+      "title": "LCCI Annual Agro-Allied Symposium & Exhibition 2026",
+      "start_date": "2026-09-23",
+      "city": "Lagos, Nigeria",
       "group": "business",
       "products": [
-        "Corporate Travel",
+        "Flight",
         "Hotel",
         "Transfers",
-        "Group Booking"
+        "Business Travel"
       ],
-      "source": "Abuja International Trade Fair",
-      "url": "https://aitf.accinigeria.com/",
-      "days_until": 22,
+      "source": "Lagos Chamber of Commerce & Industry",
+      "url": "https://odoo.lagoschamber.com/event",
+      "days_until": 20,
       "alert": {
         "days_before": 30,
         "label": "SELL NOW",
@@ -216,27 +351,25 @@
       }
     },
     {
-      "id": 110,
-      "title": "Madrid Grand Prix 2026",
-      "start_date": "2026-09-11",
-      "city": "Madrid, Spain",
-      "group": "sports",
+      "id": 141,
+      "title": "Nigeria Plant Breeders Association International Conference 2026",
+      "start_date": "2026-09-23",
+      "city": "Abuja, Nigeria",
+      "group": "business",
       "products": [
         "Flight",
         "Hotel",
         "Transfers",
-        "Group Travel"
+        "Business Travel"
       ],
-      "source": "Formula 1",
-      "url": "https://www.formula1.com/",
-      "sales_market": "Nigeria",
-      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
-      "days_until": 8,
+      "source": "Nigeria Plant Breeders Association",
+      "url": "https://www.ng-plantbreeders.com/",
+      "days_until": 20,
       "alert": {
-        "days_before": 14,
-        "label": "HIGH PRIORITY",
+        "days_before": 30,
+        "label": "SELL NOW",
         "priority": "HOT",
-        "action": "Follow up with every active lead and send quotes."
+        "action": "Push flight, hotel, transfer and group/corporate travel packages."
       }
     },
     {
@@ -256,6 +389,50 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "days_until": 21,
+      "alert": {
+        "days_before": 30,
+        "label": "SELL NOW",
+        "priority": "HOT",
+        "action": "Push flight, hotel, transfer and group/corporate travel packages."
+      }
+    },
+    {
+      "id": 142,
+      "title": "Nigeria Aviation Forum 2026",
+      "start_date": "2026-09-24",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Executive Travel"
+      ],
+      "source": "Eventhive",
+      "url": "https://eventhive.ng/calendar/2026-eventhive-calender.pdf",
+      "days_until": 21,
+      "alert": {
+        "days_before": 30,
+        "label": "SELL NOW",
+        "priority": "HOT",
+        "action": "Push flight, hotel, transfer and group/corporate travel packages."
+      }
+    },
+    {
+      "id": 109,
+      "title": "21st Abuja International Trade Fair",
+      "start_date": "2026-09-25",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Corporate Travel",
+        "Hotel",
+        "Transfers",
+        "Group Booking"
+      ],
+      "source": "Abuja International Trade Fair",
+      "url": "https://aitf.accinigeria.com/",
+      "days_until": 22,
       "alert": {
         "days_before": 30,
         "label": "SELL NOW",
@@ -288,6 +465,30 @@
       }
     },
     {
+      "id": 116,
+      "title": "Singapore Grand Prix 2026",
+      "start_date": "2026-10-09",
+      "city": "Singapore",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+      "days_until": 36,
+      "alert": {
+        "days_before": 60,
+        "label": "START OUTREACH",
+        "priority": "WARM",
+        "action": "Build the lead list and begin English WhatsApp/email outreach."
+      }
+    },
+    {
       "id": 113,
       "title": "Nigeria Mining Week 2026",
       "start_date": "2026-10-12",
@@ -310,20 +511,21 @@
       }
     },
     {
-      "id": 114,
-      "title": "Nigeria Energy 2026",
-      "start_date": "2026-10-27",
-      "city": "Lagos, Nigeria",
+      "id": 144,
+      "title": "Abuja International Education Fair 2026",
+      "start_date": "2026-10-12",
+      "city": "Abuja, Nigeria",
       "group": "business",
       "products": [
         "Flight",
         "Hotel",
         "Transfers",
-        "Corporate Travel"
+        "Visa Assistance",
+        "Family Travel"
       ],
-      "source": "Nigeria Energy",
-      "url": "https://www.nigeriaenergy-ng.com/",
-      "days_until": 54,
+      "source": "Lekkside Education Fair",
+      "url": "https://www.lekside.com/event/abuja-international-education-fair/",
+      "days_until": 39,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -332,46 +534,21 @@
       }
     },
     {
-      "id": 115,
-      "title": "Dakar 2026 Youth Olympic Games",
-      "start_date": "2026-10-31",
-      "city": "Dakar / Diamniadio / Saly, Senegal",
-      "group": "sports",
+      "id": 143,
+      "title": "60th Agricultural Society of Nigeria Conference 2026",
+      "start_date": "2026-10-19",
+      "city": "Abuja, Nigeria",
+      "group": "business",
       "products": [
         "Flight",
         "Hotel",
         "Transfers",
+        "Business Travel",
         "Group Travel"
       ],
-      "source": "Olympics",
-      "url": "https://www.olympics.com/",
-      "sales_market": "Nigeria",
-      "sales_reason": "Nigerian athletes, supporters, families and delegations may travel for the event",
-      "days_until": 58,
-      "alert": {
-        "days_before": 60,
-        "label": "START OUTREACH",
-        "priority": "WARM",
-        "action": "Build the lead list and begin English WhatsApp/email outreach."
-      }
-    },
-    {
-      "id": 116,
-      "title": "Singapore Grand Prix 2026",
-      "start_date": "2026-10-09",
-      "city": "Singapore",
-      "group": "sports",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Group Travel"
-      ],
-      "source": "Formula 1",
-      "url": "https://www.formula1.com/",
-      "sales_market": "Nigeria",
-      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
-      "days_until": 36,
+      "source": "Agricultural Society of Nigeria",
+      "url": "https://agriculturalsocietynigeria.org/60conference/",
+      "days_until": 46,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -404,6 +581,51 @@
       }
     },
     {
+      "id": 114,
+      "title": "Nigeria Energy 2026",
+      "start_date": "2026-10-27",
+      "city": "Lagos, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Corporate Travel"
+      ],
+      "source": "Nigeria Energy",
+      "url": "https://www.nigeriaenergy-ng.com/",
+      "days_until": 54,
+      "alert": {
+        "days_before": 60,
+        "label": "START OUTREACH",
+        "priority": "WARM",
+        "action": "Build the lead list and begin English WhatsApp/email outreach."
+      }
+    },
+    {
+      "id": 145,
+      "title": "International Cybersecurity Conference 2026 (ICSC)",
+      "start_date": "2026-10-27",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel",
+        "Executive Travel"
+      ],
+      "source": "NITDA",
+      "url": "https://nitda.gov.ng/event/international-cybersecurity-conference-2026-icsc-2nd-edition/",
+      "days_until": 54,
+      "alert": {
+        "days_before": 60,
+        "label": "START OUTREACH",
+        "priority": "WARM",
+        "action": "Build the lead list and begin English WhatsApp/email outreach."
+      }
+    },
+    {
       "id": 118,
       "title": "Mexico City Grand Prix 2026",
       "start_date": "2026-10-30",
@@ -425,6 +647,78 @@
         "label": "START OUTREACH",
         "priority": "WARM",
         "action": "Build the lead list and begin English WhatsApp/email outreach."
+      }
+    },
+    {
+      "id": 115,
+      "title": "Dakar 2026 Youth Olympic Games",
+      "start_date": "2026-10-31",
+      "city": "Dakar / Diamniadio / Saly, Senegal",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Olympics",
+      "url": "https://www.olympics.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian athletes, supporters, families and delegations may travel for the event",
+      "days_until": 58,
+      "alert": {
+        "days_before": 60,
+        "label": "START OUTREACH",
+        "priority": "WARM",
+        "action": "Build the lead list and begin English WhatsApp/email outreach."
+      }
+    },
+    {
+      "id": 123,
+      "title": "São Paulo Grand Prix 2026",
+      "start_date": "2026-11-06",
+      "city": "São Paulo, Brazil",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+      "days_until": 64,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
+      }
+    },
+    {
+      "id": 122,
+      "title": "WTA Finals Indian Wells 2026",
+      "start_date": "2026-11-08",
+      "city": "Indian Wells, USA",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "WTA",
+      "url": "https://www.wtatennis.com/tournaments/wta-finals",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian tennis supporters, families and premium leisure travellers may travel for the event",
+      "days_until": 66,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
       }
     },
     {
@@ -498,46 +792,21 @@
       }
     },
     {
-      "id": 122,
-      "title": "WTA Finals Indian Wells 2026",
-      "start_date": "2026-11-08",
-      "city": "Indian Wells, USA",
-      "group": "sports",
+      "id": 146,
+      "title": "National Advertising Conference 2026",
+      "start_date": "2026-11-11",
+      "city": "Abuja, Nigeria",
+      "group": "business",
       "products": [
         "Flight",
         "Hotel",
         "Transfers",
-        "Group Travel"
+        "Business Travel",
+        "Executive Travel"
       ],
-      "source": "WTA",
-      "url": "https://www.wtatennis.com/tournaments/wta-finals",
-      "sales_market": "Nigeria",
-      "sales_reason": "Nigerian tennis supporters, families and premium leisure travellers may travel for the event",
-      "days_until": 66,
-      "alert": {
-        "days_before": 90,
-        "label": "PLAN AHEAD",
-        "priority": "WARM",
-        "action": "Research target companies and prepare the sales offer."
-      }
-    },
-    {
-      "id": 123,
-      "title": "São Paulo Grand Prix 2026",
-      "start_date": "2026-11-06",
-      "city": "São Paulo, Brazil",
-      "group": "sports",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Group Travel"
-      ],
-      "source": "Formula 1",
-      "url": "https://www.formula1.com/",
-      "sales_market": "Nigeria",
-      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
-      "days_until": 64,
+      "source": "Advertising Regulatory Council of Nigeria",
+      "url": "https://nationaladvertisingconference.com/",
+      "days_until": 69,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -570,22 +839,20 @@
       }
     },
     {
-      "id": 125,
-      "title": "Qatar Grand Prix 2026",
-      "start_date": "2026-11-27",
-      "city": "Lusail, Qatar",
-      "group": "sports",
+      "id": 147,
+      "title": "SOEHPON Annual International Conference & Exhibition 2026",
+      "start_date": "2026-11-23",
+      "city": "Lagos, Nigeria",
+      "group": "business",
       "products": [
         "Flight",
         "Hotel",
         "Transfers",
-        "Group Travel"
+        "Executive Travel"
       ],
-      "source": "Formula 1",
-      "url": "https://www.formula1.com/",
-      "sales_market": "Nigeria",
-      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
-      "days_until": 85,
+      "source": "SOEHPON",
+      "url": "https://conference2026.soehpon.com/contact/",
+      "days_until": 81,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -616,289 +883,22 @@
       }
     },
     {
-      "id": 129,
-      "title": "Ember to Remember 2026",
-      "start_date": "2026-09-14",
-      "city": "Nigeria — nationwide",
-      "group": "seasonal",
-      "products": [
-        "Flights",
-        "Hotels",
-        "Airport Transfers",
-        "Holiday Packages"
-      ],
-      "source": "Federal Ministry of Information and National Orientation",
-      "url": "https://fmino.gov.ng/tourism-ministry-and-mycityapp-announce-ember-to-remember-2026-nigerias-100-day-tourism-season/",
-      "days_until": 11,
-      "alert": {
-        "days_before": 14,
-        "label": "HIGH PRIORITY",
-        "priority": "HOT",
-        "action": "Follow up with every active lead and send quotes."
-      }
-    },
-    {
-      "id": 136,
-      "title": "Travelpreneur Conference & Expo (TRAVCONEXPO) 2026",
-      "start_date": "2026-09-04",
-      "city": "Lagos, Nigeria",
-      "group": "business",
+      "id": 125,
+      "title": "Qatar Grand Prix 2026",
+      "start_date": "2026-11-27",
+      "city": "Lusail, Qatar",
+      "group": "sports",
       "products": [
         "Flight",
         "Hotel",
         "Transfers",
-        "Business Travel"
-      ],
-      "source": "Travconex Projects Ltd / Luminik",
-      "url": "https://www.luminik.io/events/travelpreneur-conference-expo/",
-      "days_until": 1,
-      "alert": {
-        "days_before": 7,
-        "label": "URGENT",
-        "priority": "HOT",
-        "action": "Close pending bookings and confirm travel arrangements."
-      }
-    },
-    {
-      "id": 137,
-      "title": "CIBN Annual Banking & Finance Conference 2026",
-      "start_date": "2026-09-08",
-      "city": "Abuja, Nigeria",
-      "group": "business",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Executive Travel"
-      ],
-      "source": "Chartered Institute of Bankers of Nigeria",
-      "url": "https://abfconference.cibng.org/",
-      "days_until": 5,
-      "alert": {
-        "days_before": 7,
-        "label": "URGENT",
-        "priority": "HOT",
-        "action": "Close pending bookings and confirm travel arrangements."
-      }
-    },
-    {
-      "id": 138,
-      "title": "Akwaaba African Travel Market 2026",
-      "start_date": "2026-09-13",
-      "city": "Lagos, Nigeria",
-      "group": "business",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Business Travel"
-      ],
-      "source": "Akwaaba African Travel Market",
-      "url": "https://akwaabatravelmarket.com/",
-      "days_until": 10,
-      "alert": {
-        "days_before": 14,
-        "label": "HIGH PRIORITY",
-        "priority": "HOT",
-        "action": "Follow up with every active lead and send quotes."
-      }
-    },
-    {
-      "id": 139,
-      "title": "Nigeria Industries & Manufacturing Summit 2026",
-      "start_date": "2026-09-14",
-      "city": "Abuja, Nigeria",
-      "group": "business",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Business Travel",
-        "Group Booking"
-      ],
-      "source": "N-IMEX 2026",
-      "url": "https://n-imex.ng/",
-      "days_until": 11,
-      "alert": {
-        "days_before": 14,
-        "label": "HIGH PRIORITY",
-        "priority": "HOT",
-        "action": "Follow up with every active lead and send quotes."
-      }
-    },
-    {
-      "id": 140,
-      "title": "LCCI Annual Agro-Allied Symposium & Exhibition 2026",
-      "start_date": "2026-09-23",
-      "city": "Lagos, Nigeria",
-      "group": "business",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Business Travel"
-      ],
-      "source": "Lagos Chamber of Commerce & Industry",
-      "url": "https://odoo.lagoschamber.com/event",
-      "days_until": 20,
-      "alert": {
-        "days_before": 30,
-        "label": "SELL NOW",
-        "priority": "HOT",
-        "action": "Push flight, hotel, transfer and group/corporate travel packages."
-      }
-    },
-    {
-      "id": 141,
-      "title": "Nigeria Plant Breeders Association International Conference 2026",
-      "start_date": "2026-09-23",
-      "city": "Abuja, Nigeria",
-      "group": "business",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Business Travel"
-      ],
-      "source": "Nigeria Plant Breeders Association",
-      "url": "https://www.ng-plantbreeders.com/",
-      "days_until": 20,
-      "alert": {
-        "days_before": 30,
-        "label": "SELL NOW",
-        "priority": "HOT",
-        "action": "Push flight, hotel, transfer and group/corporate travel packages."
-      }
-    },
-    {
-      "id": 142,
-      "title": "Nigeria Aviation Forum 2026",
-      "start_date": "2026-09-24",
-      "city": "Abuja, Nigeria",
-      "group": "business",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Executive Travel"
-      ],
-      "source": "Eventhive",
-      "url": "https://eventhive.ng/calendar/2026-eventhive-calender.pdf",
-      "days_until": 21,
-      "alert": {
-        "days_before": 30,
-        "label": "SELL NOW",
-        "priority": "HOT",
-        "action": "Push flight, hotel, transfer and group/corporate travel packages."
-      }
-    },
-    {
-      "id": 143,
-      "title": "60th Agricultural Society of Nigeria Conference 2026",
-      "start_date": "2026-10-19",
-      "city": "Abuja, Nigeria",
-      "group": "business",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Business Travel",
         "Group Travel"
       ],
-      "source": "Agricultural Society of Nigeria",
-      "url": "https://agriculturalsocietynigeria.org/60conference/",
-      "days_until": 46,
-      "alert": {
-        "days_before": 60,
-        "label": "START OUTREACH",
-        "priority": "WARM",
-        "action": "Build the lead list and begin English WhatsApp/email outreach."
-      }
-    },
-    {
-      "id": 144,
-      "title": "Abuja International Education Fair 2026",
-      "start_date": "2026-10-12",
-      "city": "Abuja, Nigeria",
-      "group": "business",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Visa Assistance",
-        "Family Travel"
-      ],
-      "source": "Lekkside Education Fair",
-      "url": "https://www.lekside.com/event/abuja-international-education-fair/",
-      "days_until": 39,
-      "alert": {
-        "days_before": 60,
-        "label": "START OUTREACH",
-        "priority": "WARM",
-        "action": "Build the lead list and begin English WhatsApp/email outreach."
-      }
-    },
-    {
-      "id": 145,
-      "title": "International Cybersecurity Conference 2026 (ICSC)",
-      "start_date": "2026-10-27",
-      "city": "Abuja, Nigeria",
-      "group": "business",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Business Travel",
-        "Executive Travel"
-      ],
-      "source": "NITDA",
-      "url": "https://nitda.gov.ng/event/international-cybersecurity-conference-2026-icsc-2nd-edition/",
-      "days_until": 54,
-      "alert": {
-        "days_before": 60,
-        "label": "START OUTREACH",
-        "priority": "WARM",
-        "action": "Build the lead list and begin English WhatsApp/email outreach."
-      }
-    },
-    {
-      "id": 146,
-      "title": "National Advertising Conference 2026",
-      "start_date": "2026-11-11",
-      "city": "Abuja, Nigeria",
-      "group": "business",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Business Travel",
-        "Executive Travel"
-      ],
-      "source": "Advertising Regulatory Council of Nigeria",
-      "url": "https://nationaladvertisingconference.com/",
-      "days_until": 69,
-      "alert": {
-        "days_before": 90,
-        "label": "PLAN AHEAD",
-        "priority": "WARM",
-        "action": "Research target companies and prepare the sales offer."
-      }
-    },
-    {
-      "id": 147,
-      "title": "SOEHPON Annual International Conference & Exhibition 2026",
-      "start_date": "2026-11-23",
-      "city": "Lagos, Nigeria",
-      "group": "business",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Executive Travel"
-      ],
-      "source": "SOEHPON",
-      "url": "https://conference2026.soehpon.com/contact/",
-      "days_until": 81,
+      "source": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "sales_market": "Nigeria",
+      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
+      "days_until": 85,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
