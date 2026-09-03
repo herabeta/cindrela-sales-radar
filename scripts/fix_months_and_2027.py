@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 from datetime import date
 
+# One-time repair helper: keep the Sales Opportunities timeline continuous and chronological.
 ROOT = Path(__file__).resolve().parents[1]
 OPP = ROOT / 'data' / 'opportunities.json'
 PLAYS = ROOT / 'data' / 'event-sales-plays.json'
@@ -37,7 +38,6 @@ plays = {
   167:["Nigerian motorsport fans, premium leisure travellers and sports groups","Flights + Hotels + Transfers + Premium Travel","Start outreach in January 2027; convert serious prospects in March–April","PLAN","Follow up weekly with qualified travellers","Formula E confirms Berlin double-header dates in May 2027"]
 }
 
-# Add only missing events, then keep the database itself chronologically ordered.
 items = json.loads(OPP.read_text(encoding='utf-8'))
 by_id = {int(x['id']): x for x in items}
 for e in new_events:
@@ -45,7 +45,6 @@ for e in new_events:
 items = sorted(by_id.values(), key=lambda x: (x.get('start_date','9999-99-99'), int(x.get('id',0))))
 OPP.write_text(json.dumps(items, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
-# Extend existing event-sales-play mappings without disturbing existing plays.
 if PLAYS.exists():
     existing = json.loads(PLAYS.read_text(encoding='utf-8'))
 else:
@@ -54,13 +53,11 @@ for k,v in plays.items():
     existing.setdefault(str(k), v)
 PLAYS.write_text(json.dumps(existing, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
-# Make the All view render every calendar month between the earliest and latest opportunity,
-# so a missing event never causes the month heading itself to disappear.
 html = INDEX.read_text(encoding='utf-8')
 start = html.find('function render(){')
 end = html.find('function counts(){', start)
 if start == -1 or end == -1:
     raise SystemExit('render function markers not found')
-new_render = '''function render(){const q=document.getElementById('search').value.toLowerCase().trim();const filtered=opportunities.filter(o=>(current==='all'||o.type===current||o.group===current)&&(!q||(`${o.title} ${o.city} ${o.products} ${o.target}`).toLowerCase().includes(q))).sort((a,b)=>dateObj(a.start_date)-dateObj(b.start_date));if(!filtered.length){cards.innerHTML='<div class="panel">No matching opportunity found.</div>';return}let html='',lastMonth='',monthKeys=[];if(current==='all'&&!q){const dates=opportunities.map(o=>dateObj(o.start_date)).filter(d=>!isNaN(d));if(dates.length){let d=new Date(dates.reduce((a,b)=>a<b?a:b));const max=new Date(dates.reduce((a,b)=>a>b?a:b));d.setDate(1);max.setDate(1);while(d<=max){monthKeys.push(d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0'));d.setMonth(d.getMonth()+1)}}}else{monthKeys=[...new Set(filtered.map(o=>{const d=dateObj(o.start_date);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')}))]}monthKeys.forEach(key=>{const [y,m]=key.split('-').map(Number);const monthDate=new Date(y,m-1,1);const monthName=monthDate.toLocaleDateString('en-GB',{month:'long',year:'numeric'});const monthItems=filtered.filter(o=>{const d=dateObj(o.start_date);return d.getFullYear()===y&&d.getMonth()===m-1});html+=`<h3 class="month-title">📅 ${esc(monthName)}</h3><div class="cards">`;if(!monthItems.length){html+='<div class="panel" style="margin:0">No sales opportunity loaded for this month yet.</div>'}else{monthItems.forEach(o=>{html+=`<article class="card ${o.type}"><div class="top"><span class="badge">${esc(o.tag)}</span><span class="score">${o.score}/100</span></div><h3>${esc(o.title)}</h3><div class="meta">📅 ${esc(dateLabel(o.start_date))}<br>📍 ${esc(o.city)}<br>🎯 ${esc(o.target)}</div><div class="sellbox"><strong>💰 Cindrela can sell:</strong>${esc(o.products)}</div><div class="action">Action: <b>${esc(o.contact)}</b></div><button class="leadbtn" onclick="openModal(${o.id})">🎯 Open Sales Lead Play</button></article>`})}html+='</div>'});cards.innerHTML=html}'''
+new_render = '''function render(){const q=document.getElementById('search').value.toLowerCase().trim();const filtered=opportunities.filter(o=>(current==='all'||o.type===current||o.group===current)&&(!q||(`${o.title} ${o.city} ${o.products} ${o.target}`).toLowerCase().includes(q))).sort((a,b)=>dateObj(a.start_date)-dateObj(b.start_date));if(!filtered.length){cards.innerHTML='<div class="panel">No matching opportunity found.</div>';return}let html='',monthKeys=[];if(current==='all'&&!q){const dates=opportunities.map(o=>dateObj(o.start_date)).filter(d=>!isNaN(d));if(dates.length){let d=new Date(dates.reduce((a,b)=>a<b?a:b));const max=new Date(dates.reduce((a,b)=>a>b?a:b));d.setDate(1);max.setDate(1);while(d<=max){monthKeys.push(d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0'));d.setMonth(d.getMonth()+1)}}}else{monthKeys=[...new Set(filtered.map(o=>{const d=dateObj(o.start_date);return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')}))]}monthKeys.forEach(key=>{const [y,m]=key.split('-').map(Number);const monthDate=new Date(y,m-1,1);const monthName=monthDate.toLocaleDateString('en-GB',{month:'long',year:'numeric'});const monthItems=filtered.filter(o=>{const d=dateObj(o.start_date);return d.getFullYear()===y&&d.getMonth()===m-1});html+=`<h3 class="month-title">📅 ${esc(monthName)}</h3><div class="cards">`;if(!monthItems.length){html+='<div class="panel" style="margin:0">No sales opportunity loaded for this month yet.</div>'}else{monthItems.forEach(o=>{html+=`<article class="card ${o.type}"><div class="top"><span class="badge">${esc(o.tag)}</span><span class="score">${o.score}/100</span></div><h3>${esc(o.title)}</h3><div class="meta">📅 ${esc(dateLabel(o.start_date))}<br>📍 ${esc(o.city)}<br>🎯 ${esc(o.target)}</div><div class="sellbox"><strong>💰 Cindrela can sell:</strong>${esc(o.products)}</div><div class="action">Action: <b>${esc(o.contact)}</b></div><button class="leadbtn" onclick="openModal(${o.id})">🎯 Open Sales Lead Play</button></article>`})}html+='</div>'});cards.innerHTML=html}'''
 html = html[:start] + new_render + html[end:]
 INDEX.write_text(html, encoding='utf-8')
