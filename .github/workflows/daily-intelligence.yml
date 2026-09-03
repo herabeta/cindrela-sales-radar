@@ -12,8 +12,10 @@ on:
       - 'scripts/ensure_future_months.py'
       - 'scripts/build_sales_alerts.py'
       - 'scripts/build_dynamic_sales_plays.py'
+      - 'scripts/build_public_lead_contacts.py'
       - 'scripts/fix_months_and_2027.py'
       - 'data/opportunities.json'
+      - 'data/public-lead-contacts.json'
 permissions:
   contents: write
 jobs:
@@ -33,6 +35,8 @@ jobs:
         run: python scripts/discover_event_candidates.py
       - name: Promote only verified Nigeria opportunities
         run: python scripts/promote_verified_event_candidates.py
+      - name: Refresh public business contacts from event sources
+        run: python scripts/build_public_lead_contacts.py
       - name: Build dynamic date-driven sales plays
         run: python scripts/build_dynamic_sales_plays.py
       - name: Refresh worldwide intelligence feed
@@ -41,10 +45,10 @@ jobs:
         run: python scripts/build_sales_alerts.py
       - name: Validate master data and event-facing pages
         run: python scripts/validate_sales_radar_data.py
-      - name: Commit updated intelligence, candidates, alerts, event data and UI
+      - name: Commit updated intelligence, candidates, contacts, alerts, event data and UI
         run: |
           git config user.name 'cindrela-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/daily-intelligence.json data/event-candidates.json data/sales-alerts.json data/opportunities.json data/event-sales-plays.json index.html
-          git diff --cached --quiet || git commit -m 'Daily discovery, verification and sales intelligence refresh'
+          git add data/daily-intelligence.json data/event-candidates.json data/public-lead-contacts.json data/sales-alerts.json data/opportunities.json data/event-sales-plays.json index.html lead-finder.html
+          git diff --cached --quiet || git commit -m 'Daily refresh with public lead contact enrichment'
           git push
