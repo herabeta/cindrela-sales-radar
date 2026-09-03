@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T05:40:00.778761Z",
+  "generated_at": "2026-09-03T14:33:22.493570Z",
   "rules": [
     {
       "days_before": 90,
@@ -34,10 +34,164 @@
   ],
   "alerts": [
     {
-      "id": 2,
+      "id": 101,
+      "title": "FIFA U-20 Women’s World Cup Poland 2026",
+      "start_date": "2026-09-05",
+      "city": "Poland",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "FIFA",
+      "url": "https://www.fifa.com/en/tournaments/womens/u20womensworldcup/poland-2026",
+      "days_until": 2,
+      "alert": {
+        "days_before": 7,
+        "label": "URGENT",
+        "priority": "HOT",
+        "action": "Close pending bookings and confirm travel arrangements."
+      }
+    },
+    {
+      "id": 102,
+      "title": "FIBA Women’s Basketball World Cup 2026",
+      "start_date": "2026-09-04",
+      "city": "Berlin, Germany",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "FIBA",
+      "url": "https://www.fiba.basketball/",
+      "days_until": 1,
+      "alert": {
+        "days_before": 7,
+        "label": "URGENT",
+        "priority": "HOT",
+        "action": "Close pending bookings and confirm travel arrangements."
+      }
+    },
+    {
+      "id": 103,
+      "title": "Italian Grand Prix 2026",
+      "start_date": "2026-09-04",
+      "city": "Monza, Italy",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "days_until": 1,
+      "alert": {
+        "days_before": 7,
+        "label": "URGENT",
+        "priority": "HOT",
+        "action": "Close pending bookings and confirm travel arrangements."
+      }
+    },
+    {
+      "id": 105,
+      "title": "Propak West Africa 2026",
+      "start_date": "2026-09-08",
+      "city": "Lagos, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel"
+      ],
+      "source": "Propak West Africa",
+      "url": "https://www.propakwestafrica.com/",
+      "days_until": 5,
+      "alert": {
+        "days_before": 7,
+        "label": "URGENT",
+        "priority": "HOT",
+        "action": "Close pending bookings and confirm travel arrangements."
+      }
+    },
+    {
+      "id": 106,
+      "title": "Africa FARMTECH Expo Western Africa 2026",
+      "start_date": "2026-09-15",
+      "city": "Lagos, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Showsbee / organiser listing",
+      "url": "https://www.showsbee.com/",
+      "days_until": 12,
+      "alert": {
+        "days_before": 14,
+        "label": "HIGH PRIORITY",
+        "priority": "HOT",
+        "action": "Follow up with every active lead and send quotes."
+      }
+    },
+    {
+      "id": 107,
+      "title": "ACI Africa 2026",
+      "start_date": "2026-09-19",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel"
+      ],
+      "source": "ACI Africa",
+      "url": "https://www.aci-africa.aero/",
+      "days_until": 16,
+      "alert": {
+        "days_before": 30,
+        "label": "SELL NOW",
+        "priority": "HOT",
+        "action": "Push flight, hotel, transfer and group/corporate travel packages."
+      }
+    },
+    {
+      "id": 108,
+      "title": "Big 5 Construct Nigeria 2026",
+      "start_date": "2026-09-22",
+      "city": "Lagos, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel"
+      ],
+      "source": "Big 5 Construct Nigeria",
+      "url": "https://www.big5constructnigeria.com/",
+      "days_until": 19,
+      "alert": {
+        "days_before": 30,
+        "label": "SELL NOW",
+        "priority": "HOT",
+        "action": "Push flight, hotel, transfer and group/corporate travel packages."
+      }
+    },
+    {
+      "id": 109,
       "title": "21st Abuja International Trade Fair",
       "start_date": "2026-09-25",
-      "city": "Abuja",
+      "city": "Abuja, Nigeria",
       "group": "business",
       "products": [
         "Corporate Travel",
@@ -45,6 +199,8 @@
         "Transfers",
         "Group Booking"
       ],
+      "source": "Abuja International Trade Fair",
+      "url": "https://aitf.accinigeria.com/",
       "days_until": 22,
       "alert": {
         "days_before": 30,
@@ -54,10 +210,98 @@
       }
     },
     {
-      "id": 3,
-      "title": "International Cybersecurity Conference",
+      "id": 110,
+      "title": "Madrid Grand Prix 2026",
+      "start_date": "2026-09-11",
+      "city": "Madrid, Spain",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "days_until": 8,
+      "alert": {
+        "days_before": 14,
+        "label": "HIGH PRIORITY",
+        "priority": "HOT",
+        "action": "Follow up with every active lead and send quotes."
+      }
+    },
+    {
+      "id": 111,
+      "title": "Azerbaijan Grand Prix 2026",
+      "start_date": "2026-09-24",
+      "city": "Baku, Azerbaijan",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "days_until": 21,
+      "alert": {
+        "days_before": 30,
+        "label": "SELL NOW",
+        "priority": "HOT",
+        "action": "Push flight, hotel, transfer and group/corporate travel packages."
+      }
+    },
+    {
+      "id": 112,
+      "title": "SBC Summit 2026",
+      "start_date": "2026-09-29",
+      "city": "Lisbon, Portugal",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel"
+      ],
+      "source": "Visit Lisboa",
+      "url": "https://www.visitlisboa.com/en/events/sbc-summit-2026",
+      "days_until": 26,
+      "alert": {
+        "days_before": 30,
+        "label": "SELL NOW",
+        "priority": "HOT",
+        "action": "Push flight, hotel, transfer and group/corporate travel packages."
+      }
+    },
+    {
+      "id": 113,
+      "title": "Nigeria Mining Week 2026",
+      "start_date": "2026-10-12",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel"
+      ],
+      "source": "Nigeria Mining Week",
+      "url": "https://www.nigeriaminingweek.com/",
+      "days_until": 39,
+      "alert": {
+        "days_before": 60,
+        "label": "START OUTREACH",
+        "priority": "WARM",
+        "action": "Build the lead list and begin English WhatsApp/email outreach."
+      }
+    },
+    {
+      "id": 114,
+      "title": "Nigeria Energy 2026",
       "start_date": "2026-10-27",
-      "city": "Abuja",
+      "city": "Lagos, Nigeria",
       "group": "business",
       "products": [
         "Flight",
@@ -65,6 +309,8 @@
         "Transfers",
         "Corporate Travel"
       ],
+      "source": "Nigeria Energy",
+      "url": "https://www.nigeriaenergy-ng.com/",
       "days_until": 54,
       "alert": {
         "days_before": 60,
@@ -74,10 +320,98 @@
       }
     },
     {
-      "id": 4,
-      "title": "Digital Nigeria International Conference",
-      "start_date": "2026-11-10",
-      "city": "Abuja",
+      "id": 115,
+      "title": "Dakar 2026 Youth Olympic Games",
+      "start_date": "2026-10-31",
+      "city": "Dakar / Diamniadio / Saly, Senegal",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Olympics",
+      "url": "https://www.olympics.com/",
+      "days_until": 58,
+      "alert": {
+        "days_before": 60,
+        "label": "START OUTREACH",
+        "priority": "WARM",
+        "action": "Build the lead list and begin English WhatsApp/email outreach."
+      }
+    },
+    {
+      "id": 116,
+      "title": "Singapore Grand Prix 2026",
+      "start_date": "2026-10-09",
+      "city": "Singapore",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "days_until": 36,
+      "alert": {
+        "days_before": 60,
+        "label": "START OUTREACH",
+        "priority": "WARM",
+        "action": "Build the lead list and begin English WhatsApp/email outreach."
+      }
+    },
+    {
+      "id": 117,
+      "title": "United States Grand Prix 2026",
+      "start_date": "2026-10-23",
+      "city": "Austin, USA",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "days_until": 50,
+      "alert": {
+        "days_before": 60,
+        "label": "START OUTREACH",
+        "priority": "WARM",
+        "action": "Build the lead list and begin English WhatsApp/email outreach."
+      }
+    },
+    {
+      "id": 118,
+      "title": "Mexico City Grand Prix 2026",
+      "start_date": "2026-10-30",
+      "city": "Mexico City, Mexico",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "days_until": 57,
+      "alert": {
+        "days_before": 60,
+        "label": "START OUTREACH",
+        "priority": "WARM",
+        "action": "Build the lead list and begin English WhatsApp/email outreach."
+      }
+    },
+    {
+      "id": 119,
+      "title": "Web Summit 2026",
+      "start_date": "2026-11-09",
+      "city": "Lisbon, Portugal",
       "group": "business",
       "products": [
         "Flight",
@@ -85,6 +419,52 @@
         "Transfers",
         "Business Travel"
       ],
+      "source": "Web Summit",
+      "url": "https://websummit.com/",
+      "days_until": 67,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
+      }
+    },
+    {
+      "id": 120,
+      "title": "COP31",
+      "start_date": "2026-11-09",
+      "city": "Antalya, Türkiye",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Executive Travel"
+      ],
+      "source": "UNFCCC",
+      "url": "https://unfccc.int/cop31",
+      "days_until": 67,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
+      }
+    },
+    {
+      "id": 121,
+      "title": "Digital Nigeria 2026",
+      "start_date": "2026-11-10",
+      "city": "Abuja, Nigeria",
+      "group": "business",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Business Travel"
+      ],
+      "source": "NITDA",
+      "url": "https://nitda.gov.ng/events/",
       "days_until": 68,
       "alert": {
         "days_before": 90,
@@ -94,10 +474,98 @@
       }
     },
     {
-      "id": 5,
-      "title": "Africa Space Economy Conference",
+      "id": 122,
+      "title": "WTA Finals Indian Wells 2026",
+      "start_date": "2026-11-08",
+      "city": "Indian Wells, USA",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "WTA",
+      "url": "https://www.wtatennis.com/tournaments/wta-finals",
+      "days_until": 66,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
+      }
+    },
+    {
+      "id": 123,
+      "title": "São Paulo Grand Prix 2026",
+      "start_date": "2026-11-06",
+      "city": "São Paulo, Brazil",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "days_until": 64,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
+      }
+    },
+    {
+      "id": 124,
+      "title": "Las Vegas Grand Prix 2026",
+      "start_date": "2026-11-19",
+      "city": "Las Vegas, USA",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "days_until": 77,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
+      }
+    },
+    {
+      "id": 125,
+      "title": "Qatar Grand Prix 2026",
+      "start_date": "2026-11-27",
+      "city": "Lusail, Qatar",
+      "group": "sports",
+      "products": [
+        "Flight",
+        "Hotel",
+        "Transfers",
+        "Group Travel"
+      ],
+      "source": "Formula 1",
+      "url": "https://www.formula1.com/",
+      "days_until": 85,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
+      }
+    },
+    {
+      "id": 126,
+      "title": "Africa Space Economy Conference 2026",
       "start_date": "2026-11-24",
-      "city": "Abuja",
+      "city": "Abuja, Nigeria",
       "group": "business",
       "products": [
         "Flight",
@@ -105,6 +573,8 @@
         "Transfers",
         "Executive Travel"
       ],
+      "source": "ASEICC",
+      "url": "https://aseicc.org/",
       "days_until": 82,
       "alert": {
         "days_before": 90,
@@ -114,23 +584,25 @@
       }
     },
     {
-      "id": 6,
-      "title": "Trade Expo Nigeria",
-      "start_date": "2026-11-20",
-      "city": "Nigeria",
-      "group": "business",
+      "id": 129,
+      "title": "Ember to Remember 2026",
+      "start_date": "2026-09-14",
+      "city": "Nigeria — nationwide",
+      "group": "seasonal",
       "products": [
-        "Corporate Travel",
-        "Hotel",
-        "Transfers",
-        "Group Booking"
+        "Flights",
+        "Hotels",
+        "Airport Transfers",
+        "Holiday Packages"
       ],
-      "days_until": 78,
+      "source": "Federal Ministry of Information and National Orientation",
+      "url": "https://fmino.gov.ng/tourism-ministry-and-mycityapp-announce-ember-to-remember-2026-nigerias-100-day-tourism-season/",
+      "days_until": 11,
       "alert": {
-        "days_before": 90,
-        "label": "PLAN AHEAD",
-        "priority": "WARM",
-        "action": "Research target companies and prepare the sales offer."
+        "days_before": 14,
+        "label": "HIGH PRIORITY",
+        "priority": "HOT",
+        "action": "Follow up with every active lead and send quotes."
       }
     }
   ]
