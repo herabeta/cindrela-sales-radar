@@ -29,3 +29,4 @@ jobs:
           fi
           git commit -m "Add missing 2027 months and opportunities"
           git push
+# trigger repair
