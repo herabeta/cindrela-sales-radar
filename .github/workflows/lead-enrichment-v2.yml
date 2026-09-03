@@ -1,0 +1,30 @@
+name: Daily Lead Enrichment V2
+on:
+  schedule:
+    - cron: '30 5 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/expand_event_leads.py'
+      - 'data/opportunities.json'
+      - 'data/public-lead-contacts.json'
+permissions:
+  contents: write
+jobs:
+  enrich:
+    if: github.actor != 'cindrela-bot'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Expand every event into contactable leads
+        run: python scripts/expand_event_leads.py
+      - name: Commit enriched public lead records
+        run: |
+          git config user.name 'cindrela-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add data/public-lead-contacts.json
+          git diff --cached --quiet || git commit -m 'Expand event-wide lead pool'
+          git push
