@@ -10,26 +10,26 @@
   "102": [
     "Nigerian basketball fans, players' families, clubs and sports delegations",
     "Flights + Hotels + Transfers + Group Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
-    "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "FIBA Women’s Basketball World Cup 2026 is within one week in Berlin, Germany; remaining travel enquiries are time-sensitive"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "FIBA Women’s Basketball World Cup 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "103": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
-    "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Italian Grand Prix 2026 is within one week in Monza, Italy; remaining travel enquiries are time-sensitive"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Italian Grand Prix 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "136": [
     "Travel agencies, tour operators, hospitality companies, travel-tech firms and tourism executives",
     "Flights + Hotels + Transfers + Business Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
-    "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Travelpreneur Conference & Expo (TRAVCONEXPO) 2026 is within one week in Lagos, Nigeria; remaining travel enquiries are time-sensitive"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Travelpreneur Conference & Expo (TRAVCONEXPO) 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "101": [
     "Nigeria U-20 supporters, parents, youth football academies and team-linked delegations",
@@ -330,10 +330,10 @@
   "127": [
     "Nigerian F1 fans, premium travellers, corporate guests and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Start planning now; identify Nigerian prospects and prepare travel options",
-    "EARLY",
-    "Review every 2–4 weeks until the event enters the active sales window",
-    "Abu Dhabi Grand Prix 2026 is a future opportunity in Abu Dhabi, UAE; early lead building gives Cindrela more time to qualify and convert travel demand"
+    "Start prospecting now; build the target list and open early conversations",
+    "WARM",
+    "Follow up weekly and update booking status",
+    "Abu Dhabi Grand Prix 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "150": [
     "Internet/networking engineers, telecom firms, cybersecurity teams and technical delegates",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-04T05:14:19.557057Z",
+    "generated_at": "2026-09-05T05:14:11.481197Z",
     "engine": "dynamic-date-sales-play-v1",
-    "reference_date": "2026-09-04",
+    "reference_date": "2026-09-05",
     "rules": "WHEN TO CONTACT, LEAD PRIORITY, FOLLOW-UP and WHY NOW are recalculated from each event date every run."
   }
 }
