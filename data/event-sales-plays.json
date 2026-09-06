@@ -34,10 +34,10 @@
   "101": [
     "Nigeria U-20 supporters, parents, youth football academies and team-linked delegations",
     "Flights + Hotels + Transfers + Group Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
-    "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "FIFA U-20 Women’s World Cup Poland 2026 is within one week in Poland; remaining travel enquiries are time-sensitive"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "FIFA U-20 Women’s World Cup Poland 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "105": [
     "Packaging/manufacturing companies, exhibitors, procurement teams and business delegates",
@@ -66,10 +66,10 @@
   "138": [
     "Travel agencies, tour operators, destination managers, airlines and tourism buyers",
     "Flights + Hotels + Transfers + Business Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "Akwaaba African Travel Market 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "Akwaaba African Travel Market 2026 is within one week in Lagos, Nigeria; remaining travel enquiries are time-sensitive"
   ],
   "129": [
     "Nigerian families, diaspora visitors, leisure travellers and domestic holiday groups",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-05T05:14:11.481197Z",
+    "generated_at": "2026-09-06T05:14:10.484914Z",
     "engine": "dynamic-date-sales-play-v1",
-    "reference_date": "2026-09-05",
+    "reference_date": "2026-09-06",
     "rules": "WHEN TO CONTACT, LEAD PRIORITY, FOLLOW-UP and WHY NOW are recalculated from each event date every run."
   }
 }
