@@ -33,6 +33,25 @@ jobs:
         run: python scripts/patch_date_range_display.py
       - name: Validate Sales Radar data
         run: python scripts/validate_sales_radar_data.py
+      - name: Validate Event Explorer JavaScript
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p = Path('event-calendar-full.html')
+          s = p.read_text(encoding='utf-8')
+          count = len(re.findall(r'\b(?:const|let|var)\s+dateLabel\s*=', s))
+          if count != 1:
+              raise SystemExit(f'Event Explorer dateLabel declaration count is {count}; expected exactly 1')
+          scripts = re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>', s, re.I | re.S)
+          if not scripts:
+              raise SystemExit('Event Explorer has no script block')
+          Path('/tmp/event-explorer.js').write_text('\n'.join(scripts), encoding='utf-8')
+          print('Event Explorer JS structure check passed.')
+          PY
+          node --check /tmp/event-explorer.js
       - name: Commit enriched leads and date ranges
         run: |
           git config user.name 'cindrela-bot'
