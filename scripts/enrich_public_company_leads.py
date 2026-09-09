@@ -4,7 +4,7 @@
 Rules:
 - Use only publicly reachable business information.
 - Never invent people, companies, emails or phone numbers.
-- Only save a discovered company lead when an email, phone or public LinkedIn URL is found.
+- Only save a discovered company lead when a valid email, phone or public LinkedIn URL is found.
 - Prefer links exposed by official/event source pages and the linked organisation's own public pages.
 """
 import hashlib
@@ -21,12 +21,12 @@ ROOT = Path(__file__).resolve().parents[1]
 OPP = ROOT / 'data/opportunities.json'
 CONTACTS = ROOT / 'data/public-lead-contacts.json'
 
-EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}")
-PHONE_RE = re.compile(r"(?<!\\d)(?:\\+\\d{1,3}[\\s().-]*)?(?:\\d[\\s().-]*){7,14}\\d(?!\\d)")
-LINKEDIN_RE = re.compile(r"https?://(?:www\\.)?linkedin\\.com/(?:company|in)/[A-Za-z0-9_./%-]+", re.I)
+EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+PHONE_RE = re.compile(r"(?<!\d)(?:\+\d{1,3}[\s().-]*)?(?:\d[\s().-]*){7,14}\d(?!\d)")
+LINKEDIN_RE = re.compile(r"https?://(?:www\.)?linkedin\.com/(?:company|in)/[A-Za-z0-9_./%-]+", re.I)
 GENERIC = ('info@','contact@','hello@','sales@','support@','enquiries@','enquiry@','secretariat@','conference@','marketing@','office@','admin@')
 RELEVANT = ('exhibitor','exhibitors','sponsor','sponsors','partner','partners','speaker','speakers','delegate','delegates','participant','participants','vendor','vendors','team','teams','company','companies','association','federation','buyer','buyers','supplier','suppliers','member','members','startup','startups','media','press')
-BAD = ('home','about','contact','privacy','cookie','login','register','registration','read more','learn more','view all','menu','facebook','instagram','youtube','linkedin','twitter','x.com','whatsapp','terms')
+BAD = ('home','about','contact','privacy','cookie','login','register','registration','read more','learn more','view all','menu','facebook','instagram','youtube','linkedin','twitter','x.com','whatsapp','terms','exhibitor list','exhibitors list','sponsor list','sponsors list','partner list','partners list','speaker list','speakers list','delegate list','delegates list','participant list','participants list','vendor list','vendors list','company list','companies list','team list','teams list','member list','members list','buyer list','buyers list','supplier list','suppliers list','directory','directories')
 SOCIAL_HOSTS = ('facebook.com','instagram.com','youtube.com','linkedin.com','twitter.com','x.com','tiktok.com')
 
 class Links(HTMLParser):
@@ -54,21 +54,23 @@ def fetch(url, timeout=8):
         return raw.decode(r.headers.get_content_charset() or 'utf-8','ignore')
 
 def clean(s):
-    s=re.sub(r'<script[\\s\\S]*?</script>|<style[\\s\\S]*?</style>',' ',s,flags=re.I)
+    s=re.sub(r'<script[\s\S]*?</script>|<style[\s\S]*?</style>',' ',s,flags=re.I)
     return re.sub(r'<[^>]+>',' ',s)
 
 def norm(s):
     return re.sub(r'[^a-z0-9]+',' ',str(s or '').lower()).strip()
 
 def phone(s):
-    d=re.sub(r'\\D','',s)
+    d=re.sub(r'\D','',s)
     if not 8<=len(d)<=15:return ''
-    return re.sub(r'\\s+',' ',s).strip(' .,-')
+    # Reject obvious years/date ranges and other non-phone numeric labels.
+    if re.fullmatch(r'(?:19|20)\d{2}',d) or re.fullmatch(r'(?:19|20)\d{2}(?:19|20)\d{2}',d):return ''
+    return re.sub(r'\s+',' ',s).strip(' .,-')
 
 def valid_anchor(label, href):
-    text=re.sub(r'\\s+',' ',label or '').strip()
+    text=re.sub(r'\s+',' ',label or '').strip()
     low=(text+' '+href).lower()
-    if len(text)<3 or len(text)>120 or re.fullmatch(r'[0-9\\W_]+',text):return False
+    if len(text)<3 or len(text)>120 or re.fullmatch(r'[0-9\W_]+',text):return False
     if any(x in low for x in BAD):return False
     if not href.lower().startswith(('http://','https://')):return False
     host=urlparse(href).netloc.lower()
@@ -94,7 +96,7 @@ def candidate_pages(base, html):
         target=urljoin(base,href)
         if target in seen:continue
         seen.add(target)
-        out.append((re.sub(r'\\s+',' ',label).strip(),target))
+        out.append((re.sub(r'\s+',' ',label).strip(),target))
         if len(out)>=12:break
     return out
 
@@ -115,7 +117,7 @@ def make_record(event, company, source, email='', phone_value='', linkedin='', r
     }
 
 def key(c):
-    return (norm(c.get('event')),norm(c.get('company')),str(c.get('businessEmail','')).lower().strip(),re.sub(r'\\D','',str(c.get('businessPhone',''))),str(c.get('linkedin','')).lower().strip())
+    return (norm(c.get('event')),norm(c.get('company')),str(c.get('businessEmail','')).lower().strip(),re.sub(r'\D','',str(c.get('businessPhone',''))),str(c.get('linkedin','')).lower().strip())
 
 def process_event(event):
     title=event.get('title','').strip(); source=event.get('url','').strip()
@@ -123,11 +125,8 @@ def process_event(event):
     try:html=fetch(source)
     except Exception:return []
     candidates=candidate_pages(source,html)
-    jobs=[]
-    for label,url in candidates:
-        jobs.append((label,url))
     records=[]
-    for label,url in jobs:
+    for label,url in candidates:
         try: page=fetch(url)
         except Exception:continue
         urls=[(url,page)]
@@ -159,7 +158,6 @@ def main():
         except Exception:continue
         if end>=today: active.append(e)
     added=0
-    # Keep daily network work bounded while covering every active event.
     with ThreadPoolExecutor(max_workers=8) as pool:
         futures={pool.submit(process_event,e):e for e in active}
         for fut in as_completed(futures):
