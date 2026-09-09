@@ -42,18 +42,18 @@
   "105": [
     "Packaging/manufacturing companies, exhibitors, procurement teams and business delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
-    "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Propak West Africa 2026 is within one week in Lagos, Nigeria; remaining travel enquiries are time-sensitive"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Propak West Africa 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "137": [
     "Bank CEOs, senior bankers, finance executives, corporate delegates and speakers",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
-    "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "CIBN Annual Banking & Finance Conference 2026 is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "CIBN Annual Banking & Finance Conference 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "110": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
@@ -165,7 +165,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Singapore Grand Prix 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Singapore Grand Prix 2026 is within 30 days in Singapore; flight, hotel and transfer decisions should be moving now"
   ],
   "113": [
     "Mining companies, executives, investors, suppliers and technical delegates",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-08T05:15:31.181590Z",
+    "generated_at": "2026-09-09T05:15:05.221723Z",
     "engine": "dynamic-date-sales-play-v1",
-    "reference_date": "2026-09-08",
+    "reference_date": "2026-09-09",
     "rules": "WHEN TO CONTACT, LEAD PRIORITY, FOLLOW-UP and WHY NOW are recalculated from each event date every run."
   }
 }
