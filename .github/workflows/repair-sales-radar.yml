@@ -1,3 +1,4 @@
+# Safety workflow: repairs malformed Sales Opportunities markup before deployment.
 name: Repair Sales Radar safely
 
 on:
