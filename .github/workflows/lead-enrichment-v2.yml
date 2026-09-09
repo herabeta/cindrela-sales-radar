@@ -8,6 +8,7 @@ on:
       - 'scripts/expand_event_leads.py'
       - 'scripts/enrich_public_company_leads.py'
       - 'scripts/harden_lead_finder.py'
+      - 'scripts/add_nigeria_filter.py'
       - 'scripts/split_public_leads.py'
       - 'scripts/patch_date_range_display.py'
       - 'scripts/validate_sales_radar_data.py'
@@ -33,6 +34,8 @@ jobs:
         run: python scripts/enrich_public_company_leads.py
       - name: Harden Lead Finder contact deduplication
         run: python scripts/harden_lead_finder.py
+      - name: Add Nigeria-only Sales Opportunities filter safely
+        run: python scripts/add_nigeria_filter.py
       - name: Split leads into fast event-wise files
         run: python scripts/split_public_leads.py
       - name: Apply verified event date ranges to user-facing cards
@@ -76,10 +79,32 @@ jobs:
           print('Lead Finder JS structure check passed.')
           PY
           node --check /tmp/lead-finder.js
-      - name: Commit enriched leads and safe Lead Finder changes
+      - name: Validate Sales Opportunities JavaScript and Nigeria filter
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+          if s.count('data-filter="nigeria"') != 1:
+              raise SystemExit('Sales Opportunities Nigeria filter is missing or duplicated')
+          if s.count('function isNigeriaOpportunity(o)') != 1:
+              raise SystemExit('Sales Opportunities Nigeria helper is missing or duplicated')
+          if s.count("current==='nigeria'&&isNigeriaOpportunity(o)") != 1:
+              raise SystemExit('Sales Opportunities Nigeria filter logic is missing or duplicated')
+          scripts = re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>', s, re.I | re.S)
+          if not scripts:
+              raise SystemExit('Sales Opportunities has no script block')
+          Path('/tmp/sales-opportunities.js').write_text('\n'.join(scripts), encoding='utf-8')
+          print('Sales Opportunities Nigeria filter and JS structure check passed.')
+          PY
+          node --check /tmp/sales-opportunities.js
+      - name: Commit enriched leads and safe Sales Radar changes
         run: |
           git config user.name 'cindrela-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/public-lead-contacts.json data/public-lead-index.json data/leads-by-event data/opportunities.json index.html event-calendar-full.html lead-finder.html scripts/enrich_public_company_leads.py scripts/harden_lead_finder.py
-          git diff --cached --quiet || git commit -m 'Strengthen Lead Finder public contact coverage'
+          git add data/public-lead-contacts.json data/public-lead-index.json data/leads-by-event data/opportunities.json index.html event-calendar-full.html lead-finder.html scripts/enrich_public_company_leads.py scripts/harden_lead_finder.py scripts/add_nigeria_filter.py
+          git diff --cached --quiet || git commit -m 'Strengthen Lead Finder and add Nigeria opportunity filter'
           git push
