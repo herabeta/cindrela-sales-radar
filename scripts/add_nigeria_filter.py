@@ -62,3 +62,4 @@ if s.count("current==='nigeria'&&isNigeriaOpportunity(o)") != 1:
 
 PAGE.write_text(s, encoding="utf-8")
 print("Nigeria-only Sales Opportunities filter applied safely.")
+# Triggered by an explicit user-requested safety validation run.
