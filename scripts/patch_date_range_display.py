@@ -39,7 +39,9 @@ if "sales-radar-ux-v1" in s:
     p.write_text(s, encoding="utf-8")
 
 
-# Sales Opportunities: replace dateLabel with a range-aware formatter.
+# Sales Opportunities: replace dateLabel with a range-aware formatter and
+# keep only active/upcoming events in the live sales view. Historical records
+# remain untouched in data/opportunities.json.
 patch("index.html", [
     (
         "function dateLabel(s){const d=dateObj(s);return isNaN(d)?s:d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})}",
@@ -48,6 +50,17 @@ patch("index.html", [
     ("${esc(dateLabel(o.start_date))}", "${esc(dateLabel(o.start_date,o.end_date))}"),
     ("mPlace.textContent=`📅 ${dateLabel(selected.start_date)} • 📍 ${selected.city} • ${selected.score}/100`;", "mPlace.textContent=`📅 ${dateLabel(selected.start_date,selected.end_date)} • 📍 ${selected.city} • ${selected.score}/100`;")
 ])
+
+# Add the active-event helper exactly once.
+p = ROOT / "index.html"
+s = p.read_text(encoding="utf-8")
+if "function isActiveOpportunity(" not in s:
+    s = s.replace(
+        "function dateObj(s){return new Date(s+'T00:00:00')}",
+        "function dateObj(s){return new Date(s+'T00:00:00')}function isActiveOpportunity(o){const t=new Date();t.setHours(0,0,0,0);const e=dateObj(o.end_date||o.start_date);return !isNaN(e)&&e>=t}"
+    )
+s = s.replace("opportunities=opportunities.map(enrich);counts();render();", "opportunities=opportunities.map(enrich).filter(isActiveOpportunity);counts();render();")
+p.write_text(s, encoding="utf-8")
 
 
 # Event Explorer: update the card, but add the formatter only when it is absent.
@@ -78,4 +91,4 @@ s = s.replace("$('eventInfo').textContent=e.start_date+' • '+e.city+' • Targ
 if s != original:
     p.write_text(s, encoding="utf-8")
 
-print("Date range patches applied safely (idempotent).")
+print("Date range and active-event patches applied safely (idempotent).")
