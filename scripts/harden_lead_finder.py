@@ -27,3 +27,4 @@ elif new_contact not in s:
 
 PAGE.write_text(s,encoding='utf-8')
 print('Lead Finder hardening applied: multiple contacts preserved and contact routes validated.')
+# Keep this patch idempotent so repeated scheduled runs never duplicate UI/logic.
