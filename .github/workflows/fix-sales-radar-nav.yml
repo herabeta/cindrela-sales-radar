@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Repair Sales Opportunities page
+        run: python scripts/patch_date_range_display.py
       - name: Persist Lead Finder and Back navigation
         run: |
           python - <<'PY'
