@@ -1,0 +1,42 @@
+name: Repair Sales Radar safely
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    if: ${{ github.event.head_commit.message != 'Repair Sales Radar page' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Repair malformed Sales Opportunities markup
+        run: python scripts/patch_date_range_display.py
+      - name: Validate Sales Opportunities JavaScript
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          s = Path('index.html').read_text(encoding='utf-8')
+          if 'sales-radar-ux-v1' in s:
+              raise SystemExit('Temporary UX injection marker still present')
+          if '</style></style>' in s:
+              raise SystemExit('Duplicate closing style tag remains')
+          scripts = re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>', s, re.I | re.S)
+          if len(scripts) != 1:
+              raise SystemExit(f'Expected exactly one script block, found {len(scripts)}')
+          Path('/tmp/index.js').write_text(scripts[0], encoding='utf-8')
+          print('Sales Opportunities HTML/JS structure check passed.')
+          PY
+          node --check /tmp/index.js
+      - name: Commit repaired page
+        run: |
+          git config user.name 'cindrela-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add index.html
+          git diff --cached --quiet && exit 0
+          git commit -m 'Repair Sales Radar page'
+          git push
