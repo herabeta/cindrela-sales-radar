@@ -6,6 +6,8 @@ on:
   push:
     paths:
       - 'scripts/expand_event_leads.py'
+      - 'scripts/enrich_public_company_leads.py'
+      - 'scripts/harden_lead_finder.py'
       - 'scripts/split_public_leads.py'
       - 'scripts/patch_date_range_display.py'
       - 'scripts/validate_sales_radar_data.py'
@@ -27,6 +29,10 @@ jobs:
           python-version: '3.x'
       - name: Expand every event into contactable leads
         run: python scripts/expand_event_leads.py
+      - name: Expand event-linked companies into contactable public leads
+        run: python scripts/enrich_public_company_leads.py
+      - name: Harden Lead Finder contact deduplication
+        run: python scripts/harden_lead_finder.py
       - name: Split leads into fast event-wise files
         run: python scripts/split_public_leads.py
       - name: Apply verified event date ranges to user-facing cards
@@ -52,10 +58,28 @@ jobs:
           print('Event Explorer JS structure check passed.')
           PY
           node --check /tmp/event-explorer.js
-      - name: Commit enriched leads and date ranges
+      - name: Validate Lead Finder JavaScript
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p = Path('lead-finder.html')
+          s = p.read_text(encoding='utf-8')
+          scripts = re.findall(r'<script(?:\s[^>]*)?>(.*?)</script>', s, re.I | re.S)
+          if not scripts:
+              raise SystemExit('Lead Finder has no script block')
+          Path('/tmp/lead-finder.js').write_text('\n'.join(scripts), encoding='utf-8')
+          if 'contactKey=' not in s:
+              raise SystemExit('Lead Finder multiple-contact hardening is missing')
+          print('Lead Finder JS structure check passed.')
+          PY
+          node --check /tmp/lead-finder.js
+      - name: Commit enriched leads and safe Lead Finder changes
         run: |
           git config user.name 'cindrela-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/public-lead-contacts.json data/public-lead-index.json data/leads-by-event data/opportunities.json index.html event-calendar-full.html lead-finder.html
-          git diff --cached --quiet || git commit -m 'Split leads by event for faster Lead Finder'
+          git add data/public-lead-contacts.json data/public-lead-index.json data/leads-by-event data/opportunities.json index.html event-calendar-full.html lead-finder.html scripts/enrich_public_company_leads.py scripts/harden_lead_finder.py
+          git diff --cached --quiet || git commit -m 'Strengthen Lead Finder public contact coverage'
           git push
