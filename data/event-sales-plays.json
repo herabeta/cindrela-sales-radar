@@ -10,10 +10,10 @@
   "102": [
     "Nigerian basketball fans, players' families, clubs and sports delegations",
     "Flights + Hotels + Transfers + Group Travel",
-    "Event passed — close active event outreach and move to the next relevant opportunity",
-    "CLOSED",
-    "No routine follow-up; close or recycle the event lead",
-    "FIBA Women’s Basketball World Cup 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
+    "Event is live — contact active prospects and resolve any immediate travel needs",
+    "HOT",
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "FIBA Women’s Basketball World Cup 2026 is currently underway in Berlin, Germany; focus on immediate and remaining travel requirements"
   ],
   "103": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
@@ -34,26 +34,26 @@
   "101": [
     "Nigeria U-20 supporters, parents, youth football academies and team-linked delegations",
     "Flights + Hotels + Transfers + Group Travel",
-    "Event passed — close active event outreach and move to the next relevant opportunity",
-    "CLOSED",
-    "No routine follow-up; close or recycle the event lead",
-    "FIFA U-20 Women’s World Cup Poland 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
+    "Event is live — contact active prospects and resolve any immediate travel needs",
+    "HOT",
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "FIFA U-20 Women’s World Cup Poland 2026 is currently underway in Poland; focus on immediate and remaining travel requirements"
   ],
   "105": [
     "Packaging/manufacturing companies, exhibitors, procurement teams and business delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Event passed — close active event outreach and move to the next relevant opportunity",
-    "CLOSED",
-    "No routine follow-up; close or recycle the event lead",
-    "Propak West Africa 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
+    "Event is live — contact active prospects and resolve any immediate travel needs",
+    "HOT",
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "Propak West Africa 2026 is currently underway in Lagos, Nigeria; focus on immediate and remaining travel requirements"
   ],
   "137": [
     "Bank CEOs, senior bankers, finance executives, corporate delegates and speakers",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Event passed — close active event outreach and move to the next relevant opportunity",
-    "CLOSED",
-    "No routine follow-up; close or recycle the event lead",
-    "CIBN Annual Banking & Finance Conference 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
+    "HOT",
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "CIBN Annual Banking & Finance Conference 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
   ],
   "110": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-09T05:15:05.221723Z",
-    "engine": "dynamic-date-sales-play-v1",
+    "generated_at": "2026-09-09T14:44:42.791502Z",
+    "engine": "dynamic-date-sales-play-v2",
     "reference_date": "2026-09-09",
-    "rules": "WHEN TO CONTACT, LEAD PRIORITY, FOLLOW-UP and WHY NOW are recalculated from each event date every run."
+    "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
