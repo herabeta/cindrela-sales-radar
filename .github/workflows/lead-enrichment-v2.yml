@@ -82,7 +82,7 @@ jobs:
           Path('/tmp/lead-finder.js').write_text('\n'.join(scripts), encoding='utf-8')
           if 'contactKey=' not in s:
               raise SystemExit('Lead Finder multiple-contact hardening is missing')
-          if 'badEmail=' not in s or 'email@domain.ext' not in s or '500x' not in s:
+          if 'badEmail=' not in s or 'email@domain.ext' not in s or not re.search(r'\\d\{2,4\}x\\d\{2,4\}', s):
               raise SystemExit('Lead Finder malformed-email guard is missing')
           if 'Companies' not in s:
               raise SystemExit('Lead Finder company-group display patch is missing')
