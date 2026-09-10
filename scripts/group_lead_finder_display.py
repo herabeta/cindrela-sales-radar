@@ -7,7 +7,6 @@ so this patch makes the display one card per event/company and renders all verif
 contacts inside that card.
 """
 from pathlib import Path
-import re
 
 ROOT=Path(__file__).resolve().parents[1]
 PAGE=ROOT/'lead-finder.html'
