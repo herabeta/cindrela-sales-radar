@@ -7,6 +7,7 @@ on:
     paths:
       - 'scripts/expand_event_leads.py'
       - 'scripts/enrich_public_company_leads.py'
+      - 'scripts/clean_public_leads.py'
       - 'scripts/harden_lead_finder.py'
       - 'scripts/add_nigeria_filter.py'
       - 'scripts/split_public_leads.py'
@@ -32,6 +33,8 @@ jobs:
         run: python scripts/expand_event_leads.py
       - name: Expand event-linked companies into contactable public leads
         run: python scripts/enrich_public_company_leads.py
+      - name: Remove malformed and placeholder public contact values
+        run: python scripts/clean_public_leads.py
       - name: Harden Lead Finder contact deduplication
         run: python scripts/harden_lead_finder.py
       - name: Add Nigeria-only Sales Opportunities filter safely
@@ -76,7 +79,9 @@ jobs:
           Path('/tmp/lead-finder.js').write_text('\n'.join(scripts), encoding='utf-8')
           if 'contactKey=' not in s:
               raise SystemExit('Lead Finder multiple-contact hardening is missing')
-          print('Lead Finder JS structure check passed.')
+          if 'badEmail=' not in s or 'email@domain.ext' not in s or '500x' not in s:
+              raise SystemExit('Lead Finder malformed-email guard is missing')
+          print('Lead Finder JS structure and contact validation passed.')
           PY
           node --check /tmp/lead-finder.js
       - name: Validate Sales Opportunities JavaScript and Nigeria filter
@@ -105,6 +110,6 @@ jobs:
         run: |
           git config user.name 'cindrela-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add data/public-lead-contacts.json data/public-lead-index.json data/leads-by-event data/opportunities.json index.html event-calendar-full.html lead-finder.html scripts/enrich_public_company_leads.py scripts/harden_lead_finder.py scripts/add_nigeria_filter.py
-          git diff --cached --quiet || git commit -m 'Strengthen Lead Finder and add Nigeria opportunity filter'
+          git add data/public-lead-contacts.json data/public-lead-index.json data/leads-by-event data/opportunities.json index.html event-calendar-full.html lead-finder.html scripts/enrich_public_company_leads.py scripts/clean_public_leads.py scripts/harden_lead_finder.py scripts/add_nigeria_filter.py
+          git diff --cached --quiet || git commit -m 'Clean and strengthen Lead Finder public contacts'
           git push
