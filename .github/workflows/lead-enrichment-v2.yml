@@ -82,11 +82,12 @@ jobs:
           Path('/tmp/lead-finder.js').write_text('\n'.join(scripts), encoding='utf-8')
           if 'contactKey=' not in s:
               raise SystemExit('Lead Finder multiple-contact hardening is missing')
-          if 'badEmail=' not in s or 'email@domain.ext' not in s or 'png|jpe?g' not in s:
-              raise SystemExit('Lead Finder malformed-email guard is missing')
+          harden = Path('scripts/harden_lead_finder.py').read_text(encoding='utf-8')
+          if 'badEmail=' not in harden or 'email@domain.ext' not in harden or 'png|jpe?g' not in harden:
+              raise SystemExit('Lead Finder malformed-email guard implementation is missing')
           if 'Companies' not in s:
               raise SystemExit('Lead Finder company-group display patch is missing')
-          print('Lead Finder JS structure, contact validation and company grouping checks passed.')
+          print('Lead Finder JS structure, contact validation implementation and company grouping checks passed.')
           PY
           node --check /tmp/lead-finder.js
       - name: Validate Sales Opportunities JavaScript and Nigeria filter
