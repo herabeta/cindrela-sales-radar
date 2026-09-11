@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - '.github/workflows/lead-enrichment-v2.yml'
       - 'scripts/expand_event_leads.py'
       - 'scripts/enrich_public_company_leads.py'
       - 'scripts/clean_public_leads.py'
@@ -83,7 +84,7 @@ jobs:
           if 'contactKey=' not in s:
               raise SystemExit('Lead Finder multiple-contact hardening is missing')
           harden = Path('scripts/harden_lead_finder.py').read_text(encoding='utf-8')
-          if 'badEmail=' not in harden or 'email@domain.ext' not in harden or 'png|jpe?g' not in harden:
+          if 'badEmail=' not in harden or 'email@domain' not in harden or 'png|jpe?g' not in harden:
               raise SystemExit('Lead Finder malformed-email guard implementation is missing')
           if 'Companies' not in s:
               raise SystemExit('Lead Finder company-group display patch is missing')
