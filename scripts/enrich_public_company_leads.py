@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Find additional public, contactable company leads from event pages.
+"""Find and score additional public, contactable company leads from event pages.
 
 Rules:
 - Use only publicly reachable business information.
 - Never invent people, companies, emails or phone numbers.
 - Only save a discovered company lead when a valid email, phone or public LinkedIn URL is found.
 - Prefer links exposed by official/event source pages and the linked organisation's own public pages.
+- Add a transparent sales-fit score so the UI can prioritize leads that are easier to contact and more relevant to travel sales.
 """
 import hashlib
 import json
@@ -25,7 +26,27 @@ EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 PHONE_RE = re.compile(r"(?<!\d)(?:\+\d{1,3}[\s().-]*)?(?:\d[\s().-]*){7,14}\d(?!\d)")
 LINKEDIN_RE = re.compile(r"https?://(?:www\.)?linkedin\.com/(?:company|in)/[A-Za-z0-9_./%-]+", re.I)
 GENERIC = ('info@','contact@','hello@','sales@','support@','enquiries@','enquiry@','secretariat@','conference@','marketing@','office@','admin@')
-RELEVANT = ('exhibitor','exhibitors','sponsor','sponsors','partner','partners','speaker','speakers','delegate','delegates','participant','participants','vendor','vendors','team','teams','company','companies','association','federation','buyer','buyers','supplier','suppliers','member','members','startup','startups','media','press')
+RELEVANT = ('exhibitor','exhibitors','sponsor','sponsors','partner','partners','speaker','speakers','delegate','delegates','participant','participants','vendor','vendors','team','teams','company','companies','association','federation','buyer','buyers','supplier','suppliers','member','members','startup','startups','media','press','procurement','operations','admin','human resources','hr','travel desk','corporate travel','business travel')
+ROLE_HINTS = {
+    'sponsor':'Sponsorship / Partnerships',
+    'partner':'Partnerships / Business Development',
+    'exhibitor':'Exhibitor / Stand Enquiries',
+    'delegate':'Delegate / Corporate Travel',
+    'participant':'Participant / Business Travel',
+    'speaker':'Speaker / Executive Travel',
+    'buyer':'Buyer / Procurement',
+    'supplier':'Supplier / Procurement',
+    'procurement':'Procurement / Vendor Management',
+    'human resources':'HR / Staff Travel',
+    'hr ':'HR / Staff Travel',
+    'travel desk':'Travel Desk / Corporate Travel',
+    'corporate travel':'Corporate Travel',
+    'business travel':'Business Travel',
+    'operations':'Operations / Staff Travel',
+    'startup':'Startup / Team Travel',
+    'company':'Business / Corporate Travel',
+    'companies':'Business / Corporate Travel',
+}
 BAD = ('home','about','contact','privacy','cookie','login','register','registration','read more','learn more','view all','menu','facebook','instagram','youtube','linkedin','twitter','x.com','whatsapp','terms','exhibitor list','exhibitors list','sponsor list','sponsors list','partner list','partners list','speaker list','speakers list','delegate list','delegates list','participant list','participants list','vendor list','vendors list','company list','companies list','team list','teams list','member list','members list','buyer list','buyers list','supplier list','suppliers list','directory','directories')
 SOCIAL_HOSTS = ('facebook.com','instagram.com','youtube.com','linkedin.com','twitter.com','x.com','tiktok.com')
 
@@ -48,7 +69,7 @@ class Links(HTMLParser):
             self.href=''; self.text=[]
 
 def fetch(url, timeout=8):
-    req=urllib.request.Request(url,headers={'User-Agent':'Cindrela-Sales-Radar-Public-Lead-Enrichment/1.0'})
+    req=urllib.request.Request(url,headers={'User-Agent':'Cindrela-Sales-Radar-Public-Lead-Enrichment/1.1'})
     with urllib.request.urlopen(req,timeout=timeout) as r:
         raw=r.read(900000)
         return raw.decode(r.headers.get_content_charset() or 'utf-8','ignore')
@@ -63,7 +84,6 @@ def norm(s):
 def phone(s):
     d=re.sub(r'\D','',s)
     if not 8<=len(d)<=15:return ''
-    # Reject obvious years/date ranges and other non-phone numeric labels.
     if re.fullmatch(r'(?:19|20)\d{2}',d) or re.fullmatch(r'(?:19|20)\d{2}(?:19|20)\d{2}',d):return ''
     return re.sub(r'\s+',' ',s).strip(' .,-')
 
@@ -97,7 +117,7 @@ def candidate_pages(base, html):
         if target in seen:continue
         seen.add(target)
         out.append((re.sub(r'\s+',' ',label).strip(),target))
-        if len(out)>=12:break
+        if len(out)>=16:break
     return out
 
 def contact_pages(url):
@@ -105,14 +125,38 @@ def contact_pages(url):
     root=f'{p.scheme}://{p.netloc}'
     return [url,root+'/contact',root+'/contact-us',root+'/about',root+'/team']
 
-def make_record(event, company, source, email='', phone_value='', linkedin='', role='Public Business Contact'):
+def role_from_label(label):
+    low=' '+str(label or '').lower()+' '
+    for needle,role in ROLE_HINTS.items():
+        if needle in low:return role
+    return 'Event-linked Business / Corporate Travel'
+
+def sales_fit_score(label, email, phone_value, linkedin, page_text):
+    low=(str(label or '')+' '+str(page_text or '')).lower()
+    score=20
+    reasons=[]
+    if email:
+        score+=30; reasons.append('business email')
+    if phone_value:
+        score+=30; reasons.append('business phone')
+    if linkedin:
+        score+=10; reasons.append('LinkedIn')
+    if any(k in low for k in ('sponsor','exhibitor','partner','delegate','speaker','buyer','procurement','operations','human resources','travel desk','corporate travel','business travel')):
+        score+=15; reasons.append('travel-relevant role signal')
+    if any(k in low for k in ('company','companies','firm','enterprise','corporate','business','association','federation','startup')):
+        score+=5; reasons.append('business audience signal')
+    return min(score,100), reasons
+
+def make_record(event, company, source, email='', phone_value='', linkedin='', role='Event-linked Business / Corporate Travel', score=0, reasons=None):
     lead_id='auto-'+hashlib.sha1((event+'|'+company+'|'+email+'|'+phone_value+'|'+linkedin+'|'+source).encode()).hexdigest()[:16]
+    reasons=reasons or []
     return {
         'event':event,'company':company,'country':'Nigeria','role':role,'contactPerson':'','contactRole':role,
         'businessEmail':email,'businessPhone':phone_value,'linkedin':linkedin,'source':source,
         'note':'Public business contact discovered from an event-linked organisation page. Verify before outreach.',
         'leadType':'Event-linked public business','contactMethod':'Email + WhatsApp/Phone + LinkedIn',
         'outreachAngle':'Travel support for staff, exhibitors, delegates or business visitors','followUpPlan':'Follow up in 2–3 days',
+        'salesFitScore':score,'salesFitReasons':reasons,'salesReady':score>=65,
         'leadId':lead_id,'lastVerified':date.today().isoformat(),'contactReady':True
     }
 
@@ -131,20 +175,22 @@ def process_event(event):
         except Exception:continue
         urls=[(url,page)]
         for cp in contact_pages(url)[1:4]:
-            if cp!=url:
-                try: urls.append((cp,fetch(cp,timeout=6)))
-                except Exception: pass
-        emails=[];phones=[];links=[];best_source=url
+            try: urls.append((cp,fetch(cp,timeout=6)))
+            except Exception: pass
+        emails=[];phones=[];links=[];best_source=url;best_text=''
         for pu,ph in urls:
             e,p,l=extract(ph)
             emails += e; phones += p; links += l
-            if e or p or l: best_source=pu
+            if e or p or l:
+                best_source=pu
+                best_text=clean(ph)[:25000]
         emails=list(dict.fromkeys(emails)); phones=list(dict.fromkeys(phones)); links=list(dict.fromkeys(links))
         email=next((x for x in emails if x.lower().startswith(GENERIC)), emails[0] if emails else '')
         ph=phones[0] if phones else ''
         li=links[0] if links else ''
         if email or ph or li:
-            records.append(make_record(title,label,best_source,email,ph,li))
+            score,reasons=sales_fit_score(label,email,ph,li,best_text)
+            records.append(make_record(title,label,best_source,email,ph,li,role_from_label(label),score,reasons))
     return records
 
 def main():
@@ -153,20 +199,19 @@ def main():
     existing={key(c) for c in contacts}
     today=date.today(); active=[]
     for e in events:
-        try:
-            end=date.fromisoformat(e.get('end_date') or e.get('start_date'))
+        try:end=date.fromisoformat(e.get('end_date') or e.get('start_date'))
         except Exception:continue
-        if end>=today: active.append(e)
+        if end>=today:active.append(e)
     added=0
     with ThreadPoolExecutor(max_workers=8) as pool:
         futures={pool.submit(process_event,e):e for e in active}
         for fut in as_completed(futures):
-            try: rows=fut.result()
-            except Exception: continue
+            try:rows=fut.result()
+            except Exception:continue
             for c in rows:
                 k=key(c)
                 if k in existing:continue
-                contacts.append(c); existing.add(k); added+=1
+                contacts.append(c);existing.add(k);added+=1
     CONTACTS.write_text(json.dumps(contacts,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     print(f'Public company lead expansion: active_events={len(active)}, added={added}, total={len(contacts)}')
 
