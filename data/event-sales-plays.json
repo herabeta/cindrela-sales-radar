@@ -98,10 +98,10 @@
   "107": [
     "Airports, airlines, aviation executives, regulators and corporate delegates",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "ACI Africa 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "ACI Africa 2026 is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
   ],
   "108": [
     "Construction companies, contractors, developers, suppliers and procurement teams",
@@ -173,7 +173,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Nigeria Mining Week 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Nigeria Mining Week 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "144": [
     "Students, parents, education agents and families planning overseas study",
@@ -181,7 +181,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Abuja International Education Fair 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Abuja International Education Fair 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "143": [
     "Agribusiness companies, farmers, researchers, exhibitors, investors and professional groups",
@@ -202,17 +202,17 @@
   "114": [
     "Energy companies, oil & gas teams, suppliers, executives and exhibitors",
     "Flights + Hotels + Transfers + Corporate Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Nigeria Energy 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "145": [
     "Cybersecurity firms, IT companies, CISOs, government agencies and technical delegates",
     "Flights + Hotels + Transfers + Business Travel + Executive Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "International Cybersecurity Conference 2026 (ICSC) is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "118": [
@@ -346,10 +346,10 @@
   "128": [
     "Nigerian football fans, supporters' groups, sports agencies and delegation planners",
     "Flights + Hotels + Transfers + Group Travel",
-    "Start planning now; identify Nigerian prospects and prepare travel options",
-    "EARLY",
-    "Review every 2–4 weeks until the event enters the active sales window",
-    "FIFA Women’s World Cup 2027 Final Draw is a future opportunity in Brazil / Global; early lead building gives Cindrela more time to qualify and convert travel demand"
+    "Start prospecting now; build the target list and open early conversations",
+    "WARM",
+    "Follow up weekly and update booking status",
+    "FIFA Women’s World Cup 2027 Final Draw is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "151": [
     "Exporters, manufacturers, distributors, international buyers and business delegations",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-11T05:15:12.872629Z",
+    "generated_at": "2026-09-12T05:13:59.775829Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-11",
+    "reference_date": "2026-09-12",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
