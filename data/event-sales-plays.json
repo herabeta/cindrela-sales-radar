@@ -10,10 +10,10 @@
   "102": [
     "Nigerian basketball fans, players' families, clubs and sports delegations",
     "Flights + Hotels + Transfers + Group Travel",
-    "Event is live — contact active prospects and resolve any immediate travel needs",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
     "Follow up today on any active enquiry and close remaining travel requirements",
-    "FIBA Women’s Basketball World Cup 2026 is currently underway in Berlin, Germany; focus on immediate and remaining travel requirements"
+    "FIBA Women’s Basketball World Cup 2026 ends today in Berlin, Germany; remaining travel enquiries should be handled immediately"
   ],
   "103": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
@@ -58,18 +58,18 @@
   "110": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Event is live — contact active prospects and resolve any immediate travel needs",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
     "Follow up today on any active enquiry and close remaining travel requirements",
-    "Madrid Grand Prix 2026 is currently underway in Madrid, Spain; focus on immediate and remaining travel requirements"
+    "Madrid Grand Prix 2026 ends today in Madrid, Spain; remaining travel enquiries should be handled immediately"
   ],
   "138": [
     "Travel agencies, tour operators, destination managers, airlines and tourism buyers",
     "Flights + Hotels + Transfers + Business Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Event is live — contact active prospects and resolve any immediate travel needs",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Akwaaba African Travel Market 2026 is within one week in Lagos, Nigeria; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "Akwaaba African Travel Market 2026 is currently underway in Lagos, Nigeria; focus on immediate and remaining travel requirements"
   ],
   "129": [
     "Nigerian families, diaspora visitors, leisure travellers and domestic holiday groups",
@@ -354,10 +354,10 @@
   "151": [
     "Exporters, manufacturers, distributors, international buyers and business delegations",
     "Flights + Hotels + Transfers + Business Travel + Group Booking",
-    "Start planning now; identify Nigerian prospects and prepare travel options",
-    "EARLY",
-    "Review every 2–4 weeks until the event enters the active sales window",
-    "Made-in-Nigeria Export Exhibition 2026 is a future opportunity in Abuja, Nigeria; early lead building gives Cindrela more time to qualify and convert travel demand"
+    "Start prospecting now; build the target list and open early conversations",
+    "WARM",
+    "Follow up weekly and update booking status",
+    "Made-in-Nigeria Export Exhibition 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "152": [
     "Families, diaspora visitors, carnival fans, entertainment groups and Lagos leisure travellers",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-12T05:13:59.775829Z",
+    "generated_at": "2026-09-13T05:14:26.032527Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-12",
+    "reference_date": "2026-09-13",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
