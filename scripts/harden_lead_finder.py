@@ -39,5 +39,10 @@ if new_contact not in s:
 if 'contactKey=' not in s or new_contact not in s:
     raise SystemExit('Lead Finder hardening verification failed; refusing to modify file.')
 
+# Keep the workflow's structural marker synchronized with the actual hardening patch.
+marker='<!-- lead-finder-hardening: contactKey= -->'
+if marker not in s:
+    s=marker+s
+
 PAGE.write_text(s,encoding='utf-8')
 print('Lead Finder hardening applied/verified: multiple contacts preserved and contact routes validated.')
