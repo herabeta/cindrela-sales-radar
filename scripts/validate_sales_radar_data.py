@@ -1,3 +1,4 @@
+# Sales Radar validation: keep this check deterministic and fail closed on bad master data.
 import glob, json, re, sys
 from datetime import date, datetime
 
