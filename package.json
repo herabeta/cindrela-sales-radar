@@ -1,0 +1,9 @@
+{
+  "name": "cindrela-sales-radar",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Cindrela Sales Radar",
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2"
+  }
+}
