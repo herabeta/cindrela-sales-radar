@@ -1,4 +1,14 @@
 {
+  "rewrites": [
+    {
+      "source": "/data/opportunities.json",
+      "destination": "/api/opportunities?active=false&legacy=true"
+    },
+    {
+      "source": "/data/daily-intelligence.json",
+      "destination": "/api/intelligence"
+    }
+  ],
   "headers": [
     {
       "source": "/data/(.*)\\.json",
