@@ -66,10 +66,10 @@
   "138": [
     "Travel agencies, tour operators, destination managers, airlines and tourism buyers",
     "Flights + Hotels + Transfers + Business Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Akwaaba African Travel Market 2026 ends today in Lagos, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Akwaaba African Travel Market 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "129": [
     "Nigerian families, diaspora visitors, leisure travellers and domestic holiday groups",
@@ -82,18 +82,18 @@
   "139": [
     "Manufacturers, exporters, procurement teams, industrial executives and exhibitors",
     "Flights + Hotels + Transfers + Business Travel + Group Booking",
-    "Event is live — contact active prospects and resolve any immediate travel needs",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
     "Follow up today on any active enquiry and close remaining travel requirements",
-    "Nigeria Industries & Manufacturing Summit 2026 is currently underway in Abuja, Nigeria; focus on immediate and remaining travel requirements"
+    "Nigeria Industries & Manufacturing Summit 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
   ],
   "106": [
     "Agribusiness companies, farmers, exhibitors, suppliers and technical delegates",
     "Flights + Hotels + Transfers + Group Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Africa FARMTECH Expo Western Africa 2026 ends today in Lagos, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Africa FARMTECH Expo Western Africa 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "107": [
     "Airports, airlines, aviation executives, regulators and corporate delegates",
@@ -114,18 +114,18 @@
   "140": [
     "Agribusiness owners, exporters, food companies, exhibitors and corporate buyers",
     "Flights + Hotels + Transfers + Business Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "LCCI Annual Agro-Allied Symposium & Exhibition 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "LCCI Annual Agro-Allied Symposium & Exhibition 2026 is within one week in Lagos, Nigeria; remaining travel enquiries are time-sensitive"
   ],
   "141": [
     "Plant scientists, universities, researchers, agribusiness firms and academic delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "Nigeria Plant Breeders Association International Conference 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "Nigeria Plant Breeders Association International Conference 2026 is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
   ],
   "111": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
@@ -226,9 +226,9 @@
   "115": [
     "Nigerian athletes, parents, coaches, supporters and sports delegations",
     "Flights + Hotels + Transfers + Group Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Dakar 2026 Youth Olympic Games is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "123": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-15T05:16:07.930410Z",
+    "generated_at": "2026-09-16T05:14:54.021541Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-15",
+    "reference_date": "2026-09-16",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
