@@ -18,12 +18,25 @@ module.exports = function handler(req, res) {
     );
 
     const activeOnly = String(req.query?.active ?? 'true').toLowerCase() !== 'false';
+    const event = String(req.query?.event || '').trim();
     const q = String(req.query?.q || '').trim().toLowerCase();
-    let data = activeOnly ? contacts.filter((x) => activeEvents.has(String(x.event || '').trim())) : contacts;
+
+    let data = activeOnly
+      ? contacts.filter((x) => activeEvents.has(String(x.event || '').trim()))
+      : contacts;
+
+    // Event filtering happens on the server so the browser never has to
+    // download the complete lead database just to show one event.
+    if (event) {
+      const eventKey = event.toLowerCase();
+      data = data.filter((x) => String(x.event || '').trim().toLowerCase() === eventKey);
+    }
 
     if (q) {
-      data = data.filter((x) => [x.event, x.company, x.country, x.role, x.contactPerson, x.businessEmail, x.businessPhone, x.linkedin]
-        .some((v) => String(v || '').toLowerCase().includes(q)));
+      data = data.filter((x) => [
+        x.event, x.company, x.country, x.role, x.contactPerson,
+        x.businessEmail, x.businessPhone, x.linkedin
+      ].some((v) => String(v || '').toLowerCase().includes(q)));
     }
 
     const limit = Math.min(Math.max(Number(req.query?.limit) || 100, 1), 500);
@@ -35,6 +48,7 @@ module.exports = function handler(req, res) {
     res.setHeader('Content-Type', 'application/json; charset=utf-8');
     return res.status(200).json({ data: paged, total: data.length, page, limit });
   } catch (error) {
+    console.error('public-lead-contacts:', error);
     return res.status(500).json({ error: 'Unable to load public lead contacts' });
   }
 };
