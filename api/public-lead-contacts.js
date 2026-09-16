@@ -5,7 +5,7 @@ function read(name) {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', name), 'utf8'));
 }
 
-const genericCompany = /^(media partners?|speakers?|why sponsor|sponsors?|exhibitors?|delegates?|visitors?|attendees?|organisers?|organizers?|partners?|contact us|about us|registration|sales|marketing|head office|general enquiries?|general inquiries?)$/i;
+const genericCompany = /^(media partners?|speakers?|why sponsor|sponsors?|exhibitors?|delegates?|visitors?|attendees?|organisers?|organizers?|partners?|contact us|about us|registration|sales|marketing|head office|general enquiries?|general inquiries?|event organiser listings|event organizer listings|public business contact|event contact desk)$/i;
 
 function validEmail(value) {
   const email = String(value || '').trim();
@@ -28,6 +28,10 @@ function validPhone(value) {
   if (/^\d{1,3}\s+\d{1,3}\s+0{5,}\d+$/.test(phone)) return false;
   if (/(19|20)\d{2}[-/.](0?[1-9]|1[0-2])[-/.](0?[1-9]|[12]\d|3[01])/.test(phone)) return false;
   if (/(19|20)\d{2}\s*[-–]\s*(19|20)\d{2}/.test(phone)) return false;
+  // Reject dates, event timings and coordinate-like extraction artifacts.
+  if (/\b(19|20)\d{2}\b/.test(phone)) return false;
+  if (/\b\d{1,2}:\d{2}\b/.test(phone)) return false;
+  if (/\b\d{1,2}\s*[-–]\s*\d{1,2}\b/.test(phone) && digits.length < 9) return false;
   return true;
 }
 
@@ -40,9 +44,12 @@ function usableLead(x) {
   const emailOk = validEmail(x.businessEmail);
   const phoneOk = validPhone(x.businessPhone);
   const linkedinOk = validLinkedIn(x.linkedin);
+  const sourceOk = /^https?:\/\//i.test(String(x.source || '').trim());
+  const verifiedOk = /^\d{4}-\d{2}-\d{2}$/.test(String(x.lastVerified || '').trim());
+
   if (!company || genericCompany.test(company)) return false;
-  // A sales card must have a usable public business email or phone.
-  // LinkedIn alone is not enough for the main contact card.
+  if (!sourceOk || !verifiedOk) return false;
+  if (x.salesReady === false) return false;
   if (!emailOk && !phoneOk) return false;
   if (!emailOk && !phoneOk && !linkedinOk) return false;
   return true;
@@ -76,7 +83,7 @@ module.exports = function handler(req, res) {
       ? contacts.filter((x) => activeEvents.has(String(x.event || '').trim()))
       : contacts;
 
-    // Only expose contact records that look like real public business leads.
+    // Only expose source-backed, recently verified public business contacts.
     data = data.filter(usableLead);
 
     // One public email/phone = one lead card, even when the same contact
