@@ -5,6 +5,57 @@ function read(name) {
   return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', name), 'utf8'));
 }
 
+const genericCompany = /^(media partners?|speakers?|why sponsor|sponsors?|exhibitors?|delegates?|visitors?|attendees?|organisers?|organizers?|partners?|contact us|about us|registration|sales|marketing|head office|general enquiries?|general inquiries?)$/i;
+
+function validEmail(value) {
+  const email = String(value || '').trim();
+  if (!email || /[<>]/.test(email)) return false;
+  const parts = email.split('@');
+  if (parts.length !== 2) return false;
+  const [local, domain] = parts;
+  if (!local || !domain || /^(example|test|domain|localhost)$/i.test(domain)) return false;
+  if (!/^[A-Za-z0-9][A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]*[A-Za-z0-9]$/.test(local)) return false;
+  const labels = domain.split('.');
+  return labels.length >= 2 && labels.every((x) => /^[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?$/.test(x)) && /^[A-Za-z]{2,24}$/.test(labels.at(-1) || '');
+}
+
+function validPhone(value) {
+  const phone = String(value || '').trim();
+  const digits = phone.replace(/\D/g, '');
+  if (digits.length < 8 || digits.length > 15) return false;
+  if (/^([0-9])\1{6,}$/.test(digits)) return false;
+  if (/(?:\d+\.\d+\s+){2,}\d+\.\d+/.test(phone)) return false;
+  if (/^\d{1,3}\s+\d{1,3}\s+0{5,}\d+$/.test(phone)) return false;
+  if (/(19|20)\d{2}[-/.](0?[1-9]|1[0-2])[-/.](0?[1-9]|[12]\d|3[01])/.test(phone)) return false;
+  if (/(19|20)\d{2}\s*[-–]\s*(19|20)\d{2}/.test(phone)) return false;
+  return true;
+}
+
+function validLinkedIn(value) {
+  return /^https?:\/\/(?:www\.)?linkedin\.com\/(?:company|in)\/[A-Za-z0-9_./%-]+/i.test(String(value || '').trim());
+}
+
+function usableLead(x) {
+  const company = String(x.company || '').trim();
+  const emailOk = validEmail(x.businessEmail);
+  const phoneOk = validPhone(x.businessPhone);
+  const linkedinOk = validLinkedIn(x.linkedin);
+  if (!company || genericCompany.test(company)) return false;
+  // A sales card must have a usable public business email or phone.
+  // LinkedIn alone is not enough for the main contact card.
+  if (!emailOk && !phoneOk) return false;
+  if (!emailOk && !phoneOk && !linkedinOk) return false;
+  return true;
+}
+
+function contactKey(x) {
+  const email = String(x.businessEmail || '').trim().toLowerCase();
+  if (validEmail(email)) return `email:${email}`;
+  const phone = String(x.businessPhone || '').replace(/\D/g, '');
+  if (validPhone(x.businessPhone)) return `phone:${phone}`;
+  return `lead:${String(x.company || '').trim().toLowerCase()}|${String(x.event || '').trim().toLowerCase()}`;
+}
+
 module.exports = function handler(req, res) {
   try {
     const contacts = read('public-lead-contacts.json');
@@ -25,8 +76,19 @@ module.exports = function handler(req, res) {
       ? contacts.filter((x) => activeEvents.has(String(x.event || '').trim()))
       : contacts;
 
-    // Event filtering happens on the server so the browser never has to
-    // download the complete lead database just to show one event.
+    // Only expose contact records that look like real public business leads.
+    data = data.filter(usableLead);
+
+    // One public email/phone = one lead card, even when the same contact
+    // appears under multiple event roles such as Speakers / Sponsors.
+    const seen = new Set();
+    data = data.filter((x) => {
+      const key = contactKey(x);
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+
     if (event) {
       const eventKey = event.toLowerCase();
       data = data.filter((x) => String(x.event || '').trim().toLowerCase() === eventKey);
