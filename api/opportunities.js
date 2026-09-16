@@ -22,15 +22,13 @@ function cache(res) {
 module.exports = async function handler(req, res) {
   try {
     const activeOnly = String(req.query?.active ?? 'false').toLowerCase() === 'true';
+    const legacy = String(req.query?.legacy ?? 'false').toLowerCase() === 'true';
     const sql = getDb();
 
     if (sql) {
-      const rows = await sql`
-        SELECT id, event_key, title, start_date, end_date, country, city, venue, category, source_url, raw_data
-        FROM events
-        ${activeOnly ? sql`WHERE COALESCE(end_date, start_date) >= CURRENT_DATE` : sql``}
-        ORDER BY start_date ASC NULLS LAST, title ASC
-      `;
+      const rows = activeOnly
+        ? await sql`SELECT id,event_key,title,start_date,end_date,country,city,venue,category,source_url,raw_data FROM events WHERE COALESCE(end_date,start_date) >= CURRENT_DATE ORDER BY start_date ASC NULLS LAST,title ASC`
+        : await sql`SELECT id,event_key,title,start_date,end_date,country,city,venue,category,source_url,raw_data FROM events ORDER BY start_date ASC NULLS LAST,title ASC`;
       if (rows.length) {
         const data = rows.map((r) => ({
           ...(r.raw_data || {}),
@@ -41,18 +39,19 @@ module.exports = async function handler(req, res) {
           country: r.country ?? r.raw_data?.country,
           city: r.city ?? r.raw_data?.city,
           venue: r.venue ?? r.raw_data?.venue,
-          group: r.category ?? r.raw_data?.group,
+          category: r.category ?? r.raw_data?.category,
+          group: r.raw_data?.group ?? r.category ?? r.raw_data?.group,
           url: r.source_url ?? r.raw_data?.url
         }));
         cache(res);
-        return res.status(200).json({ data, total: data.length, source: 'database' });
+        return res.status(200).json(legacy ? data : { data, total: data.length, source: 'database' });
       }
     }
 
     const data = readJson('opportunities.json');
     const opportunities = activeOnly ? data.filter(isActive) : data;
     cache(res);
-    return res.status(200).json({ data: opportunities, total: opportunities.length, source: 'json-fallback' });
+    return res.status(200).json(legacy ? opportunities : { data: opportunities, total: opportunities.length, source: 'json-fallback' });
   } catch (error) {
     console.error('opportunities API', error);
     return res.status(500).json({ error: 'Unable to load opportunities' });
