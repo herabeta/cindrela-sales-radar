@@ -1,0 +1,33 @@
+name: Update sales outreach message
+on:
+  push:
+    paths:
+      - .github/workflows/update-sales-outreach.yml
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replace outreach message
+        run: |
+          python - <<'PY2'
+          from pathlib import Path
+          import re
+          path = Path('lead-finder.html')
+          text = path.read_text(encoding='utf-8')
+          new = """outreachText=(x,kind)=>{const body=`Hello Sir/Ma’am,\\n\\nI’m Devanshu from Cinderella Travels, Abuja. I’m reaching out to introduce our B2B travel support services and explore how we can assist your agency with your clients’ travel requirements.\\n\\nWith our international network and strong airline partnerships, we can support you with:\\n\\n✅ Competitive International & Domestic Airfares\\n✅ SOTO / SITO / IT & Special Fares\\n✅ Complex & Last-Minute Itineraries\\n✅ Visa Assistance & Travel Services\\n✅ Hotel Booking & Airport Transfers\\n✅ Quick Support for Changes, Refunds & Reissues\\n✅ Dedicated B2B Support for Travel Agencies\\n\\nWhether you have a difficult itinerary, urgent ticketing requirement, special fare request, or visa/travel service, simply share the requirement with us — we’ll work on the best available option for you. 🤝\\n\\n📞 Contact: +234 9111881673\\n\\nLet’s connect and build a strong B2B partnership. 🤝🌍\\n\\nCinderella Travels — You Travel. We Handle the Rest. ✈️`;return body},mailHref="""
+          updated, count = re.subn(r'outreachText=\(x,kind\)=>\{.*?\},mailHref=', new, text, count=1, flags=re.S)
+          if count != 1:
+              raise SystemExit('outreachText block not found')
+          path.write_text(updated, encoding='utf-8')
+          PY2
+      - name: Commit update
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add lead-finder.html
+          git diff --cached --quiet && exit 0
+          git commit -m 'Update B2B WhatsApp and email outreach message'
+          git push
