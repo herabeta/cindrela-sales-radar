@@ -1,0 +1,58 @@
+name: Add Visa Events Navigation
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  add-nav:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add Visa Events link to site navigation
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          files = [
+              'index.html',
+              'lead-finder.html',
+              'sales-pipeline.html',
+              'intelligence.html',
+              'event-calendar-full.html',
+              'event-calendar.html',
+          ]
+          link = '<a href="/visa-destination-events.html">🌍&nbsp; Visa Events</a>'
+          changed = []
+          for name in files:
+              p = Path(name)
+              if not p.exists():
+                  continue
+              s = p.read_text(encoding='utf-8')
+              if '/visa-destination-events.html' in s:
+                  continue
+              marker = '</nav>'
+              if marker not in s:
+                  continue
+              s2 = s.replace(marker, link + marker, 1)
+              if s2 != s:
+                  p.write_text(s2, encoding='utf-8')
+                  changed.append(name)
+          print('Updated:', ', '.join(changed) if changed else 'none')
+          PY
+      - name: Commit navigation changes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html lead-finder.html sales-pipeline.html intelligence.html event-calendar-full.html event-calendar.html
+          if git diff --cached --quiet; then
+            echo "No navigation changes needed."
+            exit 0
+          fi
+          git commit -m "feat: add Visa Events to site navigation"
+          git push
