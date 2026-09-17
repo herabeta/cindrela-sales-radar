@@ -82,10 +82,10 @@
   "139": [
     "Manufacturers, exporters, procurement teams, industrial executives and exhibitors",
     "Flights + Hotels + Transfers + Business Travel + Group Booking",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Nigeria Industries & Manufacturing Summit 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Nigeria Industries & Manufacturing Summit 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "106": [
     "Agribusiness companies, farmers, exhibitors, suppliers and technical delegates",
@@ -130,18 +130,18 @@
   "111": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "Azerbaijan Grand Prix 2026 is within 30 days in Baku, Azerbaijan; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "Azerbaijan Grand Prix 2026 is within one week in Baku, Azerbaijan; remaining travel enquiries are time-sensitive"
   ],
   "142": [
     "Airlines, airports, aviation regulators, executives, suppliers and aviation professionals",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "Nigeria Aviation Forum 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "Nigeria Aviation Forum 2026 is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
   ],
   "109": [
     "Abuja exhibitors, corporate teams, SMEs, government-linked buyers and visiting traders",
@@ -482,7 +482,7 @@
   "163": [
     "Nigerian travel agencies, tourism boards, hotel groups, destination marketers and senior travel executives",
     "Flights + Hotels + Transfers + Business Travel + Group Booking",
-    "Early planning stage; build the target list and monitor for confirmed travel intent",
+    "Start planning now; identify Nigerian prospects and prepare travel options",
     "EARLY",
     "Review every 2–4 weeks until the event enters the active sales window",
     "ITB Berlin 2027 is a future opportunity in Berlin, Germany; early lead building gives Cindrela more time to qualify and convert travel demand"
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-16T05:14:54.021541Z",
+    "generated_at": "2026-09-17T05:16:30.074032Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-16",
+    "reference_date": "2026-09-17",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
