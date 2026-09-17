@@ -28,7 +28,6 @@ function validPhone(value) {
   if (/^\d{1,3}\s+\d{1,3}\s+0{5,}\d+$/.test(phone)) return false;
   if (/(19|20)\d{2}[-/.](0?[1-9]|1[0-2])[-/.](0?[1-9]|[12]\d|3[01])/.test(phone)) return false;
   if (/(19|20)\d{2}\s*[-–]\s*(19|20)\d{2}/.test(phone)) return false;
-  // Reject dates, event timings and coordinate-like extraction artifacts.
   if (/\b(19|20)\d{2}\b/.test(phone)) return false;
   if (/\b\d{1,2}:\d{2}\b/.test(phone)) return false;
   if (/\b\d{1,2}\s*[-–]\s*\d{1,2}\b/.test(phone) && digits.length < 9) return false;
@@ -63,6 +62,10 @@ function contactKey(x) {
   return `lead:${String(x.company || '').trim().toLowerCase()}|${String(x.event || '').trim().toLowerCase()}`;
 }
 
+function eventKey(value) {
+  return String(value || '').trim().toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
 module.exports = function handler(req, res) {
   try {
     const contacts = read('public-lead-contacts.json');
@@ -79,15 +82,18 @@ module.exports = function handler(req, res) {
     const event = String(req.query?.event || '').trim();
     const q = String(req.query?.q || '').trim().toLowerCase();
 
-    let data = activeOnly
-      ? contacts.filter((x) => activeEvents.has(String(x.event || '').trim()))
-      : contacts;
+    // If an exact event is requested (including a Visa Events record), use that
+    // event directly instead of requiring it to exist in opportunities.json.
+    // This keeps Visa Events lead lookup independent from the main event DB.
+    let data = event
+      ? contacts.filter((x) => eventKey(x.event) === eventKey(event))
+      : (activeOnly ? contacts.filter((x) => activeEvents.has(String(x.event || '').trim())) : contacts);
 
     // Only expose source-backed, recently verified public business contacts.
     data = data.filter(usableLead);
 
     // One public email/phone = one lead card, even when the same contact
-    // appears under multiple event roles such as Speakers / Sponsors.
+    // appears under multiple event roles.
     const seen = new Set();
     data = data.filter((x) => {
       const key = contactKey(x);
@@ -95,11 +101,6 @@ module.exports = function handler(req, res) {
       seen.add(key);
       return true;
     });
-
-    if (event) {
-      const eventKey = event.toLowerCase();
-      data = data.filter((x) => String(x.event || '').trim().toLowerCase() === eventKey);
-    }
 
     if (q) {
       data = data.filter((x) => [
