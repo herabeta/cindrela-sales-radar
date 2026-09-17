@@ -49,6 +49,9 @@ function usableLead(x) {
   if (!company || genericCompany.test(company)) return false;
   if (!sourceOk || !verifiedOk) return false;
   if (x.salesReady === false) return false;
+  // Event-specific public intent signals are allowed without contact details.
+  // They are clearly marked as VERIFY and are never presented as verified contacts.
+  if (x.intentSignal === true) return true;
   if (!emailOk && !phoneOk) return false;
   if (!emailOk && !phoneOk && !linkedinOk) return false;
   return true;
@@ -59,6 +62,7 @@ function contactKey(x) {
   if (validEmail(email)) return `email:${email}`;
   const phone = String(x.businessPhone || '').replace(/\D/g, '');
   if (validPhone(x.businessPhone)) return `phone:${phone}`;
+  if (x.intentSignal) return `intent:${String(x.source || '').toLowerCase()}|${String(x.role || '').toLowerCase()}|${String(x.event || '').toLowerCase()}`;
   return `lead:${String(x.company || '').trim().toLowerCase()}|${String(x.event || '').trim().toLowerCase()}`;
 }
 
@@ -66,7 +70,85 @@ function eventKey(value) {
   return String(value || '').trim().toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
-module.exports = function handler(req, res) {
+function decode(s='') {
+  return s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&#39;/g, "'").replace(/&quot;/g, '"');
+}
+
+function xmlTag(block, name) {
+  const m = block.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)</${name}>`, 'i'));
+  return m ? decode(m[1]).trim() : '';
+}
+
+function stripHtml(s='') {
+  return s.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+const INTENT_WORDS = [
+  'travel', 'flight', 'hotel', 'accommodation', 'visa', 'tickets', 'hospitality',
+  'package', 'trip', 'tour', 'attend', 'attendees', 'delegation', 'business travel',
+  'conference', 'exhibition', 'grand prix', 'motogp', 'formula 1', 'event'
+];
+
+function intentScore(title, description) {
+  const text = `${title} ${description}`.toLowerCase();
+  return INTENT_WORDS.reduce((score, word) => score + (text.includes(word) ? 1 : 0), 0);
+}
+
+async function publicIntentSignals(event) {
+  if (!event) return [];
+  const queries = [
+    `"${event}" Nigeria travel hotel flight visa`,
+    `"${event}" Nigeria attendees delegates travel`,
+    `"${event}" hotel accommodation travel package`
+  ];
+  const results = [];
+  const seen = new Set();
+
+  for (const query of queries) {
+    try {
+      const url = 'https://news.google.com/rss/search?q=' + encodeURIComponent(query) + '&hl=en-NG&gl=NG&ceid=NG:en';
+      const response = await fetch(url, { headers: { 'user-agent': 'Cindrela-Sales-Radar/1.0' } });
+      if (!response.ok) continue;
+      const xml = await response.text();
+      for (const block of xml.match(/<item>[\s\S]*?<\/item>/gi) || []) {
+        const title = xmlTag(block, 'title');
+        const link = xmlTag(block, 'link');
+        const source = xmlTag(block, 'source') || 'Public Web';
+        const pubDate = xmlTag(block, 'pubDate');
+        const description = stripHtml(xmlTag(block, 'description'));
+        if (!title || !link) continue;
+        const key = link.split('?')[0];
+        if (seen.has(key)) continue;
+        seen.add(key);
+        const score = intentScore(title, description);
+        if (score < 2) continue;
+        results.push({
+          company: source,
+          role: `PUBLIC INTENT • ${title.slice(0, 85)}`,
+          contactPerson: '',
+          businessEmail: '',
+          businessPhone: '',
+          linkedin: '',
+          country: 'Nigeria / Public Web',
+          event,
+          source: link,
+          lastVerified: new Date().toISOString().slice(0, 10),
+          salesReady: true,
+          intentSignal: true,
+          intentScore: Math.min(100, score * 12),
+          intentPublishedAt: pubDate,
+          intentReason: 'Public web content related to this event and travel demand. Verify the business/person before outreach.'
+        });
+      }
+    } catch (error) {
+      console.error('public intent query failed:', error.message);
+    }
+  }
+
+  return results.sort((a, b) => (b.intentScore || 0) - (a.intentScore || 0)).slice(0, 20);
+}
+
+module.exports = async function handler(req, res) {
   try {
     const contacts = read('public-lead-contacts.json');
     const opportunities = read('opportunities.json');
@@ -82,18 +164,18 @@ module.exports = function handler(req, res) {
     const event = String(req.query?.event || '').trim();
     const q = String(req.query?.q || '').trim().toLowerCase();
 
-    // If an exact event is requested (including a Visa Events record), use that
-    // event directly instead of requiring it to exist in opportunities.json.
-    // This keeps Visa Events lead lookup independent from the main event DB.
     let data = event
       ? contacts.filter((x) => eventKey(x.event) === eventKey(event))
       : (activeOnly ? contacts.filter((x) => activeEvents.has(String(x.event || '').trim())) : contacts);
 
-    // Only expose source-backed, recently verified public business contacts.
     data = data.filter(usableLead);
 
-    // One public email/phone = one lead card, even when the same contact
-    // appears under multiple event roles.
+    // The event-specific intent scan happens only when a user clicks Find Leads
+    // for a particular card. It is never run for every card during page load.
+    let intent = [];
+    if (event) intent = await publicIntentSignals(event);
+    data = [...data, ...intent];
+
     const seen = new Set();
     data = data.filter((x) => {
       const key = contactKey(x);
@@ -116,7 +198,14 @@ module.exports = function handler(req, res) {
 
     res.setHeader('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=86400');
     res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    return res.status(200).json({ data: paged, total: data.length, page, limit });
+    return res.status(200).json({
+      data: paged,
+      total: data.length,
+      page,
+      limit,
+      intentScanned: Boolean(event),
+      intentCount: intent.length
+    });
   } catch (error) {
     console.error('public-lead-contacts:', error);
     return res.status(500).json({ error: 'Unable to load public lead contacts' });
