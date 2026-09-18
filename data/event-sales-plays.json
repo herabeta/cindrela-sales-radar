@@ -146,10 +146,10 @@
   "109": [
     "Abuja exhibitors, corporate teams, SMEs, government-linked buyers and visiting traders",
     "Hotels + Transfers + Corporate Travel + Group Booking",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "21st Abuja International Trade Fair is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "21st Abuja International Trade Fair is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
   ],
   "112": [
     "Nigerian betting/gaming executives, operators, founders and industry delegates",
@@ -162,9 +162,9 @@
   "116": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "Singapore Grand Prix 2026 is within 30 days in Singapore; flight, hotel and transfer decisions should be moving now"
   ],
   "113": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-17T05:16:30.074032Z",
+    "generated_at": "2026-09-18T05:14:23.601397Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-17",
+    "reference_date": "2026-09-18",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
