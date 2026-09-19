@@ -98,10 +98,10 @@
   "107": [
     "Airports, airlines, aviation executives, regulators and corporate delegates",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "ACI Africa 2026 is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "ACI Africa 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
   ],
   "108": [
     "Construction companies, contractors, developers, suppliers and procurement teams",
@@ -189,7 +189,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "60th Agricultural Society of Nigeria Conference 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "60th Agricultural Society of Nigeria Conference 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "117": [
     "Nigerian F1 fans, premium travellers, corporate guests and motorsport groups",
@@ -370,10 +370,10 @@
   "130": [
     "Diaspora visitors, families, music fans, entertainment groups and leisure travellers",
     "Flights + Hotels + Airport Transfers + Holiday Packages + Event Travel",
-    "Start planning now; identify Nigerian prospects and prepare travel options",
-    "EARLY",
-    "Review every 2–4 weeks until the event enters the active sales window",
-    "Detty December 2026 is a future opportunity in Lagos, Nigeria; early lead building gives Cindrela more time to qualify and convert travel demand"
+    "Start prospecting now; build the target list and open early conversations",
+    "WARM",
+    "Follow up weekly and update booking status",
+    "Detty December 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "131": [
     "Families, diaspora visitors, holiday groups and New Year leisure travellers",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-18T05:14:23.601397Z",
+    "generated_at": "2026-09-19T05:13:45.836349Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-18",
+    "reference_date": "2026-09-19",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
