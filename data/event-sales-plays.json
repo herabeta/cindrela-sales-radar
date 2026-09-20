@@ -98,10 +98,10 @@
   "107": [
     "Airports, airlines, aviation executives, regulators and corporate delegates",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "ACI Africa 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "ACI Africa 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "108": [
     "Construction companies, contractors, developers, suppliers and procurement teams",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-19T05:13:45.836349Z",
+    "generated_at": "2026-09-20T05:14:41.458627Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-19",
+    "reference_date": "2026-09-20",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
