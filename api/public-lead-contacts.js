@@ -90,9 +90,28 @@ const INTENT_WORDS = [
   'conference', 'exhibition', 'grand prix', 'motogp', 'formula 1', 'event'
 ];
 
-function intentScore(title, description) {
+function intentScore(title, description, event) {
   const text = `${title} ${description}`.toLowerCase();
-  return INTENT_WORDS.reduce((score, word) => score + (text.includes(word) ? 1 : 0), 0);
+  const eventText = String(event || '').toLowerCase();
+  const demandWords = ['travel', 'flight', 'hotel', 'accommodation', 'visa', 'tickets', 'hospitality', 'package', 'trip', 'tour', 'attend', 'attendees', 'delegation', 'business travel', 'travel agency'];
+  const geographyWords = ['nigeria', 'nigerian', 'abuja', 'lagos', 'port harcourt', 'ibadan', 'kano', 'enugu'];
+  const intentWords = ['booking', 'book', 'package', 'arranging', 'arrange', 'delegation', 'delegates', 'attendees', 'travelling', 'traveling', 'from nigeria', 'nigerian company', 'nigerian business', 'staff', 'employees', 'clients'];
+  const eventTokens = eventText.split(/[^a-z0-9]+/).filter(x => x.length >= 4);
+  const eventHits = eventTokens.filter(token => text.includes(token)).length;
+  const demandHits = demandWords.filter(word => text.includes(word)).length;
+  const geographyHits = geographyWords.filter(word => text.includes(word)).length;
+  const intentHits = intentWords.filter(word => text.includes(word)).length;
+  return { score: demandHits + intentHits + geographyHits + Math.min(eventHits, 3), eventHits, demandHits, geographyHits, intentHits };
+}
+
+function strongPublicIntent(title, description, event) {
+  const s = intentScore(title, description, event);
+  // A public article is a lead signal only when it is clearly about the exact
+  // event, shows travel demand, and has a Nigeria/business-travel connection.
+  if (s.eventHits < 1) return false;
+  if (s.demandHits < 1) return false;
+  if (s.geographyHits < 1 && s.intentHits < 2) return false;
+  return s.score >= 4;
 }
 
 async function publicIntentSignals(event) {
@@ -117,8 +136,8 @@ async function publicIntentSignals(event) {
         const key = link.split('?')[0];
         if (seen.has(key)) continue;
         seen.add(key);
-        const score = intentScore(title, description);
-        if (score < 2) continue;
+        const scoring = intentScore(title, description, event);
+        if (!strongPublicIntent(title, description, event)) continue;
         results.push({
           company: source,
           role: `PUBLIC INTENT • ${title.slice(0, 85)}`,
@@ -132,7 +151,7 @@ async function publicIntentSignals(event) {
           lastVerified: new Date().toISOString().slice(0, 10),
           salesReady: true,
           intentSignal: true,
-          intentScore: Math.min(100, score * 12),
+          intentScore: Math.min(100, scoring.score * 15),
           intentPublishedAt: pubDate,
           intentReason: 'Public web content related to this event and travel demand. Verify the business/person before outreach.'
         });
