@@ -91,77 +91,111 @@ const INTENT_WORDS = [
 ];
 
 function intentScore(title, description, event) {
-  const text = `${title} ${description}`.toLowerCase();
+  const text = String(title || '') + ' ' + String(description || '');
   const eventText = String(event || '').toLowerCase();
-  const demandWords = ['travel', 'flight', 'hotel', 'accommodation', 'visa', 'tickets', 'hospitality', 'package', 'trip', 'tour', 'attend', 'attendees', 'delegation', 'business travel', 'travel agency'];
+  const demandWords = ['travel', 'flight', 'hotel', 'accommodation', 'visa', 'tickets', 'hospitality', 'package', 'trip', 'tour', 'attend', 'attending', 'delegation', 'business travel', 'travel agency'];
   const geographyWords = ['nigeria', 'nigerian', 'abuja', 'lagos', 'port harcourt', 'ibadan', 'kano', 'enugu'];
-  const intentWords = ['booking', 'book', 'package', 'arranging', 'arrange', 'delegation', 'delegates', 'attendees', 'travelling', 'traveling', 'from nigeria', 'nigerian company', 'nigerian business', 'staff', 'employees', 'clients'];
+  const intentWords = ['i am going', 'i’m going', 'im going', 'planning to attend', 'plan to attend', 'planning to go', 'going to', 'travelling to', 'traveling to', 'looking for', 'need a hotel', 'need hotel', 'need a flight', 'need flight', 'need accommodation', 'booking a hotel', 'book a hotel', 'book flight', 'looking for tickets', 'who is going', 'anyone going', 'anyone attending', 'attending the', 'will attend', 'want to attend', 'want to go'];
+  const lower = text.toLowerCase();
   const eventTokens = eventText.split(/[^a-z0-9]+/).filter(x => x.length >= 4);
-  const eventHits = eventTokens.filter(token => text.includes(token)).length;
-  const demandHits = demandWords.filter(word => text.includes(word)).length;
-  const geographyHits = geographyWords.filter(word => text.includes(word)).length;
-  const intentHits = intentWords.filter(word => text.includes(word)).length;
-  return { score: demandHits + intentHits + geographyHits + Math.min(eventHits, 3), eventHits, demandHits, geographyHits, intentHits };
+  const eventHits = eventTokens.filter(token => lower.includes(token)).length;
+  const demandHits = demandWords.filter(word => lower.includes(word)).length;
+  const geographyHits = geographyWords.filter(word => lower.includes(word)).length;
+  const intentHits = intentWords.filter(word => lower.includes(word)).length;
+  const firstPersonHits = ['i am', 'i’m', 'im ', 'my ', 'we are', 'we’re', 'our ', 'i need', 'i want', 'i plan', 'i will', 'looking for'].filter(word => lower.includes(word)).length;
+  return { score: demandHits + intentHits * 2 + geographyHits + Math.min(eventHits, 4) + firstPersonHits * 2, eventHits, demandHits, geographyHits, intentHits, firstPersonHits };
 }
 
 function strongPublicIntent(title, description, event) {
   const s = intentScore(title, description, event);
-  // A public article is a lead signal only when it is clearly about the exact
-  // event, shows travel demand, and has a Nigeria/business-travel connection.
   if (s.eventHits < 1) return false;
   if (s.demandHits < 1) return false;
-  if (s.geographyHits < 1 && s.intentHits < 2) return false;
-  return s.score >= 4;
+  if (s.intentHits < 1) return false;
+  if (s.firstPersonHits < 1 && s.geographyHits < 1) return false;
+  return s.score >= 7;
+}
+
+function extractRedditItems(json) {
+  const children = json?.data?.children;
+  if (!Array.isArray(children)) return [];
+  return children.map(x => x?.data || {}).filter(x => x.title || x.selftext).map(x => ({
+    title: String(x.title || ''),
+    description: String(x.selftext || ''),
+    link: x.permalink ? 'https://www.reddit.com' + x.permalink : '',
+    source: x.author ? 'Reddit • u/' + x.author : 'Reddit',
+    pubDate: x.created_utc ? new Date(x.created_utc * 1000).toUTCString() : ''
+  }));
 }
 
 async function publicIntentSignals(event) {
   if (!event) return [];
-  const queries = [`"${event}" travel`,`"${event}" hotel`,`"${event}" flight`,`"${event}" visa`,`"${event}" accommodation`,`"${event}" attendees`,`"${event}" delegates`,`"${event}" exhibitors`,`"${event}" visitors`,`"${event}" tourism`,`"${event}" Nigeria travel`,`"${event}" Nigeria hotel`,`"${event}" Nigeria flight`,`"${event}" Nigeria visa`,`"${event}" Nigeria exhibitors`,`"${event}" Nigeria delegation`,`"${event}" "travel agency" Nigeria`,`"${event}" "business travel" Nigeria`];
+  const queries = [
+    '"' + event + '" "I am going"',
+    '"' + event + '" "planning to attend"',
+    '"' + event + '" "planning to go"',
+    '"' + event + '" "looking for" hotel',
+    '"' + event + '" "need a hotel"',
+    '"' + event + '" "need a flight"',
+    '"' + event + '" "looking for tickets"',
+    '"' + event + '" attending Nigeria',
+    '"' + event + '" going Nigeria',
+    '"' + event + '" travel Nigeria',
+    '"' + event + '" hotel Nigeria',
+    '"' + event + '" flight Nigeria',
+    '"' + event + '" accommodation Nigeria',
+    '"' + event + '" "from Lagos"',
+    '"' + event + '" "from Abuja"',
+    '"' + event + '" "anyone going"',
+    '"' + event + '" "anyone attending"',
+    '"' + event + '" "who is going"'
+  ];
   const results = [];
   const seen = new Set();
 
+  const addSignal = (item, channel) => {
+    const title = String(item.title || '').trim();
+    const description = String(item.description || '').trim();
+    const link = String(item.link || '').trim();
+    if (!title || !link) return;
+    const key = link.split('?')[0];
+    if (seen.has(key)) return;
+    const scoring = intentScore(title, description, event);
+    if (!strongPublicIntent(title, description, event)) return;
+    seen.add(key);
+    results.push({
+      company: item.source || channel || 'Public Web',
+      role: 'PUBLIC INTENT • ' + title.slice(0, 85),
+      contactPerson: '', businessEmail: '', businessPhone: '', linkedin: '',
+      country: 'Public Web' + (scoring.geographyHits ? ' • Nigeria signal' : ''),
+      event, source: link, lastVerified: new Date().toISOString().slice(0, 10), salesReady: true,
+      intentSignal: true, intentScore: Math.min(100, scoring.score * 10),
+      intentPublishedAt: item.pubDate || '',
+      intentReason: 'Public signal suggests someone is researching or planning travel for this event. Verify the actual person/company and contact details before outreach.',
+      intentType: channel || 'public-web'
+    });
+  };
+
   for (const query of queries) {
     try {
-      const url = 'https://news.google.com/rss/search?q=' + encodeURIComponent(query) + '&hl=en-NG&gl=NG&ceid=NG:en';
+      const url = 'https://news.google.com/rss/search?q=' + encodeURIComponent(query + ' site:reddit.com') + '&hl=en-NG&gl=NG&ceid=NG:en';
       const response = await fetch(url, { headers: { 'user-agent': 'Cindrela-Sales-Radar/1.0' } });
-      if (!response.ok) continue;
-      const xml = await response.text();
-      for (const block of xml.match(/<item>[\s\S]*?<\/item>/gi) || []) {
-        const title = xmlTag(block, 'title');
-        const link = xmlTag(block, 'link');
-        const source = xmlTag(block, 'source') || 'Public Web';
-        const pubDate = xmlTag(block, 'pubDate');
-        const description = stripHtml(xmlTag(block, 'description'));
-        if (!title || !link) continue;
-        const key = link.split('?')[0];
-        if (seen.has(key)) continue;
-        seen.add(key);
-        const scoring = intentScore(title, description, event);
-        if (!strongPublicIntent(title, description, event)) continue;
-        results.push({
-          company: source,
-          role: `PUBLIC INTENT • ${title.slice(0, 85)}`,
-          contactPerson: '',
-          businessEmail: '',
-          businessPhone: '',
-          linkedin: '',
-          country: 'Nigeria / Public Web',
-          event,
-          source: link,
-          lastVerified: new Date().toISOString().slice(0, 10),
-          salesReady: true,
-          intentSignal: true,
-          intentScore: Math.min(100, scoring.score * 15),
-          intentPublishedAt: pubDate,
-          intentReason: 'Public web content related to this event and travel demand. Verify the business/person before outreach.'
-        });
+      if (response.ok) {
+        const xml = await response.text();
+        for (const block of xml.match(/<item>[\s\S]*?<\/item>/gi) || []) addSignal({ title: xmlTag(block, 'title'), link: xmlTag(block, 'link'), source: xmlTag(block, 'source') || 'Public Web', pubDate: xmlTag(block, 'pubDate'), description: stripHtml(xmlTag(block, 'description')) }, 'public-search');
       }
-    } catch (error) {
-      console.error('public intent query failed:', error.message);
-    }
+    } catch (error) { console.error('public search query failed:', error.message); }
+
+    try {
+      const redditUrl = 'https://www.reddit.com/search.json?q=' + encodeURIComponent(query) + '&sort=new&t=year&limit=25&raw_json=1';
+      const response = await fetch(redditUrl, { headers: { 'user-agent': 'Cindrela-Sales-Radar/1.0 (public intent research)' } });
+      if (response.ok) {
+        const json = await response.json();
+        for (const item of extractRedditItems(json)) addSignal(item, 'reddit-public');
+      }
+    } catch (error) { console.error('reddit intent query failed:', error.message); }
   }
 
-  return results.sort((a, b) => (b.intentScore || 0) - (a.intentScore || 0)).slice(0, 20);
+  return results.sort((a, b) => (b.intentScore || 0) - (a.intentScore || 0)).slice(0, 30);
 }
 
 module.exports = async function handler(req, res) {
