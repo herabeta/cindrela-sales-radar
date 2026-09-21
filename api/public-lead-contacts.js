@@ -96,11 +96,7 @@ function intentScore(title, description) {
 
 async function publicIntentSignals(event) {
   if (!event) return [];
-  const queries = [
-    `"${event}" Nigeria travel hotel flight visa`,
-    `"${event}" Nigeria attendees delegates travel`,
-    `"${event}" hotel accommodation travel package`
-  ];
+  const queries = [`"${event}" Nigeria travel`,`"${event}" Nigeria hotel`,`"${event}" Nigeria flight`,`"${event}" Nigeria visa`,`"${event}" Nigeria attendees`,`"${event}" Nigeria delegates`,`"${event}" Nigeria exhibitors`,`"${event}" Nigeria accommodation`,`"${event}" Nigeria delegation`,`"${event}" Nigerian travelers`,`"${event}" "from Nigeria"`,`"${event}" "travel agency" Nigeria`,`"${event}" "business trip" Nigeria`,`"${event}" "travel package" Nigeria`,`"${event}" Nigeria tourism`,`"${event}" Nigeria hospitality`,`"${event}" Nigeria "business travel"`,`"${event}" Nigeria event`];
   const results = [];
   const seen = new Set();
 
