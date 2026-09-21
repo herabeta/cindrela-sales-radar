@@ -13,10 +13,11 @@ function validEmail(value) {
   const parts = email.split('@');
   if (parts.length !== 2) return false;
   const [local, domain] = parts;
-  if (!local || !domain || /^(example|test|domain|localhost)$/i.test(domain)) return false;
+  if (!local || !domain || local.length < 3 || /^(example|test|domain|localhost)$/i.test(domain)) return false;
   if (!/^[A-Za-z0-9][A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]*[A-Za-z0-9]$/.test(local)) return false;
   const labels = domain.split('.');
-  return labels.length >= 2 && labels.every((x) => /^[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?$/.test(x)) && /^[A-Za-z]{2,24}$/.test(labels.at(-1) || '');
+  if (labels.length < 2 || labels.some((x) => x.length < 2)) return false;
+  return labels.every((x) => /^[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?$/.test(x)) && /^[A-Za-z]{2,24}$/.test(labels.at(-1) || '');
 }
 
 function validPhone(value) {
