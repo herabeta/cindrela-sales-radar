@@ -170,17 +170,17 @@
   "113": [
     "Mining companies, executives, investors, suppliers and technical delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "Nigeria Mining Week 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "144": [
     "Students, parents, education agents and families planning overseas study",
     "Flights + Hotels + Transfers + Visa Assistance + Family Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "Abuja International Education Fair 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "143": [
@@ -378,10 +378,10 @@
   "131": [
     "Families, diaspora visitors, holiday groups and New Year leisure travellers",
     "Flights + Hotels + Transfers + Holiday Packages",
-    "Start planning now; identify Nigerian prospects and prepare travel options",
-    "EARLY",
-    "Review every 2–4 weeks until the event enters the active sales window",
-    "Countdown Nigeria 2026 is a future opportunity in Nigeria — multiple cities; early lead building gives Cindrela more time to qualify and convert travel demand"
+    "Start prospecting now; build the target list and open early conversations",
+    "WARM",
+    "Follow up weekly and update booking status",
+    "Countdown Nigeria 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "153": [
     "Christmas holiday travellers, music fans, families and diaspora visitors",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-20T05:14:41.458627Z",
+    "generated_at": "2026-09-21T05:15:40.141472Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-20",
+    "reference_date": "2026-09-21",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
