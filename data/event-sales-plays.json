@@ -106,10 +106,10 @@
   "108": [
     "Construction companies, contractors, developers, suppliers and procurement teams",
     "Flights + Hotels + Transfers + Business Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Event is live — contact active prospects and resolve any immediate travel needs",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Big 5 Construct Nigeria 2026 is within one week in Lagos, Nigeria; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "Big 5 Construct Nigeria 2026 is currently underway in Lagos, Nigeria; focus on immediate and remaining travel requirements"
   ],
   "140": [
     "Agribusiness owners, exporters, food companies, exhibitors and corporate buyers",
@@ -154,10 +154,10 @@
   "112": [
     "Nigerian betting/gaming executives, operators, founders and industry delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "SBC Summit 2026 is within 30 days in Lisbon, Portugal; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "SBC Summit 2026 is within one week in Lisbon, Portugal; remaining travel enquiries are time-sensitive"
   ],
   "116": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
@@ -234,9 +234,9 @@
   "123": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "São Paulo Grand Prix 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "122": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-21T05:15:40.141472Z",
+    "generated_at": "2026-09-22T05:15:06.776924Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-21",
+    "reference_date": "2026-09-22",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }

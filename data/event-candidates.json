@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-21T05:14:30.005738+00:00",
+  "generated_at": "2026-09-22T05:13:40.791937+00:00",
   "engine": "Phase 2 event discovery inbox",
   "status": "discovery_only",
   "rule": "Discovered news is never promoted directly to Sales Opportunities. Verify official source, date, location and Nigeria travel-sales relevance first.",
   "items": [
     {
-      "title": "Nigeria targets $500m investment as ACCI unveils maiden AGROMEQA Expo 2026 - The Guardian Nigeria News",
-      "source": "The Guardian Nigeria News",
-      "discovery_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcG1nRDMxdi1ldndnN1BxQWl1UjdJYmVsZXJwbnozcWppWThnMGQ5UVJoQkNsREFqc19zM2RoLXRkLThlU2FENEMtVmtBcVdHUVdwc09YeUx2NTcyalpSVVEtdmJxRm5Uc1plbXZKNTZUZHd0WnVhUnBPTUdNd3h4cVZNMDQ3VTlUbUpYNFRyRm05TkoybGpiME1EUHZSSnNK?oc=5",
-      "published": "Tue, 21 Apr 2026 07:00:00 GMT",
+      "title": "EnergyNet plans to hold Nigeria NOW investment forum in Abuja in November 2026 - UA.NEWS",
+      "source": "UA.NEWS",
+      "discovery_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNM2cxNVQzcjBuZXpGX1VaWks4N3B0Qks4cURFcjBOaDc4QnI3TmVFM3JVYnI1RVlHbEFTMjVwc0Q0dVUweHk4eDBua042REwzZEVoclZoQnpJeE1TV3E5dFg3X0hHeEhMWkdqVVB2SE5lLTZleExLTl9OcnFjeUFiaTU3aVlJUTVBUFJQb0pKREs2Y3VsNHhuTkJNZmxYelNZM1dNQXFhUnVqdlVqQ0g5UnJhb1ctaWc?oc=5",
+      "published": "Sun, 30 Aug 2026 07:00:00 GMT",
       "query": "Nigeria Abuja new event conference exhibition 2026 2027",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -53,10 +53,10 @@
       }
     },
     {
-      "title": "Nigeria To Host 2026 Global PR And African PR Forums - Arise News",
-      "source": "Arise News",
-      "discovery_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB1ZmhoTVhTNFp1VVNaZ3V5SUU2bmdXeXNSX2RMdEtETmtvMEtGRWY1aXpCdWk0RmlMd0FWYmhrN1ZpSzlQM21LUWExazlza2NjUGJPM2JreVhoZTFjMWpzcFZJcGljRnNYTVdyZmxRdzBBR2lBUUhGbjlWSE5McGs?oc=5",
-      "published": "Tue, 23 Dec 2025 08:00:00 GMT",
+      "title": "Nigeria targets $500m investment as ACCI unveils maiden AGROMEQA Expo 2026 - The Guardian Nigeria News",
+      "source": "The Guardian Nigeria News",
+      "discovery_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcG1nRDMxdi1ldndnN1BxQWl1UjdJYmVsZXJwbnozcWppWThnMGQ5UVJoQkNsREFqc19zM2RoLXRkLThlU2FENEMtVmtBcVdHUVdwc09YeUx2NTcyalpSVVEtdmJxRm5Uc1plbXZKNTZUZHd0WnVhUnBPTUdNd3h4cVZNMDQ3VTlUbUpYNFRyRm05TkoybGpiME1EUHZSSnNK?oc=5",
+      "published": "Tue, 21 Apr 2026 07:00:00 GMT",
       "query": "Nigeria Abuja new event conference exhibition 2026 2027",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -85,40 +85,8 @@
       }
     },
     {
-      "title": "Nigeria signs Intra-African Trade Fair 2027 host agreement; gears up for Africa’s biggest marketplace - African Export-Import Bank",
-      "source": "African Export-Import Bank",
-      "discovery_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNQUpEUzN4VE5WOW56aXVkbHFkXzA4dXFCel91WUpfZEt2eUV5eVhJdzBVT1ZwUnE3UjZXS2tOSXRJOHdXb29qUW9OMmJFTXZVS3ZVODd1X1JFeWlra3gyM1FzZ2liUEtKTmdPOGxMOUE1YWxNa3RQb1B5MmpBRTg0VERaeUpBTmRETVAtOFJJQVJzRXhmMGE1UWxsdXM1RGVvc3Vkdlc3RHNTTzFSX1ZDOVZwdWRiRXpkQzNhanFUV2ZnWl9zMU9V?oc=5",
-      "published": "Mon, 09 Mar 2026 07:00:00 GMT",
-      "query": "Africa new conference exhibition trade fair 2026 2027",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": true,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": true
-      }
-    },
-    {
-      "title": "Nigeria-Sierra Leone Trade Fair 2026: Dr Nwafor Calls for Greater Participation, Exhibition - Independent Newspaper Nigeria",
-      "source": "Independent Newspaper Nigeria",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxON052M0l1RDE4WEg4Y1RoYUZVQkdlQlF1bjVqdTBhX0wxb1pEZnl4aHdJZDUtbXpXRFJyX0VBcUpCNHNldU51ZVp1WmphcGtIb2hJVEE1T01TY0d3cTk1cFpFNmdoMFVFaFFaT1ZQNWV3Qmlkc1VESm1jMncwUnR6Yy1PSUdjQkEyLUJtamM5dVVLZXdWbkRjOGw5TnZRX1NPcHJEanoyaFRGZWtXMkdDckJvRQ?oc=5",
-      "published": "Sat, 06 Jun 2026 07:00:00 GMT",
-      "query": "Africa new conference exhibition trade fair 2026 2027",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": true,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": true
-      }
-    },
-    {
-      "title": "PROpaper Nigeria 2026 exhibition holds in Lagos, receives FG’s commendation - thesun.ng",
-      "source": "thesun.ng",
+      "title": "PROpaper Nigeria 2026 exhibition holds in Lagos, receives FG’s commendation - The Sun Nigeria",
+      "source": "The Sun Nigeria",
       "discovery_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZTRzUXpKQmYzM2hhQzVWc1FENlp1TWlIUk9oZjZWNEhGVnZDUDZ2em5tUTdlY2p3QXhmX3cxSVlIREhPeXRNcWZwVWlGNHpCZjFDV2V3aUtKYWZBemxpN2hBbWs4RUhsQWpBRzl6S2VadW5xeVF6SzNjX3NRY3BWanp5SjBVcHk0U0VwUXhFclFWRUppbXBJ?oc=5",
       "published": "Thu, 25 Jun 2026 07:00:00 GMT",
       "query": "Africa new conference exhibition trade fair 2026 2027",
@@ -165,8 +133,8 @@
       }
     },
     {
-      "title": "Africa Agri Expo 2026 to Spotlight East Africa's Expanding Agriculture and Food Value Chain - Global Agriculture",
-      "source": "Global Agriculture",
+      "title": "Africa Agri Expo 2026 to Spotlight East Africa's Expanding Agriculture and Food Value Chain - global-agriculture.com",
+      "source": "global-agriculture.com",
       "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNnh0SVJ1a1c5czBvaGtBdlZJVDBhYktxY2NyUkZ4Ynh2OUtNbXd4MEdRRnJHQVJ0Wlk5aEF5VTFIbjlzUDZxVVFYeXpTZVBhQUVvOXVBUXRBZjNPYmc5MVFmcXV2bUF3Q19BaWFYcE5idEpPRW1hUGdnX21SMktCVlVpQTg5WkphZGc4b3ZtcEhJNTlMMDV4YjdLRTNtZklPN0UxanJwNFUzZ1VwTHpOZFFRVXYyTzhSVlk3dEN1ZlB5TFQzVDNRUUhISUY1SlV3Vnp0b2VCb3BPQWlPenlr?oc=5",
       "published": "Thu, 30 Jul 2026 07:00:00 GMT",
       "query": "Africa new conference exhibition trade fair 2026 2027",
@@ -181,10 +149,26 @@
       }
     },
     {
-      "title": "AFCAC presents the First African Air Transport Convention and Exhibition 2026 - Breaking Travel News",
-      "source": "Breaking Travel News",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUVhsWnFFS0NYaEtfbS1CckpJQUh3QmVpMW1XcUhwYkpBdGlHc2w4bDFYWDNGWWJmd1JQSkpuWnJvOEhjVFNELVRWR0tmQnBfYTNBQmtqUHRZbGJDV1gtWEx3RzNWQWJRLUhZbUU3bC14dEctWWV4UHJUMFlxRlV0WTV2aWhvWjJ0YWlORVpSdV9KblphelBvaURYalc4WU1lS2JPOWxwLWZQUkxkcVE3Q1BTbXlfOTE5WUhyTmpKYkZxdw?oc=5",
-      "published": "Thu, 19 Mar 2026 07:00:00 GMT",
+      "title": "Nigeria signs Intra-African Trade Fair 2027 host agreement; gears up for Africa’s biggest marketplace - African Export-Import Bank",
+      "source": "African Export-Import Bank",
+      "discovery_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNQUpEUzN4VE5WOW56aXVkbHFkXzA4dXFCel91WUpfZEt2eUV5eVhJdzBVT1ZwUnE3UjZXS2tOSXRJOHdXb29qUW9OMmJFTXZVS3ZVODd1X1JFeWlra3gyM1FzZ2liUEtKTmdPOGxMOUE1YWxNa3RQb1B5MmpBRTg0VERaeUpBTmRETVAtOFJJQVJzRXhmMGE1UWxsdXM1RGVvc3Vkdlc3RHNTTzFSX1ZDOVZwdWRiRXpkQzNhanFUV2ZnWl9zMU9V?oc=5",
+      "published": "Mon, 09 Mar 2026 07:00:00 GMT",
+      "query": "Africa new conference exhibition trade fair 2026 2027",
+      "detected_date_text": "",
+      "official_source_hint": false,
+      "status": "needs_verification",
+      "verification": {
+        "date_confirmed": false,
+        "location_confirmed": true,
+        "official_source_confirmed": false,
+        "nigeria_sales_relevance_confirmed": true
+      }
+    },
+    {
+      "title": "Important Summits and Conferences 2025-2026, Key Outcomes - vajiramandravi.com",
+      "source": "vajiramandravi.com",
+      "discovery_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUnRNYkpQY0pMUUdtOW8yQnpGdmZ6TXJqZHA1eWQyS0pUUS1NcFpDajRIUVp3TDU4UGtadEhfNU1zOTZ1Sl9GRVJwUEU0SC1sUWQzUjZEVFdOb1BlMjBwcjVJdkRQN2dVWmx1MzRwa3BGa3BKamVmNW1oaGlmSGVNVmFMVQ?oc=5",
+      "published": "Wed, 02 Sep 2026 07:00:00 GMT",
       "query": "Africa new conference exhibition trade fair 2026 2027",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -197,11 +181,11 @@
       }
     },
     {
-      "title": "Event | Youth Summit 2026: Future Works: Designing Jobs for the Digital Age - World Bank Group",
-      "source": "World Bank Group",
-      "discovery_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUl9DbTJmVHE3WWNsdUVkclJhdDVyM3dSM3E2U0EyZ3I2d3lQUnlVNzlPeUU3Znl5UEdERnEwRUJjSno3bFJkZlRtRUFKd21hNkRmcWdaUFBOel9XZmhLenE2R20xNmwyUTFna3FVQmhLdXA1RGtNbnN3M3c5QXZIQVJna2lVYXFqcjVzRThHQUFHR01PUFBpVXdGN1oybVZ4Qlg5ekNzdWlORVJGaGhIZnR3?oc=5",
-      "published": "Sun, 01 Feb 2026 21:45:06 GMT",
-      "query": "international conference exhibition summit 2026 2027 Nigeria attendees",
+      "title": "Tones of Beauty Expo 2026: The UK’s Must-Attend B2B Beauty Trade Event Returns Bigger Than Ever - greatreporter.com",
+      "source": "greatreporter.com",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNczA0aEdMaUhjS3ItYXY2R1dENDhXVEhPS2R3V3ltRW51amx3QjRxNnFDbTdocjRPZWtDOEVLS0x5UHlNMkxZbDdKNEpYbF9WdVQtY2R3Zm1uRG9rOF8tUndFQUVEVGItdzlpbkljMzZQaHQ3ak04T1pJLXA5REYwcmVpQU9RMTlaUTBCOFk1OWFlLUVfS0ZCUHFfTmFycXVsdDdPQ3VCcnBjSE5laFhRMXNMN05ZQ3pHYmM3ZktSYnR0MlJoZXBDUmszTQ?oc=5",
+      "published": "Thu, 04 Jun 2026 07:00:00 GMT",
+      "query": "Africa new conference exhibition trade fair 2026 2027",
       "detected_date_text": "",
       "official_source_hint": false,
       "status": "needs_verification",
@@ -209,12 +193,12 @@
         "date_confirmed": false,
         "location_confirmed": false,
         "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": true
+        "nigeria_sales_relevance_confirmed": false
       }
     },
     {
-      "title": "18 Teams Qualify for 2027 FIFA Women's World Cup - punchng.com",
-      "source": "punchng.com",
+      "title": "18 Teams Qualify for 2027 FIFA Women's World Cup - Punch Newspapers",
+      "source": "Punch Newspapers",
       "discovery_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBpRU9RUHVIVlRoN2V6SDNhMzk3NjFGNnVoNUVSaEtSOWUwNnVmWndSWlRmbFd3ODI4ZkhfT0FVdEZLWUFqekp3eU5DTGpIZ25zWnhQZGNUYlVPU3h1VkhBQWdPaGItazdzMWZTOTNmSThiMGpWSTZB?oc=5",
       "published": "Mon, 10 Aug 2026 07:00:00 GMT",
       "query": "FIFA football tournament 2026 2027 upcoming",
@@ -373,10 +357,10 @@
       }
     },
     {
-      "title": "F1 2027 calendar announced with Bahrain to host season-opener and increase in Sprint weekends in 24-race schedule - Sky Sports",
+      "title": "F1 Grand Prix distances set to be reduced for 2027 season along with introduction of 'hard stop' time on race days - Sky Sports",
       "source": "Sky Sports",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPZFdlMjZhNUwzNkZaU051dkdvMVF2V1pMcEdnWVRPbnhOeDRsYjdic3psYi1fN1NiX1VSLUVwQkVNeU5DV0ZqLWZWT0Y5TkZ0YTg1V2o2NU5CLWp2cHpqTkV4RzBEQXg1YVhHeTctWWV1OE9DSGpmRUFrQXQyQVM4RmwydHRqaHFjRW9leUY4dWFrZGVDam01Zjc1cFdnOXhnV0ZpZUdKSldYdFpmRE41cW51WmJ0dncyMTluN3VRdnJaeG82RWNzQUlSZUxHVlpLT09iQWRtUUdhNGpCc2x2VU1kcU0zVlFidlRRMkctajBSOVNU?oc=5",
-      "published": "Wed, 16 Sep 2026 11:35:36 GMT",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPYXRPdXo2b0NBT0MySG5ic09leDZBelN5QWZjcEZENDNZX1YwekhjaVRtbHlCLUNVVEV4VHpydnotTTR2c0RWV05DU1A0QmZXN05ZZ2xxa1hycjFodjJNdDI0eGNVYkJUSjBpeUJjaGZTaHBsdXZqZVF3Zk42M3Qyek52NngzVGF3WWZoTkI0TjZVdXRfN2piOGE3RjlOQkpOVmNlUVNlU0hoejI1NHdHZzBLRW52UmtCc1hxV19zUzRsTW1INm5LSGRqUHpmSFA3QXBPUzlUZ0dpZ2o3SlZhSnVZTWl5c0RIRURj?oc=5",
+      "published": "Mon, 21 Sep 2026 16:51:03 GMT",
       "query": "F1 Formula 1 race 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -389,10 +373,10 @@
       }
     },
     {
-      "title": "Mercedes reserve sees only one F1 seat open for 2027 — and tips Câmara for it - Grande Prêmio",
-      "source": "Grande Prêmio",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYVFTWkdHdE53SG8zd3pPRGdqTjRTd0VsMXFhZEo3NnBVT1ZjTmFXWFVaendJRGRFaEhRMk9jX2JmemxOWmhQTndtYUQtOGYtLUlVcC1qeVFlSmM5WG81cXg2N3VQRkhoTEhxdTltdkhuQXNsdXZaQnBQUG5qZWs1bHA4SmdGTmM2aHFHOWtVYnpTbU8yN1dGNVdtUkUzUlM1WDNIU3VpamUzUDA?oc=5",
-      "published": "Fri, 18 Sep 2026 13:30:00 GMT",
+      "title": "F1 2027 calendar announced with Bahrain to host season-opener and increase in Sprint weekends in 24-race schedule - Sky Sports",
+      "source": "Sky Sports",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPZFdlMjZhNUwzNkZaU051dkdvMVF2V1pMcEdnWVRPbnhOeDRsYjdic3psYi1fN1NiX1VSLUVwQkVNeU5DV0ZqLWZWT0Y5TkZ0YTg1V2o2NU5CLWp2cHpqTkV4RzBEQXg1YVhHeTctWWV1OE9DSGpmRUFrQXQyQVM4RmwydHRqaHFjRW9leUY4dWFrZGVDam01Zjc1cFdnOXhnV0ZpZUdKSldYdFpmRE41cW51WmJ0dncyMTluN3VRdnJaeG82RWNzQUlSZUxHVlpLT09iQWRtUUdhNGpCc2x2VU1kcU0zVlFidlRRMkctajBSOVNU?oc=5",
+      "published": "Wed, 16 Sep 2026 11:35:36 GMT",
       "query": "F1 Formula 1 race 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -421,8 +405,8 @@
       }
     },
     {
-      "title": "FIBA Executive Committee sets sights on FIBA Women's Basketball World Cup 2026 - FIBA Basketball",
-      "source": "FIBA Basketball",
+      "title": "FIBA Executive Committee sets sights on FIBA Women's Basketball World Cup 2026 - FIBA",
+      "source": "FIBA",
       "discovery_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQeC1VR0tjTVhKNkNnWXN0a3ZMODA3Q2Z1RkJGai16QlMyWFBoQ0RSNV82ZV9Fck4wZEN6dTYtVFMtUlFKdGRjcEtQVmc5RGxTRnRXbkswRHE4VVFIcElzOWRFYUZ5T2xieXhhV3FDbnlMbUM1RU4teVE5bEY2S21WanJTTDNVa2VKdDNHSlc0aE41anU0aGRUbTZxVUVZOEVFOTMwdVZ0aGlnbXAxZURUeUlMTEl6dw?oc=5",
       "published": "Tue, 01 Sep 2026 07:00:00 GMT",
       "query": "FIBA basketball 2026 2027 upcoming",
@@ -453,8 +437,8 @@
       }
     },
     {
-      "title": "FIBA World Cup 2027 Qualifiers schedule & results - nba.com",
-      "source": "nba.com",
+      "title": "FIBA World Cup 2027 Qualifiers schedule & results - NBA.com",
+      "source": "NBA.com",
       "discovery_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5HUkVhM2FOQ05PcC03VU9qUXMyUk83TlBCVGFaR0dDRVoyX3ptRVRUanhkR3ZmR043RHRha253aFFITzloOXdJcEhYaS1LNVJWZ1g5Q1RibEFvcW55OTUzdlJZU1k3c294WHk0dWdxb2J5WkxUbHZZUG5XeGs?oc=5",
       "published": "Mon, 31 Aug 2026 07:00:00 GMT",
       "query": "FIBA basketball 2026 2027 upcoming",
@@ -469,8 +453,8 @@
       }
     },
     {
-      "title": "FIBA Executive Committee meeting highlights strong ticket sales momentum for Women's World Cup 2026 - FIBA Basketball",
-      "source": "FIBA Basketball",
+      "title": "FIBA Executive Committee meeting highlights strong ticket sales momentum for Women's World Cup 2026 - FIBA",
+      "source": "FIBA",
       "discovery_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcjltd3UyS2ZjTnNFdU44Zm1wY0p6QnlKMkRWR3g3ekpkTjE2QkVnN1NaNVhSVTY2dW9NdlhieFJsZzJMZ0RwcHY1NlhFNkF0QjYydHBjUjlKSmFsNXZoLXY0VkN6amRMSktSUnhsM2lZREhmSUFoX3pPT2hLSDNPdGkzYmJHV040VC0tYVRJdERlUjlxREo2b3FiZlFRVnFOY0dJOG85RWZua2pfb0ZQbjZwYUM3WVdYOXlHdVI0cFhIWFhxcVp4Qjc5b19CZzY5VWc?oc=5",
       "published": "Fri, 20 Feb 2026 08:00:00 GMT",
       "query": "FIBA basketball 2026 2027 upcoming",
@@ -485,8 +469,8 @@
       }
     },
     {
-      "title": "Ticketmaster becomes Official Ticketing Partner of the FIBA Basketball World Cup 2027 - FIBA Basketball",
-      "source": "FIBA Basketball",
+      "title": "Ticketmaster becomes Official Ticketing Partner of the FIBA Basketball World Cup 2027 - FIBA",
+      "source": "FIBA",
       "discovery_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcGpKQlBueUduOTd3QWJkSFJoRWs5X3ZCc0hGQXJMTDAySkZCbGtzaGViMHF2U3VMallEQ2FmcHBOVjk1bVFWWFd4VE5WMXhqeGFfdHNLcEF5UG15NnZKUUNlRHpadWZYcVZWX0JwZVFXQnJaOWNhQVpDMGtWMW5tamlYbWxrbWZPOUsyWnNrYWdTVS1ldW5VWXVHMF9rUGdSV2Q0bmI4dXZKWTR5bWk0MmJteEk5NUluSVViQndVR3g?oc=5",
       "published": "Wed, 26 Aug 2026 07:00:00 GMT",
       "query": "FIBA basketball 2026 2027 upcoming",
@@ -549,10 +533,26 @@
       }
     },
     {
+      "title": "Second Round lineup set for FIBA Basketball World Cup 2027 European Qualifiers - fiba.basketball",
+      "source": "fiba.basketball",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOZGdCYzYxWUlCeWNxUmpFWVRyYkE2bTNMNi1wem9ZbXFYZk5ZT0tqSFlQMlZ1UllybXZGTVF0RmZlYjdGYTZRQVpyZjZCSlZlLVN1T0pkbU1KNHFxWTFXRzYxYmxXM3NCaVdXWnlmS1gxVHUwc3ptVDl3WXB6ZkZQTVY5ekxkVTRxRGswQkVWeHNlbTZrWGxBRThKSm9Qa0V1R2t6SDhZUXQzY0pTOEt6aEdhOVZnNXN6d0pqYk96UTNQUjliRGtQbmVWelJBMnFCV0Y0ZVpuUkVYaEt2dUcySExuQ3R2TGU2MWp1c05DU3Vob1FUeEFMLVRRTHNncTRDMEE?oc=5",
+      "published": "Mon, 06 Jul 2026 07:00:00 GMT",
+      "query": "FIBA basketball 2026 2027 upcoming",
+      "detected_date_text": "",
+      "official_source_hint": true,
+      "status": "needs_verification",
+      "verification": {
+        "date_confirmed": false,
+        "location_confirmed": false,
+        "official_source_confirmed": true,
+        "nigeria_sales_relevance_confirmed": false
+      }
+    },
+    {
       "title": "Cricket World Cup 2027 qualified teams - full list - olympics.com",
       "source": "olympics.com",
       "discovery_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQM21Ec3hGYVVhMWZPelhOTTdiaktnTk5zaUFjc3FEVnFjM1VmWXNCcTBjWjEyejU4R21yLTczTzVsdG9aSm9LbVVnaFBOLVlHU093YlI2VzFBc1BObEg1dXdmWlE4VzhjLTRTbEV2YzhNYVg4SmxpZFA0X0YwYUItd1JWbUlYUGs?oc=5",
-      "published": "Fri, 28 Aug 2026 07:00:00 GMT",
+      "published": "Fri, 28 Aug 2026 13:05:42 GMT",
       "query": "ICC cricket 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -629,22 +629,6 @@
       }
     },
     {
-      "title": "Nepal qualify for Men's Asia Cup 2027 - icc-cricket.com",
-      "source": "icc-cricket.com",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0yNGgyc0NSTTVDX3B1WVNqdG9IREk2dnVaNjRBY3hvMDdscWdndmxvY0xxb1M2YWtYdWE1cTBMTFg4V2F1ZUNNeGxVbmFGbnR6TFRZUXZ1UldBbkYweW1BTkhKWG5kNnFmODJWblVGdklvNkgxYUhWV1hB?oc=5",
-      "published": "Sat, 12 Sep 2026 07:00:00 GMT",
-      "query": "ICC cricket 2026 2027 upcoming",
-      "detected_date_text": "",
-      "official_source_hint": true,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": true,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
       "title": "Trinidad and Tobago celebrates successful ‘bumper’ Carnival 2026 season - Caribbean National Weekly",
       "source": "Caribbean National Weekly",
       "discovery_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQOG1zV010LUdmV0JUVjZvNFhva3BhbUZxa3JTYTRWUGd5ZUxiZnV2Q2xGSk5Kd0plWVZCZDhENGZ2blE0T0cwOS1RMFNxdTlva3BFOUc0Q3FyRHBRaUpvNmoycVJOMlk2azhkM0tmdXJRYVFfOUJkS0VJVEx3bHlpRFNBVWQwa0VLLWcxbV9OMG1mREV6ZndzaUl6WHBIWnB4XzVrZDNSVjIyLVJWZFBlcmlYdS1vUQ?oc=5",
@@ -693,10 +677,10 @@
       }
     },
     {
-      "title": "Carnival Madrid 2027 - Turismo Madrid",
-      "source": "Turismo Madrid",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9yNzZUaXdRSllSdjZnb1V5UVlqRlMyT2o1YjVQVnY3eTFVOVFoVS0xZXlJanZDRENZbVN3aEIybXc1M3dqd2tHMGpGUnVFX1NNT0g1cEFyMnpHODFjVGJObjhn?oc=5",
-      "published": "Sat, 04 Jul 2026 07:00:00 GMT",
+      "title": "Carnival 2026 hailed as major economic and cultural success - Trinidad Guardian",
+      "source": "Trinidad Guardian",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNW5BM05tQXZmWlBzbHl2N3luZmlCbXpWYTk5TXJyX3Zham80Xy1fbUp1MzhHUFBvYmRaTFBaLU1RdUV0VjI0WXJFUGFWQXBMcktBcnFiR280akhUUGxGZXFNTVJ1OUhWTEllVUpKeFVQQUtnanpaM29tbHppcllvNGZzVHBUUFdwSGc1SDd4VTNwNXZ1YnpBSTc3ZHEyV1ZBZnNkLXZrTXR0RTJCMVAxaHRkWQ?oc=5",
+      "published": "Thu, 19 Feb 2026 01:08:13 GMT",
       "query": "major festival carnival 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -725,24 +709,8 @@
       }
     },
     {
-      "title": "Carnival 2026 hailed as major economic and cultural success - guardian.co.tt",
-      "source": "guardian.co.tt",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNW5BM05tQXZmWlBzbHl2N3luZmlCbXpWYTk5TXJyX3Zham80Xy1fbUp1MzhHUFBvYmRaTFBaLU1RdUV0VjI0WXJFUGFWQXBMcktBcnFiR280akhUUGxGZXFNTVJ1OUhWTEllVUpKeFVQQUtnanpaM29tbHppcllvNGZzVHBUUFdwSGc1SDd4VTNwNXZ1YnpBSTc3ZHEyV1ZBZnNkLXZrTXR0RTJCMVAxaHRkWQ?oc=5",
-      "published": "Thu, 19 Feb 2026 06:30:58 GMT",
-      "query": "major festival carnival 2026 2027 upcoming",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
-      "title": "Massive 2027 Hellbound Cruise Festival Lineup Revealed - Rolling Stone Australia",
-      "source": "Rolling Stone Australia",
+      "title": "Massive 2027 Hellbound Cruise Festival Lineup Revealed - au.rollingstone.com",
+      "source": "au.rollingstone.com",
       "discovery_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNaE9SSVdfemMxUW5UQzJXUEJsYTQ5T0xfeFZHWGFWUlBTVWU3Rm83Q0hhcExzcHNZVHNzR01HOXZubnRWSWN3b1pjaFNsQkVVbWFrN3BhSUlRMnJrZVpLQ243UkpTUzEyMWxIM2VTNERJa0lUcXVBZHplSFMxQUxtX1NyaGQ3RnpyS0VLNFpMRWhHRnBNcDMzTVREWkpyZEN2SzBhbw?oc=5",
       "published": "Mon, 02 Feb 2026 08:00:00 GMT",
       "query": "major festival carnival 2026 2027 upcoming",
@@ -757,29 +725,13 @@
       }
     },
     {
-      "title": "The world’s best music festivals to go to in 2026 - Time Out Worldwide",
-      "source": "Time Out Worldwide",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE53OXVobWZQREQ0b2o0YzNla1JGdmRYODNtYlA0OHVfNnRjakRlWHNUeTFWY2pmSi1nWHVOeUJ6c3hySTE1YjQyZm9nS21TR3ZfU1lVUWw2d1VMZnRNeUx0UEZyTUVWczlTYS1fUVFqdzJnTmxDdGU4Zmd3?oc=5",
-      "published": "Mon, 08 Dec 2025 08:00:00 GMT",
+      "title": "2026 dates announced for Baltimore’s major festivals and events - Baltimore Fishbowl",
+      "source": "Baltimore Fishbowl",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQajQxNXA0TnNKTXpUdlM2R0lXajQwLVBWSG1CS2JhRk5TMTBYZFRTUTQ3MUo3bTZvaW5tUkFPZjhQSlVwa1lGV0dvVkRLTlo3cGRxMFgzVkc1blViZi1TTF9ET09NT2hEb1JnOF9wN2RHbW9RZ3VMQkcxNXE4SVFuRUJuampkZmRhNWNicW0yck9IbHZiQzQ3VHRCNXFWZGV3Tk1DdHFXUG4wbzY5RFJRRVZpT1B2U3pTbDhSOThUWFhWSlNnREptc0s2bFFvN2RhR3FhNnJzMU5LSGF2SnNTeFEtSHM3NnNRZXZ2cmNvS0REZUVIdDhVMk15VXg3Qi1TRGIwR3J3R1dFbW5LcXpaSUE2WXBCS1gtUUlfcmR5bTNBeDFCU1dQbQ?oc=5",
+      "published": "Thu, 11 Dec 2025 08:00:00 GMT",
       "query": "major festival carnival 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
-      "title": "Climate and energy summit 2027 - chathamhouse.org",
-      "source": "chathamhouse.org",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNM2hBaUZYeDJ2eWpaWnBxdFk1aUoyLUgxYnVDTDdFc3UzaF9CU0ZuX21ob29DZjFlSEhWZklfZ2dYbzRxcy1saG1OMm5HMnlqbU9fMlYtWGROVXl3U1lBd2VlRi1BVFdhamk3ejNFTE5kd0c1M0ZJblBWRkpSb3ZnSmpzV295Z3pC?oc=5",
-      "published": "Sun, 20 Sep 2026 01:23:16 GMT",
-      "query": "global business conference summit 2026 2027 upcoming",
-      "detected_date_text": "",
-      "official_source_hint": true,
       "status": "needs_verification",
       "verification": {
         "date_confirmed": false,
@@ -821,8 +773,8 @@
       }
     },
     {
-      "title": "Business Conferences To Check Out In 2026 And 2027 - Forbes",
-      "source": "Forbes",
+      "title": "Business Conferences To Check Out In 2026 And 2027 - forbes.com",
+      "source": "forbes.com",
       "discovery_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWk9QX0lHVnBqbWstaVBXdFhyLUVVam43YXFnZTlSZHF6eGdLeDhPVWY1Zi14OXVTOXFKZVdlVjR0bFBicTVFcWRCRk9kV25rMUczTzhsVzRiU3ZhUWdCZ1BhQXpGS1BPelZEYnZhbm4wdV9aZFZoOTlCZzcwSXZRRW5RdHR6NGFYNWZOSkI3ZlJUelJDay1Scm5UMFRRSmMyb0E?oc=5",
       "published": "Sun, 07 Jun 2026 07:00:00 GMT",
       "query": "global business conference summit 2026 2027 upcoming",
@@ -869,74 +821,10 @@
       }
     },
     {
-      "title": "Important Summits and Conferences 2025-2026, Key Outcomes - Vajiram & Ravi",
-      "source": "Vajiram & Ravi",
-      "discovery_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUnRNYkpQY0pMUUdtOW8yQnpGdmZ6TXJqZHA1eWQyS0pUUS1NcFpDajRIUVp3TDU4UGtadEhfNU1zOTZ1Sl9GRVJwUEU0SC1sUWQzUjZEVFdOb1BlMjBwcjVJdkRQN2dVWmx1MzRwa3BGa3BKamVmNW1oaGlmSGVNVmFMVQ?oc=5",
-      "published": "Wed, 02 Sep 2026 07:00:00 GMT",
-      "query": "global business conference summit 2026 2027 upcoming",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
-      "title": "Confluence 2027 – International Summit on Business, Technology and Innovation to Take Place in San Jose - telegraphindia.com",
-      "source": "telegraphindia.com",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPbFhVcWNxU09MaU9tNy12cmtCWnVUWUxRNFZaREFGUmJXYnJqLWFpM1hfSE92aUx4Qy14a0gwREtJS1FlZjh1ak44Tk03b2dfV2Y5bzRZdW5oX2tmYzMtdXVzdVA1TTQ5Zy1Sa1c0RmRrMWVlUG1KYkx6ZTc5Nzl1UTh0QXRmVG9Rb0dmeXA3dE91d21MYzAxbjRXOW5Id3FPR2sxRzR5dEswRV9mUGI0VjhxRjlHblVDNzk4VVVXY0NsWnBzdTJ5Qk12eWhjVGU4NGFnWVVaWDFUczg0RGlJUW1n0gHnAUFVX3lxTFBZZld3QzRYc1lYYmxwMUJRbDZNLXBZWTk0QkNTbFZSUG5ld1YtSWtzRkItRm01UHZwbEZodzdnUmtnRFJMdVcwczRHVExmQnJPbmUzTktPM2U1bjFvUUlwT1U1YUxqMk1JYzFsUzRNT0VMNWVKUkEwWEJvQjBWQ0NFYmJjd1JwQ1pNVVozWHk4cmFYR0Rrb1REc1p3d2NiczU2Sk9Db2JjMFdQMjdvYUlyRWVnSlFray1rYlRnM3pQSHVfS3dZQ0lEV0d4MTAyMmZPMHl4bWY0TWF6NkpBcmNZRXhwX0lmRQ?oc=5",
-      "published": "Wed, 27 May 2026 07:00:00 GMT",
-      "query": "global business conference summit 2026 2027 upcoming",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
       "title": "WTM London 2026 Registration Now Open | WTM London Hub - World Travel Market Events",
       "source": "World Travel Market Events",
       "discovery_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOR0ZwOXYwQ0x6RktoaEt3SnVGNnRuU3FOdDhDLVFJNmRJVkhWdEZ4aHRGSHMxRXh2WTNYT290bHowSEVwRGNkX1d1SWVzNlczVll4Znk4NWt2TEY2REtxSHNubU01NngzRlBvZjRRSEFQSlNZcENZdmZkWmdBeW9nOHFPYzVkb2VMQWRuR0pwazlya256QlRuVmpB?oc=5",
       "published": "Mon, 22 Jun 2026 15:01:25 GMT",
-      "query": "tourism travel event 2026 2027 upcoming",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
-      "title": "TAT targets 2.7 trillion baht in 2026 with high-season events and festivals - Nation Thailand",
-      "source": "Nation Thailand",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1hQjBVbXVsRHNUcGRZVmphTmNPYUUxOENZZHAwN0ZycmVSeE5kQlZDcXMzdHE2dnFzYWl6N0RiQzZWT2lxU1ZHSXJuYXV5UndhZHZlUlFKRWo0ZTFSMlBBUk93?oc=5",
-      "published": "Fri, 11 Sep 2026 07:00:00 GMT",
-      "query": "tourism travel event 2026 2027 upcoming",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
-      "title": "Mexican Hospitality Summit 2026 Closes with More Than 400 Industry Professionals and Announces Expansion Across Latin America - Hospitality Net",
-      "source": "Hospitality Net",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOZzJDWlk3V0t4Rm5RWEtBWVJiS2xhLUhwUUNSLVFZcHFfcUlFUzV1Y2Noa2Y5ZEU3X0t3MGlTM3R5b05LUmJoT2FOTVNBUHotN00tOWgzcFRuamhiS3VUbUFJNEJzRHYtbGFxT0cxQVNqYTExZmtDbU5fUUdzbTlyanlTTzlfMWk3dEJrTFFQN3hjMEhSUngxaUJlYVFCYlF2X0Jzbi0wQnVSUF9YZm1sRFdjUmVtMndTV25KVEtobXVxVV91dk43TnZ6djh5a19EZndrLWQ2d2hRQWh6YzUtQWtjRllydHRSQ1Q5eG9Ha3BXLXNTenpNOEl5YVA4Zw?oc=5",
-      "published": "Mon, 08 Jun 2026 07:00:00 GMT",
       "query": "tourism travel event 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
