@@ -114,18 +114,18 @@
   "140": [
     "Agribusiness owners, exporters, food companies, exhibitors and corporate buyers",
     "Flights + Hotels + Transfers + Business Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "LCCI Annual Agro-Allied Symposium & Exhibition 2026 is within one week in Lagos, Nigeria; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "LCCI Annual Agro-Allied Symposium & Exhibition 2026 ends today in Lagos, Nigeria; remaining travel enquiries should be handled immediately"
   ],
   "141": [
     "Plant scientists, universities, researchers, agribusiness firms and academic delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Event is live — contact active prospects and resolve any immediate travel needs",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Nigeria Plant Breeders Association International Conference 2026 is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "Nigeria Plant Breeders Association International Conference 2026 is currently underway in Abuja, Nigeria; focus on immediate and remaining travel requirements"
   ],
   "111": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
@@ -197,7 +197,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "United States Grand Prix 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "United States Grand Prix 2026 is within 30 days in Austin, USA; flight, hotel and transfer decisions should be moving now"
   ],
   "114": [
     "Energy companies, oil & gas teams, suppliers, executives and exhibitors",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-22T05:15:06.776924Z",
+    "generated_at": "2026-09-23T05:14:22.858519Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-22",
+    "reference_date": "2026-09-23",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
