@@ -106,42 +106,42 @@
   "108": [
     "Construction companies, contractors, developers, suppliers and procurement teams",
     "Flights + Hotels + Transfers + Business Travel",
-    "Event is live — contact active prospects and resolve any immediate travel needs",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
     "Follow up today on any active enquiry and close remaining travel requirements",
-    "Big 5 Construct Nigeria 2026 is currently underway in Lagos, Nigeria; focus on immediate and remaining travel requirements"
+    "Big 5 Construct Nigeria 2026 ends today in Lagos, Nigeria; remaining travel enquiries should be handled immediately"
   ],
   "140": [
     "Agribusiness owners, exporters, food companies, exhibitors and corporate buyers",
     "Flights + Hotels + Transfers + Business Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "LCCI Annual Agro-Allied Symposium & Exhibition 2026 ends today in Lagos, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "LCCI Annual Agro-Allied Symposium & Exhibition 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "141": [
     "Plant scientists, universities, researchers, agribusiness firms and academic delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Event is live — contact active prospects and resolve any immediate travel needs",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
     "Follow up today on any active enquiry and close remaining travel requirements",
-    "Nigeria Plant Breeders Association International Conference 2026 is currently underway in Abuja, Nigeria; focus on immediate and remaining travel requirements"
+    "Nigeria Plant Breeders Association International Conference 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
   ],
   "111": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Event is live — contact active prospects and resolve any immediate travel needs",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Azerbaijan Grand Prix 2026 is within one week in Baku, Azerbaijan; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "Azerbaijan Grand Prix 2026 is currently underway in Baku, Azerbaijan; focus on immediate and remaining travel requirements"
   ],
   "142": [
     "Airlines, airports, aviation regulators, executives, suppliers and aviation professionals",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Nigeria Aviation Forum 2026 is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "Nigeria Aviation Forum 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
   ],
   "109": [
     "Abuja exhibitors, corporate teams, SMEs, government-linked buyers and visiting traders",
@@ -242,9 +242,9 @@
   "122": [
     "Nigerian tennis fans, premium leisure travellers, player families and sports groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "WTA Finals Indian Wells 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "119": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-23T05:14:22.858519Z",
+    "generated_at": "2026-09-24T09:47:35.621393Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-23",
+    "reference_date": "2026-09-24",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
