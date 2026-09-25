@@ -106,10 +106,10 @@
   "108": [
     "Construction companies, contractors, developers, suppliers and procurement teams",
     "Flights + Hotels + Transfers + Business Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Big 5 Construct Nigeria 2026 ends today in Lagos, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Big 5 Construct Nigeria 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "140": [
     "Agribusiness owners, exporters, food companies, exhibitors and corporate buyers",
@@ -122,10 +122,10 @@
   "141": [
     "Plant scientists, universities, researchers, agribusiness firms and academic delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Nigeria Plant Breeders Association International Conference 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Nigeria Plant Breeders Association International Conference 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "111": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
@@ -138,18 +138,18 @@
   "142": [
     "Airlines, airports, aviation regulators, executives, suppliers and aviation professionals",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Nigeria Aviation Forum 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Nigeria Aviation Forum 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "109": [
     "Abuja exhibitors, corporate teams, SMEs, government-linked buyers and visiting traders",
     "Hotels + Transfers + Corporate Travel + Group Booking",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "21st Abuja International Trade Fair is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "21st Abuja International Trade Fair ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
   ],
   "112": [
     "Nigerian betting/gaming executives, operators, founders and industry delegates",
@@ -250,17 +250,17 @@
   "119": [
     "Nigerian founders, tech executives, startups, investors and innovation teams",
     "Flights + Hotels + Transfers + Business Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Web Summit 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "120": [
     "Nigerian government delegates, NGOs, climate teams, energy companies and policy executives",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "COP31 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "121": [
@@ -386,10 +386,10 @@
   "153": [
     "Christmas holiday travellers, music fans, families and diaspora visitors",
     "Flights + Hotels + Airport Transfers + Holiday Packages + Event Travel",
-    "Start planning now; identify Nigerian prospects and prepare travel options",
-    "EARLY",
-    "Review every 2–4 weeks until the event enters the active sales window",
-    "Christmas Eve Special — Detty December Fest 2026 is a future opportunity in Lagos, Nigeria; early lead building gives Cindrela more time to qualify and convert travel demand"
+    "Start prospecting now; build the target list and open early conversations",
+    "WARM",
+    "Follow up weekly and update booking status",
+    "Christmas Eve Special — Detty December Fest 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "133": [
     "Families, diaspora visitors, church groups and Christmas holiday travellers",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-24T09:47:35.621393Z",
+    "generated_at": "2026-09-25T10:05:45.554367Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-24",
+    "reference_date": "2026-09-25",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
