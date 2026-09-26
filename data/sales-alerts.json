@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T10:05:57.272858Z",
+  "generated_at": "2026-09-26T09:46:54.034235Z",
   "rules": [
     {
       "days_before": 90,
@@ -34,28 +34,6 @@
   ],
   "alerts": [
     {
-      "id": 109,
-      "title": "21st Abuja International Trade Fair",
-      "start_date": "2026-09-25",
-      "city": "Abuja, Nigeria",
-      "group": "business",
-      "products": [
-        "Corporate Travel",
-        "Hotel",
-        "Transfers",
-        "Group Booking"
-      ],
-      "source": "Abuja International Trade Fair",
-      "url": "https://aitf.accinigeria.com/",
-      "days_until": 0,
-      "alert": {
-        "days_before": 7,
-        "label": "URGENT",
-        "priority": "HOT",
-        "action": "Close pending bookings and confirm travel arrangements."
-      }
-    },
-    {
       "id": 112,
       "title": "SBC Summit 2026",
       "start_date": "2026-09-29",
@@ -72,7 +50,7 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian business travellers, executives and industry delegates may travel for the event",
       "end_date": "2026-10-01",
-      "days_until": 4,
+      "days_until": 3,
       "alert": {
         "days_before": 7,
         "label": "URGENT",
@@ -97,7 +75,7 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "end_date": "2026-10-11",
-      "days_until": 14,
+      "days_until": 13,
       "alert": {
         "days_before": 14,
         "label": "HIGH PRIORITY",
@@ -119,7 +97,7 @@
       ],
       "source": "Nigeria Mining Week",
       "url": "https://www.nigeriaminingweek.com/",
-      "days_until": 17,
+      "days_until": 16,
       "alert": {
         "days_before": 30,
         "label": "SELL NOW",
@@ -142,7 +120,7 @@
       ],
       "source": "Lekkside Education Fair",
       "url": "https://www.lekside.com/event/abuja-international-education-fair/",
-      "days_until": 17,
+      "days_until": 16,
       "alert": {
         "days_before": 30,
         "label": "SELL NOW",
@@ -165,7 +143,7 @@
       ],
       "source": "Agricultural Society of Nigeria",
       "url": "https://agriculturalsocietynigeria.org/60conference/",
-      "days_until": 24,
+      "days_until": 23,
       "alert": {
         "days_before": 30,
         "label": "SELL NOW",
@@ -190,7 +168,7 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "end_date": "2026-10-25",
-      "days_until": 28,
+      "days_until": 27,
       "alert": {
         "days_before": 30,
         "label": "SELL NOW",
@@ -212,7 +190,7 @@
       ],
       "source": "Nigeria Energy",
       "url": "https://www.nigeriaenergy-ng.com/",
-      "days_until": 32,
+      "days_until": 31,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -235,7 +213,7 @@
       ],
       "source": "NITDA",
       "url": "https://nitda.gov.ng/event/international-cybersecurity-conference-2026-icsc-2nd-edition/",
-      "days_until": 32,
+      "days_until": 31,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -260,7 +238,7 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "end_date": "2026-11-01",
-      "days_until": 35,
+      "days_until": 34,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -284,7 +262,7 @@
       "url": "https://www.olympics.com/",
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian athletes, supporters, families and delegations may travel for the event",
-      "days_until": 36,
+      "days_until": 35,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -309,7 +287,7 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "end_date": "2026-11-08",
-      "days_until": 42,
+      "days_until": 41,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -333,7 +311,7 @@
       "url": "https://www.wtatennis.com/tournaments/wta-finals",
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian tennis supporters, families and premium leisure travellers may travel for the event",
-      "days_until": 44,
+      "days_until": 43,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -358,7 +336,7 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian founders, executives, technology teams and delegates may travel for the event",
       "end_date": "2026-11-12",
-      "days_until": 45,
+      "days_until": 44,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -383,7 +361,7 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian government, NGO, corporate and policy delegates may travel for the event",
       "end_date": "2026-11-20",
-      "days_until": 45,
+      "days_until": 44,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -405,7 +383,7 @@
       ],
       "source": "NITDA",
       "url": "https://nitda.gov.ng/events/",
-      "days_until": 46,
+      "days_until": 45,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -428,7 +406,7 @@
       ],
       "source": "Advertising Regulatory Council of Nigeria",
       "url": "https://nationaladvertisingconference.com/",
-      "days_until": 47,
+      "days_until": 46,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -453,7 +431,7 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "end_date": "2026-11-21",
-      "days_until": 55,
+      "days_until": 54,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -475,7 +453,7 @@
       ],
       "source": "SOEHPON",
       "url": "https://conference2026.soehpon.com/contact/",
-      "days_until": 59,
+      "days_until": 58,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -497,7 +475,7 @@
       ],
       "source": "ASEICC",
       "url": "https://aseicc.org/",
-      "days_until": 60,
+      "days_until": 59,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -522,7 +500,7 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "end_date": "2026-11-29",
-      "days_until": 63,
+      "days_until": 62,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -545,7 +523,7 @@
       ],
       "source": "LOGSAMES",
       "url": "https://www.eventbrite.com/e/made-in-nigeria-shoe-expo-tickets-1982554800778",
-      "days_until": 63,
+      "days_until": 62,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -568,7 +546,7 @@
       ],
       "source": "AfroFutureTech iFest",
       "url": "https://aftifest.com/",
-      "days_until": 69,
+      "days_until": 68,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -593,7 +571,7 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "end_date": "2026-12-06",
-      "days_until": 70,
+      "days_until": 69,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -615,7 +593,7 @@
       ],
       "source": "Team Cymru",
       "url": "https://www.team-cymru.com/events/rise",
-      "days_until": 75,
+      "days_until": 74,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -639,7 +617,7 @@
       "url": "https://www.fifa.com/",
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian football supporters, families, sports groups and delegations may travel around the tournament cycle",
-      "days_until": 77,
+      "days_until": 76,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -662,7 +640,7 @@
       ],
       "source": "Bevents Logistics Synergy / Event listing",
       "url": "https://www.eventbrite.com/e/made-in-nigeria-export-exhibition-2026-tickets-1988557860090",
-      "days_until": 78,
+      "days_until": 77,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -685,7 +663,7 @@
       ],
       "source": "Eti-Osa Carnival",
       "url": "https://www.etiosacarnival.com/events.html",
-      "days_until": 79,
+      "days_until": 78,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -708,7 +686,7 @@
       ],
       "source": "Event organiser listings",
       "url": "https://dettydecfest.com/events/",
-      "days_until": 84,
+      "days_until": 83,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -730,7 +708,7 @@
       ],
       "source": "NTDA",
       "url": "https://ntda.gov.ng/event.calendar.php",
-      "days_until": 86,
+      "days_until": 85,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -753,6 +731,75 @@
       ],
       "source": "Detty December Fest",
       "url": "https://dettydecfest.com/events/",
+      "days_until": 89,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
+      }
+    },
+    {
+      "id": 133,
+      "title": "Christmas Day 2026",
+      "start_date": "2026-12-25",
+      "city": "Nigeria — nationwide",
+      "group": "seasonal",
+      "products": [
+        "Flights",
+        "Hotels",
+        "Airport Transfers",
+        "Holiday Packages",
+        "Family Travel"
+      ],
+      "source": "Catholic Secretariat of Nigeria",
+      "url": "https://www.catholicsecretariatng.org/event/christmas-day",
+      "days_until": 90,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
+      }
+    },
+    {
+      "id": 134,
+      "title": "Christmas at The Fest 2026",
+      "start_date": "2026-12-25",
+      "city": "Lagos, Nigeria",
+      "group": "seasonal",
+      "products": [
+        "Flights",
+        "Hotels",
+        "Airport Transfers",
+        "Holiday Packages",
+        "Event Travel"
+      ],
+      "source": "Detty December Fest",
+      "url": "https://dettydecfest.com/",
+      "days_until": 90,
+      "alert": {
+        "days_before": 90,
+        "label": "PLAN AHEAD",
+        "priority": "WARM",
+        "action": "Research target companies and prepare the sales offer."
+      }
+    },
+    {
+      "id": 135,
+      "title": "Eti-Osa Christmas Celebration 2026",
+      "start_date": "2026-12-25",
+      "city": "Lagos, Nigeria",
+      "group": "seasonal",
+      "products": [
+        "Flights",
+        "Hotels",
+        "Transfers",
+        "Holiday Packages",
+        "Event Travel"
+      ],
+      "source": "Eti-Osa Carnival",
+      "url": "https://etiosacarnival.com/events.html",
       "days_until": 90,
       "alert": {
         "days_before": 90,
