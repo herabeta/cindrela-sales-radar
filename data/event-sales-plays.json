@@ -34,10 +34,10 @@
   "101": [
     "Nigeria U-20 supporters, parents, youth football academies and team-linked delegations",
     "Flights + Hotels + Transfers + Group Travel",
-    "Event is live — contact active prospects and resolve any immediate travel needs",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
     "Follow up today on any active enquiry and close remaining travel requirements",
-    "FIFA U-20 Women’s World Cup Poland 2026 is currently underway in Poland; focus on immediate and remaining travel requirements"
+    "FIFA U-20 Women’s World Cup Poland 2026 ends today in Poland; remaining travel enquiries should be handled immediately"
   ],
   "105": [
     "Packaging/manufacturing companies, exhibitors, procurement teams and business delegates",
@@ -130,10 +130,10 @@
   "111": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Azerbaijan Grand Prix 2026 ends today in Baku, Azerbaijan; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Azerbaijan Grand Prix 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "142": [
     "Airlines, airports, aviation regulators, executives, suppliers and aviation professionals",
@@ -205,7 +205,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Nigeria Energy 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Nigeria Energy 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "145": [
     "Cybersecurity firms, IT companies, CISOs, government agencies and technical delegates",
@@ -213,7 +213,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "International Cybersecurity Conference 2026 (ICSC) is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "International Cybersecurity Conference 2026 (ICSC) is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "118": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
@@ -274,9 +274,9 @@
   "146": [
     "Advertising agencies, brand managers, media executives, marketers and corporate delegates",
     "Flights + Hotels + Transfers + Business Travel + Executive Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "National Advertising Conference 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "124": [
@@ -418,10 +418,10 @@
   "154": [
     "Music fans, diaspora visitors, entertainment groups and Lagos holiday travellers",
     "Flights + Hotels + Airport Transfers + Holiday Packages + Event Travel",
-    "Start planning now; identify Nigerian prospects and prepare travel options",
-    "EARLY",
-    "Review every 2–4 weeks until the event enters the active sales window",
-    "Detty December Fest — Legacy Headliner Night is a future opportunity in Lagos, Nigeria; early lead building gives Cindrela more time to qualify and convert travel demand"
+    "Start prospecting now; build the target list and open early conversations",
+    "WARM",
+    "Follow up weekly and update booking status",
+    "Detty December Fest — Legacy Headliner Night is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "156": [
     "Nigerian tech founders, CTOs, product teams, investors and corporate innovation leaders",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-26T09:46:42.272041Z",
+    "generated_at": "2026-09-27T10:26:44.786074Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-26",
+    "reference_date": "2026-09-27",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
