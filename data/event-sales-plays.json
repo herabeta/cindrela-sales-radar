@@ -34,10 +34,10 @@
   "101": [
     "Nigeria U-20 supporters, parents, youth football academies and team-linked delegations",
     "Flights + Hotels + Transfers + Group Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "FIFA U-20 Women’s World Cup Poland 2026 ends today in Poland; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "FIFA U-20 Women’s World Cup Poland 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "105": [
     "Packaging/manufacturing companies, exhibitors, procurement teams and business delegates",
@@ -186,9 +186,9 @@
   "143": [
     "Agribusiness companies, farmers, researchers, exhibitors, investors and professional groups",
     "Flights + Hotels + Transfers + Business Travel + Group Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "60th Agricultural Society of Nigeria Conference 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "117": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-27T10:26:44.786074Z",
+    "generated_at": "2026-09-28T11:34:37.931036Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-27",
+    "reference_date": "2026-09-28",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
