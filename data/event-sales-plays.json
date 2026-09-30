@@ -221,7 +221,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Mexico City Grand Prix 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Mexico City Grand Prix 2026 is within 30 days in Mexico City, Mexico; flight, hotel and transfer decisions should be moving now"
   ],
   "115": [
     "Nigerian athletes, parents, coaches, supporters and sports delegations",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-29T11:13:46.516554Z",
+    "generated_at": "2026-09-30T11:02:08.649446Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-29",
+    "reference_date": "2026-09-30",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
