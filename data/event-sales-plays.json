@@ -154,10 +154,10 @@
   "112": [
     "Nigerian betting/gaming executives, operators, founders and industry delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Event is live — contact active prospects and resolve any immediate travel needs",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
     "Follow up today on any active enquiry and close remaining travel requirements",
-    "SBC Summit 2026 is currently underway in Lisbon, Portugal; focus on immediate and remaining travel requirements"
+    "SBC Summit 2026 ends today in Lisbon, Portugal; remaining travel enquiries should be handled immediately"
   ],
   "116": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
@@ -229,7 +229,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Dakar 2026 Youth Olympic Games is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Dakar 2026 Youth Olympic Games is within 30 days in Dakar / Diamniadio / Saly, Senegal; flight, hotel and transfer decisions should be moving now"
   ],
   "123": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-09-30T11:02:08.649446Z",
+    "generated_at": "2026-10-01T11:28:49.609863Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-09-30",
+    "reference_date": "2026-10-01",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
