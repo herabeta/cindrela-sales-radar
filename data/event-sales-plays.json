@@ -154,18 +154,18 @@
   "112": [
     "Nigerian betting/gaming executives, operators, founders and industry delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "SBC Summit 2026 ends today in Lisbon, Portugal; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "SBC Summit 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "116": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "Singapore Grand Prix 2026 is within 30 days in Singapore; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "Singapore Grand Prix 2026 is within one week in Singapore; remaining travel enquiries are time-sensitive"
   ],
   "113": [
     "Mining companies, executives, investors, suppliers and technical delegates",
@@ -194,9 +194,9 @@
   "117": [
     "Nigerian F1 fans, premium travellers, corporate guests and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "United States Grand Prix 2026 is within 30 days in Austin, USA; flight, hotel and transfer decisions should be moving now"
   ],
   "114": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-01T11:28:49.609863Z",
+    "generated_at": "2026-10-02T10:58:50.082003Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-01",
+    "reference_date": "2026-10-02",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
