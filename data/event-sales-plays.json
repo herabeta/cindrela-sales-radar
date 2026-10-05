@@ -170,18 +170,18 @@
   "113": [
     "Mining companies, executives, investors, suppliers and technical delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "Nigeria Mining Week 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "Nigeria Mining Week 2026 is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
   ],
   "144": [
     "Students, parents, education agents and families planning overseas study",
     "Flights + Hotels + Transfers + Visa Assistance + Family Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "Abuja International Education Fair 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "Abuja International Education Fair 2026 is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
   ],
   "143": [
     "Agribusiness companies, farmers, researchers, exhibitors, investors and professional groups",
@@ -282,9 +282,9 @@
   "124": [
     "Nigerian F1 fans, premium travellers, corporate guests and entertainment groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Las Vegas Grand Prix 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "147": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-04T11:02:18.570272Z",
+    "generated_at": "2026-10-05T12:09:39.839828Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-04",
+    "reference_date": "2026-10-05",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
