@@ -202,17 +202,17 @@
   "114": [
     "Energy companies, oil & gas teams, suppliers, executives and exhibitors",
     "Flights + Hotels + Transfers + Corporate Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "Nigeria Energy 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "145": [
     "Cybersecurity firms, IT companies, CISOs, government agencies and technical delegates",
     "Flights + Hotels + Transfers + Business Travel + Executive Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "International Cybersecurity Conference 2026 (ICSC) is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "118": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-05T12:09:39.839828Z",
+    "generated_at": "2026-10-06T11:53:32.218859Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-05",
+    "reference_date": "2026-10-06",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
