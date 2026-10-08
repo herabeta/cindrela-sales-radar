@@ -426,10 +426,10 @@
   "156": [
     "Nigerian tech founders, CTOs, product teams, investors and corporate innovation leaders",
     "Flights + Hotels + Transfers + Business Travel",
-    "Start planning now; identify Nigerian prospects and prepare travel options",
-    "EARLY",
-    "Review every 2–4 weeks until the event enters the active sales window",
-    "CES 2027 is a future opportunity in Las Vegas, USA; early lead building gives Cindrela more time to qualify and convert travel demand"
+    "Start prospecting now; build the target list and open early conversations",
+    "WARM",
+    "Follow up weekly and update booking status",
+    "CES 2027 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "157": [
     "Nigerian tennis fans, families and premium leisure travellers",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-07T11:38:32.300652Z",
+    "generated_at": "2026-10-08T11:53:23.086332Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-07",
+    "reference_date": "2026-10-08",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
