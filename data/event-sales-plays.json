@@ -162,10 +162,10 @@
   "116": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Event is live — contact active prospects and resolve any immediate travel needs",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Singapore Grand Prix 2026 is within one week in Singapore; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "Singapore Grand Prix 2026 is currently underway in Singapore; focus on immediate and remaining travel requirements"
   ],
   "113": [
     "Mining companies, executives, investors, suppliers and technical delegates",
@@ -218,9 +218,9 @@
   "118": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "Mexico City Grand Prix 2026 is within 30 days in Mexico City, Mexico; flight, hotel and transfer decisions should be moving now"
   ],
   "115": [
@@ -245,7 +245,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "WTA Finals Indian Wells 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "WTA Finals Indian Wells 2026 is within 30 days in Indian Wells, USA; flight, hotel and transfer decisions should be moving now"
   ],
   "119": [
     "Nigerian founders, tech executives, startups, investors and innovation teams",
@@ -290,9 +290,9 @@
   "147": [
     "Environmental health professionals, hospitals, NGOs, researchers and conference delegates",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "SOEHPON Annual International Conference & Exhibition 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "126": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-08T11:53:23.086332Z",
+    "generated_at": "2026-10-09T11:44:43.285338Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-08",
+    "reference_date": "2026-10-09",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
