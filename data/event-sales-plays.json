@@ -226,9 +226,9 @@
   "115": [
     "Nigerian athletes, parents, coaches, supporters and sports delegations",
     "Flights + Hotels + Transfers + Group Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "Dakar 2026 Youth Olympic Games is within 30 days in Dakar / Diamniadio / Saly, Senegal; flight, hotel and transfer decisions should be moving now"
   ],
   "123": [
@@ -253,7 +253,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Web Summit 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Web Summit 2026 is within 30 days in Lisbon, Portugal; flight, hotel and transfer decisions should be moving now"
   ],
   "120": [
     "Nigerian government delegates, NGOs, climate teams, energy companies and policy executives",
@@ -261,7 +261,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "COP31 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "COP31 is within 30 days in Antalya, Türkiye; flight, hotel and transfer decisions should be moving now"
   ],
   "121": [
     "Nigerian tech firms, government agencies, developers, startups and digital executives",
@@ -298,9 +298,9 @@
   "126": [
     "Space-tech companies, government agencies, investors, researchers and executives",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Africa Space Economy Conference 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "125": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-09T11:44:43.285338Z",
+    "generated_at": "2026-10-10T11:03:05.223414Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-09",
+    "reference_date": "2026-10-10",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
