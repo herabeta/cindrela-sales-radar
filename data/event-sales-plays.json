@@ -162,10 +162,10 @@
   "116": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Event is live — contact active prospects and resolve any immediate travel needs",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
     "Follow up today on any active enquiry and close remaining travel requirements",
-    "Singapore Grand Prix 2026 is currently underway in Singapore; focus on immediate and remaining travel requirements"
+    "Singapore Grand Prix 2026 ends today in Singapore; remaining travel enquiries should be handled immediately"
   ],
   "113": [
     "Mining companies, executives, investors, suppliers and technical delegates",
@@ -269,7 +269,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Digital Nigeria 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Digital Nigeria 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "146": [
     "Advertising agencies, brand managers, media executives, marketers and corporate delegates",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-10T11:03:05.223414Z",
+    "generated_at": "2026-10-11T11:20:00.799407Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-10",
+    "reference_date": "2026-10-11",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
