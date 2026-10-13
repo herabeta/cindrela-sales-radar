@@ -170,18 +170,18 @@
   "113": [
     "Mining companies, executives, investors, suppliers and technical delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Nigeria Mining Week 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Nigeria Mining Week 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "144": [
     "Students, parents, education agents and families planning overseas study",
     "Flights + Hotels + Transfers + Visa Assistance + Family Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Abuja International Education Fair 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Abuja International Education Fair 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "143": [
     "Agribusiness companies, farmers, researchers, exhibitors, investors and professional groups",
@@ -306,17 +306,17 @@
   "125": [
     "Nigerian F1 fans, premium travellers, corporate guests and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Qatar Grand Prix 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "148": [
     "Footwear manufacturers, retailers, exporters, designers and business buyers",
     "Flights + Hotels + Transfers + Business Travel + Group Booking",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Made In Nigeria Shoe Expo 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "149": [
@@ -434,10 +434,10 @@
   "157": [
     "Nigerian tennis fans, families and premium leisure travellers",
     "Flights + Hotels + Transfers + Family Travel + Event Travel",
-    "Start planning now; identify Nigerian prospects and prepare travel options",
-    "EARLY",
-    "Review every 2–4 weeks until the event enters the active sales window",
-    "Australian Open 2027 is a future opportunity in Melbourne, Australia; early lead building gives Cindrela more time to qualify and convert travel demand"
+    "Start prospecting now; build the target list and open early conversations",
+    "WARM",
+    "Follow up weekly and update booking status",
+    "Australian Open 2027 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "158": [
     "Nigerian CEOs, senior executives, investors, government leaders and policy delegates",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-12T12:55:41.446337Z",
+    "generated_at": "2026-10-13T12:33:03.058327Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-12",
+    "reference_date": "2026-10-13",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
