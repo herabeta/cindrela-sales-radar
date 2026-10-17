@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-16T09:36:14.439515Z",
+    "generated_at": "2026-10-17T09:06:58.581164Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-16",
+    "reference_date": "2026-10-17",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
