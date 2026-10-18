@@ -242,9 +242,9 @@
   "122": [
     "Nigerian tennis fans, premium leisure travellers, player families and sports groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "WTA Finals Indian Wells 2026 is within 30 days in Indian Wells, USA; flight, hotel and transfer decisions should be moving now"
   ],
   "119": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-17T09:06:58.581164Z",
+    "generated_at": "2026-10-18T09:24:54.727095Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-17",
+    "reference_date": "2026-10-18",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }

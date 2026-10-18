@@ -1,9 +1,25 @@
 {
-  "generated_at": "2026-10-17T09:05:47.323108+00:00",
+  "generated_at": "2026-10-18T09:23:52.438224+00:00",
   "engine": "Phase 2 event discovery inbox",
   "status": "discovery_only",
   "rule": "Discovered news is never promoted directly to Sales Opportunities. Verify official source, date, location and Nigeria travel-sales relevance first.",
   "items": [
+    {
+      "title": "Mega Project Nigeria Expo 2026 Marks 10th Anniversary with Strategic Partnerships, National Recognition Awards - THISDAYLIVE",
+      "source": "THISDAYLIVE",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQY1Vqcnd4RmJ3MGFBSDFhRVhUOU9HXzVwYW9nZTdIV3FMZlF1WnZQVUl2blNMUHFULUFTNHd4SnFueGc3RGFaYWtqdGF4VFhrX2ZfSFFSczlKY09JYjVGQ2dTRFUwMGEtTTRtT1NhVjVoRXNjUFc2RXBfZVMzQWRncGxidHZLbXdBTFdYM0xXcFo2LXRnZXNucG5GSVQtQlBiRjF2RDRqU0RqU25QbHBuM2lqMnYyLTlNUC1SNW96SGFoVTBWNXNPcWQ3My02TFRtZ2tsM3NZMEU0UUp1a2xrVmhQUQ?oc=5",
+      "published": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "query": "Nigeria Abuja new event conference exhibition 2026 2027",
+      "detected_date_text": "",
+      "official_source_hint": false,
+      "status": "needs_verification",
+      "verification": {
+        "date_confirmed": false,
+        "location_confirmed": true,
+        "official_source_confirmed": false,
+        "nigeria_sales_relevance_confirmed": true
+      }
+    },
     {
       "title": "Nigeria to Host 2026 RegTech Africa Conference & Expo Under the Patronage of the Office of the Vice President - Africa24 TV",
       "source": "Africa24 TV",
@@ -53,106 +69,106 @@
       }
     },
     {
-      "title": "The Global Healthcare Expo 2027: Asia's Gateway to Global Healthcare Markets, Partnerships & Growth - https://www.irishsun.com/",
-      "source": "https://www.irishsun.com/",
-      "discovery_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQjE5SnB4N2xIMlV4UW9mQU10NTgtYUlfcDhSUE9oRXAyMjZLTnJmN0xCYXM0NmlMclpRMVpqTkZCVjc0UjFvZVpyOFdMeXJvWGNsc2VoWFNsMjFMOThzZ0tqWkZVdlQza2hET1VETU5XS1RqXy1RbWh5c3ptamNOaWtVcUdQeHlDWXR5dmtSUEdpRmphYjB0M2RKajgzdjR0X2xka0w2SDJ3NlpfUW5IODQtM29lcFFuYzlzLVk5N1JnS1NRcXpPY1BvMVV1Zw?oc=5",
-      "published": "Fri, 16 Oct 2026 01:02:00 GMT",
-      "query": "Africa new conference exhibition trade fair 2026 2027",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
-      "title": "Top grocery trade shows in 2027 - Grocery Dive",
-      "source": "Grocery Dive",
-      "discovery_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8wS0hPRmxSSlMzVWRWaFRHUGxybnotWjd2ODJ1VDJMYXhqdTczMlgxTnJqVFlaOWZFM0VKcFg4bmo2cTJKRldmaTBpWV9aMTl6Y2xodWpXWmZnMWVENzQ0YzZacktCYlV0UF9QREliN0pLelVweFo0cA?oc=5",
-      "published": "Tue, 06 Oct 2026 07:00:00 GMT",
-      "query": "Africa new conference exhibition trade fair 2026 2027",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
-      "title": "WHX Lagos 2026 opens with bold push for health sector transformation - The Guardian Nigeria News",
-      "source": "The Guardian Nigeria News",
-      "discovery_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQU1RFdWo0MXJ5WDBHNTRSSU1TSEljVFNGNTZLWHBWUEJ5QkRRSTdPY1owX2ltYUtjWlloSGhsX1JJWXR6ZDVJelYxY2tRcGRCcUFKRnVVVmlWUWRKb2RJeDZOaDd2WTBORW5pQmQtUU5yQW11R1Z6RzMzb054bUNaTTZLdnNDbXNCaUx2Z2tTRmRBei1yZWZLS3Jn?oc=5",
-      "published": "Tue, 02 Jun 2026 07:00:00 GMT",
-      "query": "Africa new conference exhibition trade fair 2026 2027",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": true,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": true
-      }
-    },
-    {
-      "title": "PROpaper Nigeria 2026 exhibition holds in Lagos, receives FG’s commendation - The Sun Nigeria",
-      "source": "The Sun Nigeria",
-      "discovery_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZTRzUXpKQmYzM2hhQzVWc1FENlp1TWlIUk9oZjZWNEhGVnZDUDZ2em5tUTdlY2p3QXhmX3cxSVlIREhPeXRNcWZwVWlGNHpCZjFDV2V3aUtKYWZBemxpN2hBbWs4RUhsQWpBRzl6S2VadW5xeVF6SzNjX3NRY3BWanp5SjBVcHk0U0VwUXhFclFWRUppbXBJ?oc=5",
-      "published": "Thu, 25 Jun 2026 07:00:00 GMT",
-      "query": "Africa new conference exhibition trade fair 2026 2027",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": true,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": true
-      }
-    },
-    {
-      "title": "African Air Transport Convention & Expo 2026 Delivers Landmark Commitments for the Future of African Aviation - Yahoo Finance Singapore",
-      "source": "Yahoo Finance Singapore",
-      "discovery_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbElCbGczV3pKZkRzbm9uLW5MUEFyLTY0MVcxLXRXWUItUHo3ajZjQmxFZ2JBdjZTTUd2VW1wQmlDZTQxM1FtSDBTZUQzUFFkZHdwUDRtbFdHSUxMUG1CTFF0Q1h0RmFWcEIxTkpPbTRzSTFQSlo3RV93NGxLUXY1QjFTMVRYQXpsZEY4bGRFRQ?oc=5",
-      "published": "Mon, 06 Jul 2026 07:00:00 GMT",
-      "query": "Africa new conference exhibition trade fair 2026 2027",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
-      "title": "Africa Agri Expo 2026 to Spotlight East Africa's Expanding Agriculture and Food Value Chain - Global Agriculture",
-      "source": "Global Agriculture",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNnh0SVJ1a1c5czBvaGtBdlZJVDBhYktxY2NyUkZ4Ynh2OUtNbXd4MEdRRnJHQVJ0Wlk5aEF5VTFIbjlzUDZxVVFYeXpTZVBhQUVvOXVBUXRBZjNPYmc5MVFmcXV2bUF3Q19BaWFYcE5idEpPRW1hUGdnX21SMktCVlVpQTg5WkphZGc4b3ZtcEhJNTlMMDV4YjdLRTNtZklPN0UxanJwNFUzZ1VwTHpOZFFRVXYyTzhSVlk3dEN1ZlB5TFQzVDNRUUhISUY1SlV3Vnp0b2VCb3BPQWlPenlr?oc=5",
-      "published": "Thu, 30 Jul 2026 07:00:00 GMT",
-      "query": "Africa new conference exhibition trade fair 2026 2027",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
       "title": "WHX Labs in Dubai 2027 | Formerly Medlab Middle East - World Health Expo",
       "source": "World Health Expo",
       "discovery_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5KQkFYS1NmNnVNMlgzZ0gwRWtqR0NCZTRSUjN0SkRWYTcyTDFiSGFOdldxR09Kb2RKd0ROcEFaRkp0TlkxaEd4bDlQOXhFZm9Ia2tuUmw5cDhtdFdhbWRJ?oc=5",
       "published": "Wed, 29 Apr 2026 09:02:53 GMT",
+      "query": "Africa new conference exhibition trade fair 2026 2027",
+      "detected_date_text": "",
+      "official_source_hint": false,
+      "status": "needs_verification",
+      "verification": {
+        "date_confirmed": false,
+        "location_confirmed": false,
+        "official_source_confirmed": false,
+        "nigeria_sales_relevance_confirmed": false
+      }
+    },
+    {
+      "title": "Nigeria Signs Agreement With Afreximbank To Host 2027 Intra-African Trade Fair In Lagos - Arise News",
+      "source": "Arise News",
+      "discovery_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORUtrcWZia09zVjI5WlZSbWhybWRhdjIwVVlNeC1IbF9RNnVqWDd4QXgtX1k4VjFRbU9EQWpnUmllZE9PNWhwNlRBTlNBRzRPSnF2OVhISHlUUzlZaWsxaHg5c2VDblZTYnRHalFENElndDNoeS1abDBvSndpT1RDLTNzZlpxX0JqMjk1S2tGRlAxQVJ4VmczdEJUbGROMi1IMW5HUHBZNHdTVzNxSUE?oc=5",
+      "published": "Tue, 10 Mar 2026 07:00:00 GMT",
+      "query": "Africa new conference exhibition trade fair 2026 2027",
+      "detected_date_text": "",
+      "official_source_hint": false,
+      "status": "needs_verification",
+      "verification": {
+        "date_confirmed": false,
+        "location_confirmed": true,
+        "official_source_confirmed": false,
+        "nigeria_sales_relevance_confirmed": true
+      }
+    },
+    {
+      "title": "Nigeria-Sierra Leone Trade Fair 2026: Dr Nwafor Calls for Greater Participation, Exhibition - Independent Newspaper Nigeria",
+      "source": "Independent Newspaper Nigeria",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxON052M0l1RDE4WEg4Y1RoYUZVQkdlQlF1bjVqdTBhX0wxb1pEZnl4aHdJZDUtbXpXRFJyX0VBcUpCNHNldU51ZVp1WmphcGtIb2hJVEE1T01TY0d3cTk1cFpFNmdoMFVFaFFaT1ZQNWV3Qmlkc1VESm1jMncwUnR6Yy1PSUdjQkEyLUJtamM5dVVLZXdWbkRjOGw5TnZRX1NPcHJEanoyaFRGZWtXMkdDckJvRQ?oc=5",
+      "published": "Sat, 06 Jun 2026 07:00:00 GMT",
+      "query": "Africa new conference exhibition trade fair 2026 2027",
+      "detected_date_text": "",
+      "official_source_hint": false,
+      "status": "needs_verification",
+      "verification": {
+        "date_confirmed": false,
+        "location_confirmed": true,
+        "official_source_confirmed": false,
+        "nigeria_sales_relevance_confirmed": true
+      }
+    },
+    {
+      "title": "Nigeria to host the Intra-African Trade Fair in 2027 - African Export-Import Bank",
+      "source": "African Export-Import Bank",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObEdwb0ZjVUJGd0ZXSEwyUHc3bW9pR1BOX0k4M3YwQzFNcU5jUmZZaXR3SmVlOHdMdWRSa2ZsMGFsdy1veUFjclRYLTZGR1lxc3hjUHJsa1FDcUU0bkVYU0RBYmZXdUV2cWRIZy1Ha24wOXJjbEhmcTVENXY0TnEySkZoMmEwSkdX?oc=5",
+      "published": "Fri, 05 Sep 2025 07:00:00 GMT",
+      "query": "Africa new conference exhibition trade fair 2026 2027",
+      "detected_date_text": "",
+      "official_source_hint": false,
+      "status": "needs_verification",
+      "verification": {
+        "date_confirmed": false,
+        "location_confirmed": true,
+        "official_source_confirmed": false,
+        "nigeria_sales_relevance_confirmed": true
+      }
+    },
+    {
+      "title": "Group partners Netherlands for 2026 agro-trade fair - Punch Newspapers",
+      "source": "Punch Newspapers",
+      "discovery_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB3VHJlbERZblFJR1RkZWluVG1tazlFV3Q0QjNJWEltZjMwYnFQWm4wemZVSEFYZmJmYmJjMzNheXp1YTRPd3BiUmpxTHFYQk1qQVN0cGRKVTJoMHVoUVhYY2Mzc0J6a1FkYnVwR3dvZ05Rck5wTENxeXB3Sjg?oc=5",
+      "published": "Fri, 25 Apr 2025 07:00:00 GMT",
+      "query": "Africa new conference exhibition trade fair 2026 2027",
+      "detected_date_text": "",
+      "official_source_hint": false,
+      "status": "needs_verification",
+      "verification": {
+        "date_confirmed": false,
+        "location_confirmed": false,
+        "official_source_confirmed": false,
+        "nigeria_sales_relevance_confirmed": false
+      }
+    },
+    {
+      "title": "Canton Fair 2026: Your guide to the China Import and Export Fair - WorldFirst",
+      "source": "WorldFirst",
+      "discovery_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNY2pmS0hXbG53c3F5Q1BBTDdSRjBWcEk0WUZCMGU1OXZvZ3pITkRoR3NicUZPUUREZ3VqNFJFVGNES1lKX1RTUEtoTEpuX0FjWVRKUXpnVURNOVNacjA5MVd1eVU2QWo4bVVEYUFVNGNpRFhLWUhiYkFjdjllZGZZeGk1aw?oc=5",
+      "published": "Fri, 07 Aug 2026 07:00:00 GMT",
+      "query": "Africa new conference exhibition trade fair 2026 2027",
+      "detected_date_text": "",
+      "official_source_hint": false,
+      "status": "needs_verification",
+      "verification": {
+        "date_confirmed": false,
+        "location_confirmed": false,
+        "official_source_confirmed": false,
+        "nigeria_sales_relevance_confirmed": false
+      }
+    },
+    {
+      "title": "ANUGA SELECT IBÉRICA 2027 | Food Industry Trade Fair - IFEMA Madrid",
+      "source": "IFEMA Madrid",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAzcmZyaVF2d2thMldUZXZocXZKNl9wVDNHZTNrQm9oUkQ3ZWZueWFEQmVYT0tsaVVBMzJxaGNpR05sWFNfY0Y5NG5ldTdaRnV5QmdFdU5kSQ?oc=5",
+      "published": "Fri, 21 Nov 2025 00:59:16 GMT",
       "query": "Africa new conference exhibition trade fair 2026 2027",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -181,10 +197,10 @@
       }
     },
     {
-      "title": "Call for Speaker Abstracts Now Open for the 2027 International Biomass Conference & Expo - EIN News",
-      "source": "EIN News",
-      "discovery_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWTh6YjJaOVd2djZpYjRWYzdYM2ZFN293SnBuR3JacnBla2xwUWh6elI2bVFjS2VpVEpTNmdaMW5sM1pad3ZKRENCVGFxZG9VZW9lVmxCUU51ZkpGUzM3el9hSlRBbW1sb1BzVDZKTzBidVZ6QThTOHQ3cG5UbDBucEE5bWFDVU9SRjNHSkRJOF9HMk8tUzBwbU50V3FSS0d3UTcySFl4aHkxdFdVMTJSTXRSR1gteE5WS1JFS0lnS29HNU51bzNr?oc=5",
-      "published": "Tue, 29 Sep 2026 21:43:00 GMT",
+      "title": "2026 UAS Summit & Expo Announces Expanded Agenda for Landmark 20th Annual Event - EIN Presswire",
+      "source": "EIN Presswire",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbGFYclFjcjBCQ1Z2c2VDa3FXVFFqZUlqSWNQQkU1dXp5M1VvQU52TU10Tm5NVjFZcGNhR01vTkVRT2dFdVg3TXFWamR2UU5KRzNDS3VNTzRTUVR4UGRXWlVMSnhqeHdlTHdHN3JqUmJESjNkZ244Uy12V1BMdENnOERObE1PZk44empiMGppRzVZX3Y0VHlRV0hWeXpSQXMyczB6RlN6Z2wxUTBNU1dxSGRqRDhDT1NKaTlXdW5UOENPUQ?oc=5",
+      "published": "Thu, 06 Aug 2026 07:00:00 GMT",
       "query": "international conference exhibition summit 2026 2027 Nigeria attendees",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -197,10 +213,10 @@
       }
     },
     {
-      "title": "2026 UAS Summit & Expo Announces Expanded Agenda for Landmark 20th Annual Event - EIN Presswire",
-      "source": "EIN Presswire",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNbGFYclFjcjBCQ1Z2c2VDa3FXVFFqZUlqSWNQQkU1dXp5M1VvQU52TU10Tm5NVjFZcGNhR01vTkVRT2dFdVg3TXFWamR2UU5KRzNDS3VNTzRTUVR4UGRXWlVMSnhqeHdlTHdHN3JqUmJESjNkZ244Uy12V1BMdENnOERObE1PZk44empiMGppRzVZX3Y0VHlRV0hWeXpSQXMyczB6RlN6Z2wxUTBNU1dxSGRqRDhDT1NKaTlXdW5UOENPUQ?oc=5",
-      "published": "Thu, 06 Aug 2026 07:00:00 GMT",
+      "title": "Call for Speaker Abstracts Now Open for the 2027 International Biomass Conference & Expo - EIN News",
+      "source": "EIN News",
+      "discovery_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWTh6YjJaOVd2djZpYjRWYzdYM2ZFN293SnBuR3JacnBla2xwUWh6elI2bVFjS2VpVEpTNmdaMW5sM1pad3ZKRENCVGFxZG9VZW9lVmxCUU51ZkpGUzM3el9hSlRBbW1sb1BzVDZKTzBidVZ6QThTOHQ3cG5UbDBucEE5bWFDVU9SRjNHSkRJOF9HMk8tUzBwbU50V3FSS0d3UTcySFl4aHkxdFdVMTJSTXRSR1gteE5WS1JFS0lnS29HNU51bzNr?oc=5",
+      "published": "Tue, 29 Sep 2026 07:00:00 GMT",
       "query": "international conference exhibition summit 2026 2027 Nigeria attendees",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -277,10 +293,10 @@
       }
     },
     {
-      "title": "2026 FIFA World Cup awards: Full list of winners - Vanguard News",
-      "source": "Vanguard News",
-      "discovery_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQX2NMSlpaX2Q2UTNZTEJTZHlWNEdHSEpRRl9hc3ZYbTNleTZjeHJIOVhFa1gzcUs1UVJpX3l5SVBTUzhCRThyUmpBOTh5X1ZkVEN6TDhZYVRxcWdhTHZZLU0zSkNnLVI3Q1JkVlBleElqN3Atb1hmU3BpdEZoQVpreW1lb1RfamJRMjZyYdIBkgFBVV95cUxQdUVMeXZleXhDSXFrMHhPQ2RJUWs2c0NTTGJTYjF0THMwcXNFNmFQNUM1THdzeUxEUDhVaEp2RE9JdHpfSW05TUVmNVgzdGw5X3RPZ1lNQnkxY1FuNkJQdnhUdlRRWXU0a0dOOVFyS2lKdlFtUC1WVUxVSzhNSC1wbVJ1bE4zWWh1YmZvNDhQdDhFUQ?oc=5",
-      "published": "Sun, 19 Jul 2026 07:00:00 GMT",
+      "title": "2027 Women's World Cup: Qualifying groups, teams qualified & venues - everything you need to know - BBC",
+      "source": "BBC",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5fRFE0TmpnQjk4dTNiNDRJdzVINkJGMW9Jc0dTU3dodlkwTXN0MEpDTWhzcDV5S193WTV3X3R2bEZpcFIzSHVHZXpkQzVrWVROU2RXR3p0WGhNVjctQ1BUTVE2d1d6bFkzWmc?oc=5",
+      "published": "Wed, 04 Mar 2026 08:00:00 GMT",
       "query": "FIFA football tournament 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -298,6 +314,38 @@
       "discovery_url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTmdXUkJFUUUxeG5rcWpHY3pQQjJuOXhaQTU5dXdsdjdpUEdrWVB0bjEyX1V4eW1jWnRoUkU1TmVRODlsNG5wY1E0SWxMejJSTDg4MWIzT2stRHBZZE1hZzRYY0FKc2VSckQ0dTNTRkNuaHVUMmRZZnM4eF9yaFVodzloaGpPdnFWR00ySWZn?oc=5",
       "published": "Mon, 10 Aug 2026 07:00:00 GMT",
       "query": "FIFA football tournament 2026 2027 upcoming",
+      "detected_date_text": "",
+      "official_source_hint": false,
+      "status": "needs_verification",
+      "verification": {
+        "date_confirmed": false,
+        "location_confirmed": false,
+        "official_source_confirmed": false,
+        "nigeria_sales_relevance_confirmed": false
+      }
+    },
+    {
+      "title": "FIFA set to announce the FIFA Women's World Cup Brazil 2027™ Match Schedule - CommBank Matildas",
+      "source": "CommBank Matildas",
+      "discovery_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMkNsSm01b0xvLVRtaGVFQkhVMG8waXk5OWctTHBjc2V1OUhZZ1huV3VhWnBpZG9CTEdDUUN0eDRlWmlka0ZubGp6T1RsWHg2NUFiaWxCSEJUazlXN3RaaXRVYzVfeFRyN3RndTNVLTdWVUZ0ZlFfdloyeEd5QnFObjE3NUdJQmlUTko2bmZpSzEzNUlZMlFheXc5MnlKZw?oc=5",
+      "published": "Thu, 20 Aug 2026 07:00:00 GMT",
+      "query": "FIFA football tournament 2026 2027 upcoming",
+      "detected_date_text": "",
+      "official_source_hint": false,
+      "status": "needs_verification",
+      "verification": {
+        "date_confirmed": false,
+        "location_confirmed": false,
+        "official_source_confirmed": false,
+        "nigeria_sales_relevance_confirmed": false
+      }
+    },
+    {
+      "title": "Max Verstappen targets ‘one of the biggest events' in 2027 as F1 calendar leaves door open - GPblog",
+      "source": "GPblog",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQT0hyQUFFUmhmSFp0ZUZtOFFxVHZ2elBqT3VDOWQ1NXhBc1hpX1B4dnNDd2I5RVo0WkU1Z3lmOFVoNG5UQlcyQ3U4VnRieE9GNVEyUFROb204NXRZc2hLeHNLWGpZSVlMX2NBSlczR1Yyd3BnbkZSWXBWRXFra2ZZOGxBVjhBcGNtYmJXQ2h6dUloNVNMNzZENzZNOUZaTVcxZEMxWWZYb3c2dw?oc=5",
+      "published": "Sat, 17 Oct 2026 14:03:38 GMT",
+      "query": "F1 Formula 1 race 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
       "status": "needs_verification",
@@ -421,6 +469,22 @@
       }
     },
     {
+      "title": "Ticketmaster becomes Official Ticketing Partner of the FIBA Basketball World Cup 2027 - FIBA",
+      "source": "FIBA",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcGpKQlBueUduOTd3QWJkSFJoRWs5X3ZCc0hGQXJMTDAySkZCbGtzaGViMHF2U3VMallEQ2FmcHBOVjk1bVFWWFd4VE5WMXhqeGFfdHNLcEF5UG15NnZKUUNlRHpadWZYcVZWX0JwZVFXQnJaOWNhQVpDMGtWMW5tamlYbWxrbWZPOUsyWnNrYWdTVS1ldW5VWXVHMF9rUGdSV2Q0bmI4dXZKWTR5bWk0MmJteEk5NUluSVViQndVR3g?oc=5",
+      "published": "Wed, 26 Aug 2026 07:00:00 GMT",
+      "query": "FIBA basketball 2026 2027 upcoming",
+      "detected_date_text": "",
+      "official_source_hint": false,
+      "status": "needs_verification",
+      "verification": {
+        "date_confirmed": false,
+        "location_confirmed": false,
+        "official_source_confirmed": false,
+        "nigeria_sales_relevance_confirmed": false
+      }
+    },
+    {
       "title": "Chile vs USA - Second Round - FIBA Basketball World Cup 2027 Americas Qualifiers - FIBA",
       "source": "FIBA",
       "discovery_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ1k1b2M5RkVCdGNSQmVjaFJTTml0aS0wejVVVmRjUDR0ak1kekZfTF9FcExvckNUTFg2QlpqWUllWHdfNDQ5RlRPdEFCNlM0QWZ3M1k3RTJzNy1vSU9qbVlyWVFwSHVKbTVoeVVIbXBMN0hwdTBtLVA1YUlSM2c5bnk5TTJ4dHRNNzBJclVKREdoTi12RERhLXduWUVqejNOZDlyQlZoVlVZbEtvWkE?oc=5",
@@ -485,38 +549,6 @@
       }
     },
     {
-      "title": "FIBA Basketball World Cup 2027 European Qualifiers Smart Power Rankings: Volume 5 - FIBA",
-      "source": "FIBA",
-      "discovery_url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPYnBlT2NVckpXSUdLOG5XQ1VlOVdINURJazVDdklscXJqTV9Sb3dqdEtxYnVYQzJGS0VYUTVpaTJFR1ZDOWJFbWtHUjZFTWk2bmpGdUt0VFpqU3JIV3FtQ3JqczJqcXA1Wm1jbWVNUnU0RS1IYi1reFJRUHJhR0pDcERKNnlqSnowdHEtbnIybXZkcTB2ZHFTS0l5dnVod0Z0RDdpd3Zmajg3Q1NSbU5xOEpReGRVMVo3WTRxWjc0Wnhtb09iU3FvR2hVeHRFZXdqTl9NNlFudEk1QlFrdjdXUUxTT2hzRGlLcTNCTWpDWWRjalVsQnpuMFRJQnZHbWhiOVFxVA?oc=5",
-      "published": "Tue, 23 Jun 2026 07:00:00 GMT",
-      "query": "FIBA basketball 2026 2027 upcoming",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
-      "title": "USA vs Colombia - Second Round - FIBA Basketball World Cup 2027 Americas Qualifiers - FIBA",
-      "source": "FIBA",
-      "discovery_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMWdIcEEzNXdtOUJpRjJ1X29VaHA0U2ZzY2FaSGZnZUxISDdGdWVfWGowUzBENVdDb1A1RGxOMnVRcXdzSkpVRnFsdnhEcEpBWmgzbzM0Z2lrVjEtZVFsSUQxZ0c2N0RjTVJJNGtPTng5dzlfZ3pyM0dBZVdrOXNJQlZRZktoQkhyYmNWbC1sdlVWcEVwandJbmFzSGFjS0ZuWUNjMWFPcFVuZU93N0E?oc=5",
-      "published": "Fri, 10 Jul 2026 02:35:27 GMT",
-      "query": "FIBA basketball 2026 2027 upcoming",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
       "title": "Cricket World Cup 2027 schedule: India vs Pakistan in Johannesburg on October 10 - full list of matches - Olympics",
       "source": "Olympics",
       "discovery_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWEVVUTA5R01oaFYxRWd6TUFuWUZ3aEdGSjAza2gyeTZFOUlBZ0V3SHktMHNBOWpISGtzYkQtTzN0T05WOVhHUy1GeHBpcFBGbER4VVF0THpPNjZuVzR1YTJyR1FxMFVkb0lpVnU5X3ZSOXVucy11YnpTVzR2OHdFTjc4WDNUd1lJQ09rdlJ6VmN3b2N2TGdtbXA2RzRZcWt6NVE?oc=5",
@@ -537,22 +569,6 @@
       "source": "Yahoo Sports",
       "discovery_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNTVp1c3kwVGRaenJWNlc5ckczUWVidWtBZUVjS3VLM0lJOG0wQ3N5YS13aE5JRGNaX0NhaWVma0p6ZE9ya3FtMV9DZ19kWVIwOE1xS0VCOWhHMnJSQmFwaGd6S3lhcEJNSjZkdmFXQWxERV9iX19rMDAwUllMc3dnLUl4WQ?oc=5",
       "published": "Tue, 13 Oct 2026 18:35:00 GMT",
-      "query": "ICC cricket 2026 2027 upcoming",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
-      "title": "Fixture schedule announced for ICC Men’s Cricket World Cup 2027 - ICC",
-      "source": "ICC",
-      "discovery_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPd21hYVlqNmRlVzJ5TmRyV3RjWFRDUURxUXh2TV9xSkNRLTlab2Q4Rm96eGRJQkpkMXVmOUV0UkRuOERHTG5aVVdwd0UtRzBEZGI0SnN2N3pvcnNySFdfZE1zX05aaTNWWWd4QnZkdkJ6eFd2TGhZNUdkb3FvWGN0R3FxeDc5bUQyM1B5Zk1qUDZsalBIUmtFZUwtVGgxLVc4dExNYmVlSUhVclRMYWdIaXJIUnNyVkhzWkI4amZQbE1pYlJLOTh3ZUxTaEpnUEMt?oc=5",
-      "published": "Thu, 01 Oct 2026 07:00:00 GMT",
       "query": "ICC cricket 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -597,9 +613,9 @@
       }
     },
     {
-      "title": "Pakistan's complete World Cup 2027 schedule: All matches, dates, venues and timings - Yahoo Sports",
-      "source": "Yahoo Sports",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQkI3THlqdDlrUWNuakl2NUowWEVLSVJDdzFud2l6clVnSUNONnJfRlRnRThjcHJXbzFxeVVsYUhubkxtSEtJRU9uZ3FhSERfaVYwVHRjenZwSGxkNkFId0RmR2MtYmdSd2UtMkp3QW5oSmhQSW5SbjNuQ2NFNWtxSlN5WnpzSm1adUE?oc=5",
+      "title": "Fixture schedule announced for ICC Men’s Cricket World Cup 2027 - ICC",
+      "source": "ICC",
+      "discovery_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPd21hYVlqNmRlVzJ5TmRyV3RjWFRDUURxUXh2TV9xSkNRLTlab2Q4Rm96eGRJQkpkMXVmOUV0UkRuOERHTG5aVVdwd0UtRzBEZGI0SnN2N3pvcnNySFdfZE1zX05aaTNWWWd4QnZkdkJ6eFd2TGhZNUdkb3FvWGN0R3FxeDc5bUQyM1B5Zk1qUDZsalBIUmtFZUwtVGgxLVc4dExNYmVlSUhVclRMYWdIaXJIUnNyVkhzWkI4amZQbE1pYlJLOTh3ZUxTaEpnUEMt?oc=5",
       "published": "Thu, 01 Oct 2026 07:00:00 GMT",
       "query": "ICC cricket 2026 2027 upcoming",
       "detected_date_text": "",
@@ -613,9 +629,9 @@
       }
     },
     {
-      "title": "ICC MEN’S CRICKET WORLD CUP 2027 SCHEDULE REVEALED AND BALLOT SYSTEM OPENS - ICC",
-      "source": "ICC",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZjZvMTBSV194LVEyRFctWXgxY0RKSVRrY1EtaWN2WlM0M1U5dG5QanQ1SVlGNU1RYm5TeGVDbUUwWFhUaGczRFMzRVBiUnZjMHdWWmpsM1NSN0d4OGFuUEcydURWaUlLVW85ZGR1clFqY3Z4MVozbzJvTXUxVHY1bi1FQXloZ0hwZGlDdlRNVVBXQWhraWxWRkxuRkF5ZVRXYmFfd2ExbUVXY2lVOGhRZ1AwT3FXZDR4?oc=5",
+      "title": "Pakistan's complete World Cup 2027 schedule: All matches, dates, venues and timings - Yahoo Sports",
+      "source": "Yahoo Sports",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOQkI3THlqdDlrUWNuakl2NUowWEVLSVJDdzFud2l6clVnSUNONnJfRlRnRThjcHJXbzFxeVVsYUhubkxtSEtJRU9uZ3FhSERfaVYwVHRjenZwSGxkNkFId0RmR2MtYmdSd2UtMkp3QW5oSmhQSW5SbjNuQ2NFNWtxSlN5WnpzSm1adUE?oc=5",
       "published": "Thu, 01 Oct 2026 07:00:00 GMT",
       "query": "ICC cricket 2026 2027 upcoming",
       "detected_date_text": "",
@@ -661,22 +677,6 @@
       }
     },
     {
-      "title": "Nice Carnival 2027 “Vive l’Amour” - Office de Tourisme Nice Côte d'Azur",
-      "source": "Office de Tourisme Nice Côte d'Azur",
-      "discovery_url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ZLWNpTEVlY09YYlM4OVJSQ2daa1VHN2JzaUtwaDVtbTNZLVZaVHRCaDcydkoxaGJOc0VMVm1OdDBRU0NRSEJVeDJBMTF0akZUNmppM09uUUtzd3lSSTI2V0NyekU1WlM4OUFZNXluYTBneWNOYUVwSTlLbw?oc=5",
-      "published": "Thu, 26 Mar 2026 06:51:18 GMT",
-      "query": "major festival carnival 2026 2027 upcoming",
-      "detected_date_text": "",
-      "official_source_hint": false,
-      "status": "needs_verification",
-      "verification": {
-        "date_confirmed": false,
-        "location_confirmed": false,
-        "official_source_confirmed": false,
-        "nigeria_sales_relevance_confirmed": false
-      }
-    },
-    {
       "title": "Trinidad and Tobago celebrates successful ‘bumper’ Carnival 2026 season - Caribbean National Weekly",
       "source": "Caribbean National Weekly",
       "discovery_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQOG1zV010LUdmV0JUVjZvNFhva3BhbUZxa3JTYTRWUGd5ZUxiZnV2Q2xGSk5Kd0plWVZCZDhENGZ2blE0T0cwOS1RMFNxdTlva3BFOUc0Q3FyRHBRaUpvNmoycVJOMlk2azhkM0tmdXJRYVFfOUJkS0VJVEx3bHlpRFNBVWQwa0VLLWcxbV9OMG1mREV6ZndzaUl6WHBIWnB4XzVrZDNSVjIyLVJWZFBlcmlYdS1vUQ?oc=5",
@@ -693,10 +693,10 @@
       }
     },
     {
-      "title": "Horse racing 2026-2027 calendar: biggest UK and global races and festivals - Sports Tourism News",
-      "source": "Sports Tourism News",
-      "discovery_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNM0hxR0ZDSDh6eDNlZUMyRTFxVTA1ZlBPWTh4SnZoanVzeS1ETTJhOGctZUVLR0Q4cUdRY1lfOXhrbEluZ1JYc2JCLVA4c29XcHU4ODVVWlBOU0RzQzYybjJWTkxYYkw0c2k4NFZuOXVzQUxMRm5kYmRtaU5lb0Ewd0RXTzAtUkNKeXFjZWMydUJCQQ?oc=5",
-      "published": "Sun, 04 Oct 2026 07:00:00 GMT",
+      "title": "Notting Hill Carnival Afterparty Guide 2026: All Venues - MNEEMO",
+      "source": "MNEEMO",
+      "discovery_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rZEg3bGt3MF9pMFBLcXVCWWVabnhya3lCeF81SkF6LS0zZS1oNlNnbzctVE80UE9QQ0xPZzJKdXo3QUNFLUFzT0ZLWU1MWm0yVjFsblNlMk1Yck1XUEFwY3lSdWp3Zk1hR2NOQXNGWjVVRTVFem9J?oc=5",
+      "published": "Wed, 12 Aug 2026 07:00:00 GMT",
       "query": "major festival carnival 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -709,10 +709,10 @@
       }
     },
     {
-      "title": "Notting Hill Carnival Afterparty Guide 2026: All Venues - MNEEMO",
-      "source": "MNEEMO",
-      "discovery_url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rZEg3bGt3MF9pMFBLcXVCWWVabnhya3lCeF81SkF6LS0zZS1oNlNnbzctVE80UE9QQ0xPZzJKdXo3QUNFLUFzT0ZLWU1MWm0yVjFsblNlMk1Yck1XUEFwY3lSdWp3Zk1hR2NOQXNGWjVVRTVFem9J?oc=5",
-      "published": "Wed, 12 Aug 2026 07:00:00 GMT",
+      "title": "Horse racing 2026-2027 calendar: biggest UK and global races and festivals - Sports Tourism News",
+      "source": "Sports Tourism News",
+      "discovery_url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNM0hxR0ZDSDh6eDNlZUMyRTFxVTA1ZlBPWTh4SnZoanVzeS1ETTJhOGctZUVLR0Q4cUdRY1lfOXhrbEluZ1JYc2JCLVA4c29XcHU4ODVVWlBOU0RzQzYybjJWTkxYYkw0c2k4NFZuOXVzQUxMRm5kYmRtaU5lb0Ewd0RXTzAtUkNKeXFjZWMydUJCQQ?oc=5",
+      "published": "Sun, 04 Oct 2026 07:00:00 GMT",
       "query": "major festival carnival 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -744,7 +744,7 @@
       "title": "Carnival 2026 hailed as major economic and cultural success - Trinidad Guardian",
       "source": "Trinidad Guardian",
       "discovery_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNW5BM05tQXZmWlBzbHl2N3luZmlCbXpWYTk5TXJyX3Zham80Xy1fbUp1MzhHUFBvYmRaTFBaLU1RdUV0VjI0WXJFUGFWQXBMcktBcnFiR280akhUUGxGZXFNTVJ1OUhWTEllVUpKeFVQQUtnanpaM29tbHppcllvNGZzVHBUUFdwSGc1SDd4VTNwNXZ1YnpBSTc3ZHEyV1ZBZnNkLXZrTXR0RTJCMVAxaHRkWQ?oc=5",
-      "published": "Thu, 19 Feb 2026 21:03:12 GMT",
+      "published": "Thu, 19 Feb 2026 19:17:22 GMT",
       "query": "major festival carnival 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -777,6 +777,22 @@
       "source": "italien.news",
       "discovery_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBUaWlhc3VWUERvb21OSHhBeXBfZ2dJVHdyX1d1X1Fad1dPbXlZaUVhbHpWZ1QwdU84blM3V1dKU2xUQ29ZX20tYUFFN2dEZ3ZPNXRnWWc0WmxRZ09JYlg5V0ltYVVxczA4ckE?oc=5",
       "published": "Sun, 04 Jan 2026 20:56:37 GMT",
+      "query": "major festival carnival 2026 2027 upcoming",
+      "detected_date_text": "",
+      "official_source_hint": false,
+      "status": "needs_verification",
+      "verification": {
+        "date_confirmed": false,
+        "location_confirmed": false,
+        "official_source_confirmed": false,
+        "nigeria_sales_relevance_confirmed": false
+      }
+    },
+    {
+      "title": "Goa Carnival 2026: Dates, Schedule, And City-Wise Parade Routes Revealed - NDTV",
+      "source": "NDTV",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQT3NxMWI5eFZUT0daWDlQWEhwVjVjUmNGVWpsOUJ1d1ZaQThrMWpnOHF6Wk5jUU9ZTVBqaFVfc1FRbHZxbTh2TDZVNFhVc3RHSTVMNkswSFRWdXlHc3RjZnpPYk4tTVVkdHFxaDZySnQ0WWVRcUljQmwzMmVlZHliYkhYMjNZeHdXRW1iNVBWcXRiVklGQm94Y1NqNEZpU2w0SEFsdjZ2NW5uNlHSAbMBQVVfeXFMT0gxTy05bXEtTUw0ZzVmejh5SjZySkdPbzNnaEFMUEpSTDhwT2FBOXNnbTVYajA3N2JicDdKZ3hOWWxkTjNjN0pfS0U1Z1g5RHNpc0lJNmF6ZDNpMmFBaHFyOHBSVmVpaTh0Vk91UjI1TURRYlUxdld3U0R0cEQtejZBRW5CWjhSOEJiRkR4b195anM2aExNX3pzVkstU3pVb05xMC1rVEs4WDRRQlN2RUNYSVk?oc=5",
+      "published": "Thu, 15 Jan 2026 08:00:00 GMT",
       "query": "major festival carnival 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -901,10 +917,10 @@
       }
     },
     {
-      "title": "India chosen to host the WTTC Global Summit 2027, the world's most important tourism event - Travel2Latam",
-      "source": "Travel2Latam",
-      "discovery_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQaHFBSnZMRTRISXlzWFNVYWFMSXd0OUxwb3d1cXgwNThrWUtGYV85eC0wczQtRTJrc0twU19DTnF0REFIOEpOeTd4MHpLNHNCcVlNazZKOXllU01QcWpXSUptWWJTZG1QQnE1WEhRdVRLb3poaVRGQmY0S19vYlNkNlNRcnRlUmJZc2JMTkZzRm9fRHNuUnN6WHI2eVJ3TEx6TGNaLWxSY1hFb3d3SjBYbk90eWF4VnNZQmsyUXF4MHprNDUwTTBBT180cGRYQQ?oc=5",
-      "published": "Fri, 16 Oct 2026 15:01:55 GMT",
+      "title": "India Selected to Host WTTC Global Summit 2027, the World’s Most Important Tourism Event - World Travel & Tourism Council (WTTC)",
+      "source": "World Travel & Tourism Council (WTTC)",
+      "discovery_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rZ0h1WDRXOUJydDItblMyUHNrai1rT0w4cGdrSmhDeElWVmxQQWtNeVZ2WUpkRmdoUzFhc2VzV3o0bnZFQ0JxYk9YSDVzWUlWNnFKdl9XeGwtZw?oc=5",
+      "published": "Fri, 09 Oct 2026 07:00:00 GMT",
       "query": "tourism travel event 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
@@ -917,10 +933,10 @@
       }
     },
     {
-      "title": "India Selected to Host WTTC Global Summit 2027, the World’s Most Important Tourism Event - World Travel & Tourism Council (WTTC)",
-      "source": "World Travel & Tourism Council (WTTC)",
-      "discovery_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rZ0h1WDRXOUJydDItblMyUHNrai1rT0w4cGdrSmhDeElWVmxQQWtNeVZ2WUpkRmdoUzFhc2VzV3o0bnZFQ0JxYk9YSDVzWUlWNnFKdl9XeGwtZw?oc=5",
-      "published": "Fri, 09 Oct 2026 07:00:00 GMT",
+      "title": "India chosen to host the WTTC Global Summit 2027, the world's most important tourism event - Travel2Latam",
+      "source": "Travel2Latam",
+      "discovery_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQaHFBSnZMRTRISXlzWFNVYWFMSXd0OUxwb3d1cXgwNThrWUtGYV85eC0wczQtRTJrc0twU19DTnF0REFIOEpOeTd4MHpLNHNCcVlNazZKOXllU01QcWpXSUptWWJTZG1QQnE1WEhRdVRLb3poaVRGQmY0S19vYlNkNlNRcnRlUmJZc2JMTkZzRm9fRHNuUnN6WHI2eVJ3TEx6TGNaLWxSY1hFb3d3SjBYbk90eWF4VnNZQmsyUXF4MHprNDUwTTBBT180cGRYQQ?oc=5",
+      "published": "Fri, 16 Oct 2026 15:01:55 GMT",
       "query": "tourism travel event 2026 2027 upcoming",
       "detected_date_text": "",
       "official_source_hint": false,
