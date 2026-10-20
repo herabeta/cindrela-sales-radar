@@ -186,10 +186,10 @@
   "143": [
     "Agribusiness companies, farmers, researchers, exhibitors, investors and professional groups",
     "Flights + Hotels + Transfers + Business Travel + Group Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "60th Agricultural Society of Nigeria Conference 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "60th Agricultural Society of Nigeria Conference 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "117": [
     "Nigerian F1 fans, premium travellers, corporate guests and motorsport groups",
@@ -202,18 +202,18 @@
   "114": [
     "Energy companies, oil & gas teams, suppliers, executives and exhibitors",
     "Flights + Hotels + Transfers + Corporate Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "Nigeria Energy 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "Nigeria Energy 2026 is within one week in Lagos, Nigeria; remaining travel enquiries are time-sensitive"
   ],
   "145": [
     "Cybersecurity firms, IT companies, CISOs, government agencies and technical delegates",
     "Flights + Hotels + Transfers + Business Travel + Executive Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "International Cybersecurity Conference 2026 (ICSC) is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "International Cybersecurity Conference 2026 (ICSC) is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
   ],
   "118": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
@@ -266,9 +266,9 @@
   "121": [
     "Nigerian tech firms, government agencies, developers, startups and digital executives",
     "Flights + Hotels + Transfers + Business Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "Digital Nigeria 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "146": [
@@ -285,7 +285,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Las Vegas Grand Prix 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Las Vegas Grand Prix 2026 is within 30 days in Las Vegas, USA; flight, hotel and transfer decisions should be moving now"
   ],
   "147": [
     "Environmental health professionals, hospitals, NGOs, researchers and conference delegates",
@@ -330,9 +330,9 @@
   "127": [
     "Nigerian F1 fans, premium travellers, corporate guests and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Abu Dhabi Grand Prix 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "150": [
@@ -442,10 +442,10 @@
   "158": [
     "Nigerian CEOs, senior executives, investors, government leaders and policy delegates",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Start planning now; identify Nigerian prospects and prepare travel options",
-    "EARLY",
-    "Review every 2–4 weeks until the event enters the active sales window",
-    "World Economic Forum Annual Meeting 2027 is a future opportunity in Davos, Switzerland; early lead building gives Cindrela more time to qualify and convert travel demand"
+    "Start prospecting now; build the target list and open early conversations",
+    "WARM",
+    "Follow up weekly and update booking status",
+    "World Economic Forum Annual Meeting 2027 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "159": [
     "Nigerian Formula E fans, motorsport groups and premium leisure travellers",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-19T10:37:41.677362Z",
+    "generated_at": "2026-10-20T09:54:32.260534Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-19",
+    "reference_date": "2026-10-20",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
