@@ -274,9 +274,9 @@
   "146": [
     "Advertising agencies, brand managers, media executives, marketers and corporate delegates",
     "Flights + Hotels + Transfers + Business Travel + Executive Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "National Advertising Conference 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "124": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-20T09:54:32.260534Z",
+    "generated_at": "2026-10-21T09:55:26.364078Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-20",
+    "reference_date": "2026-10-21",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
