@@ -226,10 +226,10 @@
   "115": [
     "Nigerian athletes, parents, coaches, supporters and sports delegations",
     "Flights + Hotels + Transfers + Group Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "Dakar 2026 Youth Olympic Games is within 30 days in Dakar / Diamniadio / Saly, Senegal; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "Dakar 2026 Youth Olympic Games is within one week in Dakar / Diamniadio / Saly, Senegal; remaining travel enquiries are time-sensitive"
   ],
   "123": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
@@ -293,7 +293,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "SOEHPON Annual International Conference & Exhibition 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "SOEHPON Annual International Conference & Exhibition 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "126": [
     "Space-tech companies, government agencies, investors, researchers and executives",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-23T09:50:17.463100Z",
+    "generated_at": "2026-10-24T09:22:36.335196Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-23",
+    "reference_date": "2026-10-24",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
