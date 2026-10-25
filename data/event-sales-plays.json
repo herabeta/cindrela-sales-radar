@@ -194,10 +194,10 @@
   "117": [
     "Nigerian F1 fans, premium travellers, corporate guests and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Event is live — contact active prospects and resolve any immediate travel needs",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
     "Follow up today on any active enquiry and close remaining travel requirements",
-    "United States Grand Prix 2026 is currently underway in Austin, USA; focus on immediate and remaining travel requirements"
+    "United States Grand Prix 2026 ends today in Austin, USA; remaining travel enquiries should be handled immediately"
   ],
   "114": [
     "Energy companies, oil & gas teams, suppliers, executives and exhibitors",
@@ -301,7 +301,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Africa Space Economy Conference 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Africa Space Economy Conference 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "125": [
     "Nigerian F1 fans, premium travellers, corporate guests and motorsport groups",
@@ -338,9 +338,9 @@
   "150": [
     "Internet/networking engineers, telecom firms, cybersecurity teams and technical delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "RISE Nigeria 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "128": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-24T09:22:36.335196Z",
+    "generated_at": "2026-10-25T09:40:05.938907Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-24",
+    "reference_date": "2026-10-25",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
