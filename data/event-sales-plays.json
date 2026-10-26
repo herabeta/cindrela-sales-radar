@@ -194,10 +194,10 @@
   "117": [
     "Nigerian F1 fans, premium travellers, corporate guests and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "United States Grand Prix 2026 ends today in Austin, USA; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "United States Grand Prix 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "114": [
     "Energy companies, oil & gas teams, suppliers, executives and exhibitors",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-25T09:40:05.938907Z",
+    "generated_at": "2026-10-26T10:52:56.953585Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-25",
+    "reference_date": "2026-10-26",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
