@@ -202,18 +202,18 @@
   "114": [
     "Energy companies, oil & gas teams, suppliers, executives and exhibitors",
     "Flights + Hotels + Transfers + Corporate Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Nigeria Energy 2026 is within one week in Lagos, Nigeria; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "Nigeria Energy 2026 ends today in Lagos, Nigeria; remaining travel enquiries should be handled immediately"
   ],
   "145": [
     "Cybersecurity firms, IT companies, CISOs, government agencies and technical delegates",
     "Flights + Hotels + Transfers + Business Travel + Executive Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "International Cybersecurity Conference 2026 (ICSC) is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "International Cybersecurity Conference 2026 (ICSC) ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
   ],
   "118": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
@@ -346,9 +346,9 @@
   "128": [
     "Nigerian football fans, supporters' groups, sports agencies and delegation planners",
     "Flights + Hotels + Transfers + Group Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "FIFA Women’s World Cup 2027 Final Draw is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "151": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-26T10:52:56.953585Z",
+    "generated_at": "2026-10-27T10:17:59.248103Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-26",
+    "reference_date": "2026-10-27",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
