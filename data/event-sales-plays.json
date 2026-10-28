@@ -202,18 +202,18 @@
   "114": [
     "Energy companies, oil & gas teams, suppliers, executives and exhibitors",
     "Flights + Hotels + Transfers + Corporate Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Nigeria Energy 2026 ends today in Lagos, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Nigeria Energy 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "145": [
     "Cybersecurity firms, IT companies, CISOs, government agencies and technical delegates",
     "Flights + Hotels + Transfers + Business Travel + Executive Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "International Cybersecurity Conference 2026 (ICSC) ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "International Cybersecurity Conference 2026 (ICSC) has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "118": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
@@ -309,7 +309,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Qatar Grand Prix 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Qatar Grand Prix 2026 is within 30 days in Lusail, Qatar; flight, hotel and transfer decisions should be moving now"
   ],
   "148": [
     "Footwear manufacturers, retailers, exporters, designers and business buyers",
@@ -317,7 +317,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Made In Nigeria Shoe Expo 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Made In Nigeria Shoe Expo 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "149": [
     "Tech founders, digital professionals, investors, creators and event visitors",
@@ -354,9 +354,9 @@
   "151": [
     "Exporters, manufacturers, distributors, international buyers and business delegations",
     "Flights + Hotels + Transfers + Business Travel + Group Booking",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Made-in-Nigeria Export Exhibition 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "152": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-27T10:17:59.248103Z",
+    "generated_at": "2026-10-28T11:10:39.994488Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-27",
+    "reference_date": "2026-10-28",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
