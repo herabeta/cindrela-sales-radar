@@ -282,9 +282,9 @@
   "124": [
     "Nigerian F1 fans, premium travellers, corporate guests and entertainment groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "Las Vegas Grand Prix 2026 is within 30 days in Las Vegas, USA; flight, hotel and transfer decisions should be moving now"
   ],
   "147": [
@@ -362,9 +362,9 @@
   "152": [
     "Families, diaspora visitors, carnival fans, entertainment groups and Lagos leisure travellers",
     "Flights + Hotels + Transfers + Holiday Packages + Event Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Eti-Osa Carnival 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "130": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-28T11:10:39.994488Z",
+    "generated_at": "2026-10-29T11:23:29.381876Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-28",
+    "reference_date": "2026-10-29",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
