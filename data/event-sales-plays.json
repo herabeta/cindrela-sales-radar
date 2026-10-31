@@ -226,10 +226,10 @@
   "115": [
     "Nigerian athletes, parents, coaches, supporters and sports delegations",
     "Flights + Hotels + Transfers + Group Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Dakar 2026 Youth Olympic Games is within one week in Dakar / Diamniadio / Saly, Senegal; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "Dakar 2026 Youth Olympic Games ends today in Dakar / Diamniadio / Saly, Senegal; remaining travel enquiries should be handled immediately"
   ],
   "123": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-10-30T11:15:49.431102Z",
+    "generated_at": "2026-10-31T10:49:09.242245Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-10-30",
+    "reference_date": "2026-10-31",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
