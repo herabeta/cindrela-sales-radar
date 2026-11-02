@@ -218,10 +218,10 @@
   "118": [
     "Nigerian F1 fans, premium travellers and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Mexico City Grand Prix 2026 ends today in Mexico City, Mexico; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Mexico City Grand Prix 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "115": [
     "Nigerian athletes, parents, coaches, supporters and sports delegations",
@@ -250,18 +250,18 @@
   "119": [
     "Nigerian founders, tech executives, startups, investors and innovation teams",
     "Flights + Hotels + Transfers + Business Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "Web Summit 2026 is within 30 days in Lisbon, Portugal; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "Web Summit 2026 is within one week in Lisbon, Portugal; remaining travel enquiries are time-sensitive"
   ],
   "120": [
     "Nigerian government delegates, NGOs, climate teams, energy companies and policy executives",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "COP31 is within 30 days in Antalya, Türkiye; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "COP31 is within one week in Antalya, Türkiye; remaining travel enquiries are time-sensitive"
   ],
   "121": [
     "Nigerian tech firms, government agencies, developers, startups and digital executives",
@@ -290,9 +290,9 @@
   "147": [
     "Environmental health professionals, hospitals, NGOs, researchers and conference delegates",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "SOEHPON Annual International Conference & Exhibition 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "126": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-11-01T11:46:26.364294Z",
+    "generated_at": "2026-11-02T13:17:09.335831Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-11-01",
+    "reference_date": "2026-11-02",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
