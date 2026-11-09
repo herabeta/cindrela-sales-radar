@@ -234,34 +234,34 @@
   "123": [
     "Nigerian F1 fans, premium leisure travellers and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "São Paulo Grand Prix 2026 ends today in São Paulo, Brazil; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "São Paulo Grand Prix 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "122": [
     "Nigerian tennis fans, premium leisure travellers, player families and sports groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "WTA Finals Indian Wells 2026 ends today in Indian Wells, USA; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "WTA Finals Indian Wells 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "119": [
     "Nigerian founders, tech executives, startups, investors and innovation teams",
     "Flights + Hotels + Transfers + Business Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Event is live — contact active prospects and resolve any immediate travel needs",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Web Summit 2026 is within one week in Lisbon, Portugal; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "Web Summit 2026 is currently underway in Lisbon, Portugal; focus on immediate and remaining travel requirements"
   ],
   "120": [
     "Nigerian government delegates, NGOs, climate teams, energy companies and policy executives",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Event is live — contact active prospects and resolve any immediate travel needs",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "COP31 is within one week in Antalya, Türkiye; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "COP31 is currently underway in Antalya, Türkiye; focus on immediate and remaining travel requirements"
   ],
   "121": [
     "Nigerian tech firms, government agencies, developers, startups and digital executives",
@@ -341,7 +341,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "RISE Nigeria 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "RISE Nigeria 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "128": [
     "Nigerian football fans, supporters' groups, sports agencies and delegation planners",
@@ -386,9 +386,9 @@
   "153": [
     "Christmas holiday travellers, music fans, families and diaspora visitors",
     "Flights + Hotels + Airport Transfers + Holiday Packages + Event Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Christmas Eve Special — Detty December Fest 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "133": [
@@ -506,7 +506,7 @@
   "167": [
     "Nigerian motorsport fans, premium leisure travellers and sports groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Early planning stage; build the target list and monitor for confirmed travel intent",
+    "Start planning now; identify Nigerian prospects and prepare travel options",
     "EARLY",
     "Review every 2–4 weeks until the event enters the active sales window",
     "Berlin E-Prix 2027 is a future opportunity in Berlin, Germany; early lead building gives Cindrela more time to qualify and convert travel demand"
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-11-08T11:48:16.557209Z",
+    "generated_at": "2026-11-09T13:43:28.616169Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-11-08",
+    "reference_date": "2026-11-09",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
