@@ -266,10 +266,10 @@
   "121": [
     "Nigerian tech firms, government agencies, developers, startups and digital executives",
     "Flights + Hotels + Transfers + Business Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Digital Nigeria 2026 is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "Digital Nigeria 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
   ],
   "146": [
     "Advertising agencies, brand managers, media executives, marketers and corporate delegates",
@@ -394,25 +394,25 @@
   "133": [
     "Families, diaspora visitors, church groups and Christmas holiday travellers",
     "Flights + Hotels + Airport Transfers + Holiday Packages + Family Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Christmas Day 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "134": [
     "Diaspora visitors, music fans, families and event travellers heading to Lagos",
     "Flights + Hotels + Airport Transfers + Holiday Packages + Event Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Christmas at The Fest 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "135": [
     "Families, carnival visitors, entertainment groups and Lagos holiday travellers",
     "Flights + Hotels + Transfers + Holiday Packages + Event Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Eti-Osa Christmas Celebration 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "154": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-11-09T13:43:28.616169Z",
+    "generated_at": "2026-11-10T13:21:46.498571Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-11-09",
+    "reference_date": "2026-11-10",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
