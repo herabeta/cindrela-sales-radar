@@ -266,18 +266,18 @@
   "121": [
     "Nigerian tech firms, government agencies, developers, startups and digital executives",
     "Flights + Hotels + Transfers + Business Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Digital Nigeria 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Digital Nigeria 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "146": [
     "Advertising agencies, brand managers, media executives, marketers and corporate delegates",
     "Flights + Hotels + Transfers + Business Travel + Executive Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "National Advertising Conference 2026 is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "National Advertising Conference 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
   ],
   "124": [
     "Nigerian F1 fans, premium travellers, corporate guests and entertainment groups",
@@ -349,7 +349,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "FIFA Women’s World Cup 2027 Final Draw is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "FIFA Women’s World Cup 2027 Final Draw is within 30 days in Brazil / Global; flight, hotel and transfer decisions should be moving now"
   ],
   "151": [
     "Exporters, manufacturers, distributors, international buyers and business delegations",
@@ -418,9 +418,9 @@
   "154": [
     "Music fans, diaspora visitors, entertainment groups and Lagos holiday travellers",
     "Flights + Hotels + Airport Transfers + Holiday Packages + Event Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "Detty December Fest — Legacy Headliner Night is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "156": [
@@ -514,7 +514,7 @@
   "166": [
     "Nigerian hotel owners, investors, developers, tourism officials and hospitality executives",
     "Flights + Hotels + Transfers + Executive Travel + Business Travel",
-    "Early planning stage; build the target list and monitor for confirmed travel intent",
+    "Start planning now; identify Nigerian prospects and prepare travel options",
     "EARLY",
     "Review every 2–4 weeks until the event enters the active sales window",
     "IHIF EMEA 2027 is a future opportunity in Berlin, Germany; early lead building gives Cindrela more time to qualify and convert travel demand"
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-11-10T13:21:46.498571Z",
+    "generated_at": "2026-11-11T12:32:46.354664Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-11-10",
+    "reference_date": "2026-11-11",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
