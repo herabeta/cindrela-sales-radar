@@ -250,10 +250,10 @@
   "119": [
     "Nigerian founders, tech executives, startups, investors and innovation teams",
     "Flights + Hotels + Transfers + Business Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Web Summit 2026 ends today in Lisbon, Portugal; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Web Summit 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "120": [
     "Nigerian government delegates, NGOs, climate teams, energy companies and policy executives",
@@ -330,9 +330,9 @@
   "127": [
     "Nigerian F1 fans, premium travellers, corporate guests and motorsport groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "Abu Dhabi Grand Prix 2026 is within 30 days in Abu Dhabi, UAE; flight, hotel and transfer decisions should be moving now"
   ],
   "150": [
@@ -365,7 +365,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Eti-Osa Carnival 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Eti-Osa Carnival 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "130": [
     "Diaspora visitors, families, music fans, entertainment groups and leisure travellers",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-11-12T13:37:31.282825Z",
+    "generated_at": "2026-11-13T12:56:26.620178Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-11-12",
+    "reference_date": "2026-11-13",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
