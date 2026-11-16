@@ -290,10 +290,10 @@
   "147": [
     "Environmental health professionals, hospitals, NGOs, researchers and conference delegates",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "SOEHPON Annual International Conference & Exhibition 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "SOEHPON Annual International Conference & Exhibition 2026 is within one week in Lagos, Nigeria; remaining travel enquiries are time-sensitive"
   ],
   "126": [
     "Space-tech companies, government agencies, investors, researchers and executives",
@@ -458,10 +458,10 @@
   "160": [
     "Nigerian American-football fans, premium travellers and sports groups",
     "Flights + Hotels + Transfers + Premium Travel + Event Travel",
-    "Start planning now; identify Nigerian prospects and prepare travel options",
-    "EARLY",
-    "Review every 2–4 weeks until the event enters the active sales window",
-    "Super Bowl LXI 2027 is a future opportunity in Inglewood, USA; early lead building gives Cindrela more time to qualify and convert travel demand"
+    "Start prospecting now; build the target list and open early conversations",
+    "WARM",
+    "Follow up weekly and update booking status",
+    "Super Bowl LXI 2027 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "161": [
     "Nigerian motorsport fans, premium leisure travellers and sports groups",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-11-15T12:35:35.139675Z",
+    "generated_at": "2026-11-16T13:27:43.780554Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-11-15",
+    "reference_date": "2026-11-16",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
