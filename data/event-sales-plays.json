@@ -338,9 +338,9 @@
   "150": [
     "Internet/networking engineers, telecom firms, cybersecurity teams and technical delegates",
     "Flights + Hotels + Transfers + Business Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "RISE Nigeria 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "128": [
@@ -373,7 +373,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Detty December 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Detty December 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "131": [
     "Families, diaspora visitors, holiday groups and New Year leisure travellers",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-11-17T14:13:37.823650Z",
+    "generated_at": "2026-11-18T13:44:51.349778Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-11-17",
+    "reference_date": "2026-11-18",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
