@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T14:14:01.040420Z",
+  "generated_at": "2026-11-20T13:55:10.543293Z",
   "rules": [
     {
       "days_before": 90,
@@ -34,31 +34,6 @@
   ],
   "alerts": [
     {
-      "id": 124,
-      "title": "Las Vegas Grand Prix 2026",
-      "start_date": "2026-11-19",
-      "city": "Las Vegas, USA",
-      "group": "sports",
-      "products": [
-        "Flight",
-        "Hotel",
-        "Transfers",
-        "Group Travel"
-      ],
-      "source": "Formula 1",
-      "url": "https://www.formula1.com/",
-      "sales_market": "Nigeria",
-      "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
-      "end_date": "2026-11-21",
-      "days_until": 0,
-      "alert": {
-        "days_before": 7,
-        "label": "URGENT",
-        "priority": "HOT",
-        "action": "Close pending bookings and confirm travel arrangements."
-      }
-    },
-    {
       "id": 147,
       "title": "SOEHPON Annual International Conference & Exhibition 2026",
       "start_date": "2026-11-23",
@@ -72,7 +47,7 @@
       ],
       "source": "SOEHPON",
       "url": "https://conference2026.soehpon.com/contact/",
-      "days_until": 4,
+      "days_until": 3,
       "alert": {
         "days_before": 7,
         "label": "URGENT",
@@ -94,7 +69,7 @@
       ],
       "source": "ASEICC",
       "url": "https://aseicc.org/",
-      "days_until": 5,
+      "days_until": 4,
       "alert": {
         "days_before": 7,
         "label": "URGENT",
@@ -119,12 +94,12 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "end_date": "2026-11-29",
-      "days_until": 8,
+      "days_until": 7,
       "alert": {
-        "days_before": 14,
-        "label": "HIGH PRIORITY",
+        "days_before": 7,
+        "label": "URGENT",
         "priority": "HOT",
-        "action": "Follow up with every active lead and send quotes."
+        "action": "Close pending bookings and confirm travel arrangements."
       }
     },
     {
@@ -142,12 +117,12 @@
       ],
       "source": "LOGSAMES",
       "url": "https://www.eventbrite.com/e/made-in-nigeria-shoe-expo-tickets-1982554800778",
-      "days_until": 8,
+      "days_until": 7,
       "alert": {
-        "days_before": 14,
-        "label": "HIGH PRIORITY",
+        "days_before": 7,
+        "label": "URGENT",
         "priority": "HOT",
-        "action": "Follow up with every active lead and send quotes."
+        "action": "Close pending bookings and confirm travel arrangements."
       }
     },
     {
@@ -165,7 +140,7 @@
       ],
       "source": "AfroFutureTech iFest",
       "url": "https://aftifest.com/",
-      "days_until": 14,
+      "days_until": 13,
       "alert": {
         "days_before": 14,
         "label": "HIGH PRIORITY",
@@ -190,12 +165,12 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the event",
       "end_date": "2026-12-06",
-      "days_until": 15,
+      "days_until": 14,
       "alert": {
-        "days_before": 30,
-        "label": "SELL NOW",
+        "days_before": 14,
+        "label": "HIGH PRIORITY",
         "priority": "HOT",
-        "action": "Push flight, hotel, transfer and group/corporate travel packages."
+        "action": "Follow up with every active lead and send quotes."
       }
     },
     {
@@ -212,7 +187,7 @@
       ],
       "source": "Team Cymru",
       "url": "https://www.team-cymru.com/events/rise",
-      "days_until": 20,
+      "days_until": 19,
       "alert": {
         "days_before": 30,
         "label": "SELL NOW",
@@ -236,7 +211,7 @@
       "url": "https://www.fifa.com/",
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian football supporters, families, sports groups and delegations may travel around the tournament cycle",
-      "days_until": 22,
+      "days_until": 21,
       "alert": {
         "days_before": 30,
         "label": "SELL NOW",
@@ -259,7 +234,7 @@
       ],
       "source": "Bevents Logistics Synergy / Event listing",
       "url": "https://www.eventbrite.com/e/made-in-nigeria-export-exhibition-2026-tickets-1988557860090",
-      "days_until": 23,
+      "days_until": 22,
       "alert": {
         "days_before": 30,
         "label": "SELL NOW",
@@ -282,7 +257,7 @@
       ],
       "source": "Eti-Osa Carnival",
       "url": "https://www.etiosacarnival.com/events.html",
-      "days_until": 24,
+      "days_until": 23,
       "alert": {
         "days_before": 30,
         "label": "SELL NOW",
@@ -305,7 +280,7 @@
       ],
       "source": "Event organiser listings",
       "url": "https://dettydecfest.com/events/",
-      "days_until": 29,
+      "days_until": 28,
       "alert": {
         "days_before": 30,
         "label": "SELL NOW",
@@ -327,12 +302,12 @@
       ],
       "source": "NTDA",
       "url": "https://ntda.gov.ng/event.calendar.php",
-      "days_until": 31,
+      "days_until": 30,
       "alert": {
-        "days_before": 60,
-        "label": "START OUTREACH",
-        "priority": "WARM",
-        "action": "Build the lead list and begin English WhatsApp/email outreach."
+        "days_before": 30,
+        "label": "SELL NOW",
+        "priority": "HOT",
+        "action": "Push flight, hotel, transfer and group/corporate travel packages."
       }
     },
     {
@@ -350,7 +325,7 @@
       ],
       "source": "Detty December Fest",
       "url": "https://dettydecfest.com/events/",
-      "days_until": 35,
+      "days_until": 34,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -373,7 +348,7 @@
       ],
       "source": "Catholic Secretariat of Nigeria",
       "url": "https://www.catholicsecretariatng.org/event/christmas-day",
-      "days_until": 36,
+      "days_until": 35,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -396,7 +371,7 @@
       ],
       "source": "Detty December Fest",
       "url": "https://dettydecfest.com/",
-      "days_until": 36,
+      "days_until": 35,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -419,7 +394,7 @@
       ],
       "source": "Eti-Osa Carnival",
       "url": "https://etiosacarnival.com/events.html",
-      "days_until": 36,
+      "days_until": 35,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -442,7 +417,7 @@
       ],
       "source": "Detty December Fest",
       "url": "https://dettydecfest.com/events/",
-      "days_until": 37,
+      "days_until": 36,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -466,7 +441,7 @@
       "url": "https://www.ces.tech/",
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian technology companies, founders, investors and corporate teams may travel to CES for business, networking and product discovery",
-      "days_until": 48,
+      "days_until": 47,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -492,7 +467,7 @@
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian tennis supporters, families and premium leisure travellers may travel to Melbourne for the Grand Slam",
       "end_date": "2027-01-31",
-      "days_until": 53,
+      "days_until": 52,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -516,7 +491,7 @@
       "url": "https://www.davos.ch/en/experience/events/world-economic-forum-annual-meeting-2027",
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian executives, government leaders, investors and business delegates may travel for the global leadership meeting",
-      "days_until": 60,
+      "days_until": 59,
       "alert": {
         "days_before": 60,
         "label": "START OUTREACH",
@@ -540,7 +515,7 @@
       "url": "https://www.fiaformulae.com/",
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian motorsport fans and premium leisure travellers may travel for the Formula E race weekend",
-      "days_until": 79,
+      "days_until": 78,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
@@ -565,7 +540,7 @@
       "url": "https://www.nfl.com/",
       "sales_market": "Nigeria",
       "sales_reason": "Nigerian American-football fans, premium leisure travellers and sports groups may travel for Super Bowl week",
-      "days_until": 87,
+      "days_until": 86,
       "alert": {
         "days_before": 90,
         "label": "PLAN AHEAD",
