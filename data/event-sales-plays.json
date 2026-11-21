@@ -258,10 +258,10 @@
   "120": [
     "Nigerian government delegates, NGOs, climate teams, energy companies and policy executives",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "COP31 ends today in Antalya, Türkiye; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "COP31 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "121": [
     "Nigerian tech firms, government agencies, developers, startups and digital executives",
@@ -282,10 +282,10 @@
   "124": [
     "Nigerian F1 fans, premium travellers, corporate guests and entertainment groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Event is live — contact active prospects and resolve any immediate travel needs",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
     "Follow up today on any active enquiry and close remaining travel requirements",
-    "Las Vegas Grand Prix 2026 is currently underway in Las Vegas, USA; focus on immediate and remaining travel requirements"
+    "Las Vegas Grand Prix 2026 ends today in Las Vegas, USA; remaining travel enquiries should be handled immediately"
   ],
   "147": [
     "Environmental health professionals, hospitals, NGOs, researchers and conference delegates",
@@ -354,9 +354,9 @@
   "151": [
     "Exporters, manufacturers, distributors, international buyers and business delegations",
     "Flights + Hotels + Transfers + Business Travel + Group Booking",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "Made-in-Nigeria Export Exhibition 2026 is within 30 days in Abuja, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "152": [
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-11-20T13:54:59.907767Z",
+    "generated_at": "2026-11-21T13:18:49.094234Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-11-20",
+    "reference_date": "2026-11-21",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
