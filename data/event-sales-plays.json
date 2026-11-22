@@ -282,10 +282,10 @@
   "124": [
     "Nigerian F1 fans, premium travellers, corporate guests and entertainment groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Las Vegas Grand Prix 2026 ends today in Las Vegas, USA; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Las Vegas Grand Prix 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "147": [
     "Environmental health professionals, hospitals, NGOs, researchers and conference delegates",
@@ -362,9 +362,9 @@
   "152": [
     "Families, diaspora visitors, carnival fans, entertainment groups and Lagos leisure travellers",
     "Flights + Hotels + Transfers + Holiday Packages + Event Travel",
-    "Begin targeted outreach now; move qualified leads toward quotation",
-    "WARM",
-    "Follow up every 3–5 days with active prospects",
+    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "HOT",
+    "Follow up every 2–3 days with qualified prospects",
     "Eti-Osa Carnival 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "130": [
@@ -426,9 +426,9 @@
   "156": [
     "Nigerian tech founders, CTOs, product teams, investors and corporate innovation leaders",
     "Flights + Hotels + Transfers + Business Travel",
-    "Start prospecting now; build the target list and open early conversations",
+    "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
-    "Follow up weekly and update booking status",
+    "Follow up every 3–5 days with active prospects",
     "CES 2027 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "157": [
@@ -466,10 +466,10 @@
   "161": [
     "Nigerian motorsport fans, premium leisure travellers and sports groups",
     "Flights + Hotels + Transfers + Premium Travel",
-    "Start planning now; identify Nigerian prospects and prepare travel options",
-    "EARLY",
-    "Review every 2–4 weeks until the event enters the active sales window",
-    "Miami E-Prix 2027 is a future opportunity in Miami, USA; early lead building gives Cindrela more time to qualify and convert travel demand"
+    "Start prospecting now; build the target list and open early conversations",
+    "WARM",
+    "Follow up weekly and update booking status",
+    "Miami E-Prix 2027 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
   ],
   "162": [
     "Nigerian telecom operators, ICT companies, founders, CTOs, investors and delegates",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-11-21T13:18:49.094234Z",
+    "generated_at": "2026-11-22T13:10:53.751919Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-11-21",
+    "reference_date": "2026-11-22",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
