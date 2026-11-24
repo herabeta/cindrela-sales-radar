@@ -290,18 +290,18 @@
   "147": [
     "Environmental health professionals, hospitals, NGOs, researchers and conference delegates",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "SOEHPON Annual International Conference & Exhibition 2026 ends today in Lagos, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "SOEHPON Annual International Conference & Exhibition 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "126": [
     "Space-tech companies, government agencies, investors, researchers and executives",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Contact today; focus on ready-to-book travellers and immediate availability",
+    "Last day — contact active prospects immediately and close any remaining travel enquiries",
     "HOT",
-    "Follow up every 24–48 hours on active enquiries",
-    "Africa Space Economy Conference 2026 is within one week in Abuja, Nigeria; remaining travel enquiries are time-sensitive"
+    "Follow up today on any active enquiry and close remaining travel requirements",
+    "Africa Space Economy Conference 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
   ],
   "125": [
     "Nigerian F1 fans, premium travellers, corporate guests and motorsport groups",
@@ -389,7 +389,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Christmas Eve Special — Detty December Fest 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Christmas Eve Special — Detty December Fest 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "133": [
     "Families, diaspora visitors, church groups and Christmas holiday travellers",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-11-23T15:47:39.883195Z",
+    "generated_at": "2026-11-24T15:41:13.567186Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-11-23",
+    "reference_date": "2026-11-24",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
