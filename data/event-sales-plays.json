@@ -298,10 +298,10 @@
   "126": [
     "Space-tech companies, government agencies, investors, researchers and executives",
     "Flights + Hotels + Transfers + Executive Travel",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Africa Space Economy Conference 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Africa Space Economy Conference 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "125": [
     "Nigerian F1 fans, premium travellers, corporate guests and motorsport groups",
@@ -397,7 +397,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Christmas Day 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Christmas Day 2026 is within 30 days in Nigeria — nationwide; flight, hotel and transfer decisions should be moving now"
   ],
   "134": [
     "Diaspora visitors, music fans, families and event travellers heading to Lagos",
@@ -405,7 +405,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Christmas at The Fest 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Christmas at The Fest 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "135": [
     "Families, carnival visitors, entertainment groups and Lagos holiday travellers",
@@ -413,7 +413,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Eti-Osa Christmas Celebration 2026 is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Eti-Osa Christmas Celebration 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "154": [
     "Music fans, diaspora visitors, entertainment groups and Lagos holiday travellers",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-11-24T15:41:13.567186Z",
+    "generated_at": "2026-11-25T15:24:08.373554Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-11-24",
+    "reference_date": "2026-11-25",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
