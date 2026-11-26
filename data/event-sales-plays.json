@@ -322,10 +322,10 @@
   "149": [
     "Tech founders, digital professionals, investors, creators and event visitors",
     "Flights + Hotels + Airport Transfers + Business Travel + Event Travel",
-    "Start active outreach now; qualify dates, traveller count and booking readiness",
+    "Contact today; focus on ready-to-book travellers and immediate availability",
     "HOT",
-    "Follow up every 2–3 days with qualified prospects",
-    "AfroFutureTech iFest 2026 is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
+    "Follow up every 24–48 hours on active enquiries",
+    "AfroFutureTech iFest 2026 is within one week in Lagos, Nigeria; remaining travel enquiries are time-sensitive"
   ],
   "127": [
     "Nigerian F1 fans, premium travellers, corporate guests and motorsport groups",
@@ -421,7 +421,7 @@
     "Begin targeted outreach now; move qualified leads toward quotation",
     "WARM",
     "Follow up every 3–5 days with active prospects",
-    "Detty December Fest — Legacy Headliner Night is within the next 90 days; early outreach can capture travel demand before customers book elsewhere"
+    "Detty December Fest — Legacy Headliner Night is within 30 days in Lagos, Nigeria; flight, hotel and transfer decisions should be moving now"
   ],
   "156": [
     "Nigerian tech founders, CTOs, product teams, investors and corporate innovation leaders",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-11-25T15:24:08.373554Z",
+    "generated_at": "2026-11-26T14:52:03.847430Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-11-25",
+    "reference_date": "2026-11-26",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
