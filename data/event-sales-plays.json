@@ -314,10 +314,10 @@
   "148": [
     "Footwear manufacturers, retailers, exporters, designers and business buyers",
     "Flights + Hotels + Transfers + Business Travel + Group Booking",
-    "Last day — contact active prospects immediately and close any remaining travel enquiries",
-    "HOT",
-    "Follow up today on any active enquiry and close remaining travel requirements",
-    "Made In Nigeria Shoe Expo 2026 ends today in Abuja, Nigeria; remaining travel enquiries should be handled immediately"
+    "Event passed — close active event outreach and move to the next relevant opportunity",
+    "CLOSED",
+    "No routine follow-up; close or recycle the event lead",
+    "Made In Nigeria Shoe Expo 2026 has passed; preserve any converted leads and shift effort to the next travel opportunity"
   ],
   "149": [
     "Tech founders, digital professionals, investors, creators and event visitors",
@@ -536,9 +536,9 @@
     "FIFA Women's World Cup Brazil 2027 — July Knockout & Finals Phase is a future opportunity in Brazil — multiple host cities; early lead building gives Cindrela more time to qualify and convert travel demand"
   ],
   "_engine_meta": {
-    "generated_at": "2026-11-27T14:51:15.289768Z",
+    "generated_at": "2026-11-28T13:59:25.147184Z",
     "engine": "dynamic-date-sales-play-v2",
-    "reference_date": "2026-11-27",
+    "reference_date": "2026-11-28",
     "rules": "Sales timing is based on the event window: upcoming events use start date; live events remain HOT; ended events are CLOSED."
   }
 }
